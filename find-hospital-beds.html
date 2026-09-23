@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Hospital Beds</title>
+    <link rel="stylesheet" href="find-hospital-beds.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="top-bar-right">
+        <span>
+          <i class="fa-solid fa-phone"></i>
+          +91 790 609 05 74
+        </span>
+
+        <span>
+          <i class="fa-solid fa-envelope"></i>
+          info@hospitalbeds.com
+        </span>
+      </div>
+    </div>
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+        </a><img src="assets/logo.png" alt="Hospital Beds" />
+        </div>
+
+        <!-- Search Bar -->
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            placeholder=" Search hospitals, doctors, services..."
+          />
+
+          <button class="search-btn">Search</button>
+        </div>
+
+        <!-- Header Buttons -->
+        <div class="header-buttons">
+          <button class="login-btn">Login</button>
+
+          <button class="register-btn">Registration</button>
+      </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="find-hospital-beds.html" class="nav-link active">Find Hospital Beds</a>
+        <a href="surgery.html" class="nav-link">Surgery Packages</a>
+        <a href="blood-test.html" class="nav-link">Blood Test Comparison</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blogs.html" class="nav-link">Blogs</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+    <!-- =========================
+     FIND HOSPITALS
+========================= -->
+
+    <section class="find-hospitals-section">
+      <div class="find-hospitals-container">
+        <!-- Heading -->
+
+        <div class="find-hospitals-header">
+          <p class="find-label">FIND HOSPITALS</p>
+
+          <h1>Find the Right Hospital for Your Care</h1>
+
+          <p class="find-description">
+            Compare hospitals, specialties, facilities, ratings and more.
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+
+        <div class="hospital-search">
+          <div class="hospital-search-main">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              placeholder="Search hospital, location or specialty..."
+            />
+          </div>
+
+          <div class="hospital-location">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>City or Pincode</span>
+          </div>
+
+          <button class="hospital-search-btn">Search</button>
+        </div>
+
+        <!-- Filters -->
+
+        <div class="hospital-filter-row">
+          <div class="hospital-filters">
+            <button class="filter-btn">
+              Location
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="filter-btn">
+              Specialty
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="filter-btn">
+              Hospital Type
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="filter-btn">
+              Insurance
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="filter-btn">
+              More Filters
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <span class="result-count"> 248 results </span>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     HOSPITAL LISTING
+========================= -->
+
+    <section class="hospital-listing">
+      <div class="listing-container">
+        <!-- =========================
+             FILTER SIDEBAR
+        ========================= -->
+
+        <aside class="filter-sidebar">
+          <div class="filter-header">
+            <h3>Filters</h3>
+            <button>Clear All</button>
+          </div>
+
+          <!-- Location -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Location</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <div class="filter-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input type="text" placeholder="Search location" />
+            </div>
+
+            <button class="current-location">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              Use Current Location
+            </button>
+          </div>
+
+          <!-- Medical Specialty -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Medical Specialty</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <label><input type="checkbox" /> Cardiology</label>
+            <label><input type="checkbox" /> Orthopedics</label>
+            <label><input type="checkbox" /> Neurology</label>
+            <label><input type="checkbox" /> Oncology</label>
+            <label><input type="checkbox" /> Gynecology</label>
+            <label><input type="checkbox" /> Pediatrics</label>
+            <label><input type="checkbox" /> General Surgery</label>
+          </div>
+
+          <!-- Hospital Type -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Hospital Type</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <label><input type="checkbox"/> Multi-Specialty</label>
+            <label><input type="checkbox"/> Super Specialty</label>
+            <label><input type="checkbox"/> General Hospital</label>
+            <label><input type="checkbox"/> Specialty Hospital</label>
+            <label><input type="checkbox"/> Government</label>
+            <label><input type="checkbox"/> Private</label>
+          </div>
+
+          <!-- Rating -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Rating</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <label>
+              <input type="radio" name="rating" />
+              <span class="rating-stars">★★★★★</span>
+              4.5+ Stars
+            </label>
+
+            <label>
+              <input type="radio" name="rating" />
+              <span class="rating-stars">★★★★</span>
+              4.0+ Stars
+            </label>
+
+            <label>
+              <input type="radio" name="rating" />
+              <span class="rating-stars">★★★</span>
+              3.5+ Stars
+            </label>
+          </div>
+
+          <!-- Facilities -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Facilities</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <label><input type="checkbox" /> Emergency Care</label>
+            <label><input type="checkbox" /> ICU</label>
+            <label><input type="checkbox" /> 24*7 Pharmacy</label>
+            <label><input type="checkbox" /> Diagnostic Lab</label>
+            <label><input type="checkbox" /> Ambulance</label>
+            <label><input type="checkbox" /> Blood Bank</label>
+          </div>
+
+          <!-- Insurance -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Insurance</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <label><input type="checkbox" /> Insurance Accepted</label>
+            <label><input type="checkbox" /> Cashless Facility</label>
+          </div>
+
+          <!-- Distance -->
+
+          <div class="filter-group">
+            <div class="filter-title">
+              <span>Distance</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <label><input type="radio" name="distance" /> Within 5 km</label>
+            <label><input type="radio" name="distance" /> Within 10 km</label>
+            <label><input type="radio" name="distance" /> Within 25 km</label>
+            <label><input type="radio" name="distance" /> Any Distance</label>
+          </div>
+
+          <!-- Filter Buttons -->
+
+          <div class="filter-actions">
+            <button class="clear-filter">Clear All</button>
+
+            <button class="apply-filter">Apply Filters</button>
+          </div>
+        </aside>
+
+        <!-- =========================
+             RESULTS
+        ========================= -->
+
+        <main class="hospital-results">
+          <!-- Results Header -->
+
+          <div class="results-header">
+            <h2><span>248</span> Hospitals Found</h2>
+
+            <div class="sort-section">
+              <span>Sort by:</span>
+
+              <button class="sort-btn active">Recommended</button>
+
+              <button class="sort-btn">Highest Rated</button>
+
+              <button class="sort-btn">Nearest</button>
+
+              <button class="sort-btn">Most Reviewed</button>
+            </div>
+          </div>
+
+          <!-- =========================
+                 HOSPITAL GRID
+            ========================= -->
+
+          <div class="hospital-grid">
+            <!-- Apollo -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/apollo.png" alt="Apollo Hospitals" />
+
+                <span class="hospital-type"> Multi-Specialty </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>Apollo Hospitals</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.8</b>
+                  <small>(2,450 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  New Delhi, Delhi
+                  <em>2.4 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>24*7 Emergency</span>
+                  <span>NABH Accredited</span>
+                  <span>ICU</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  710 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fortis -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img
+                  src="assets/fortis.png"
+                  alt="Fortis Memorial Research Institute"
+                />
+
+                <span class="hospital-type"> Super Specialty </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>Fortis Memorial Research Institute</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.7</b>
+                  <small>(1,890 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Gurugram, Haryana
+                  <em>5.1 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>Cardiac Care</span>
+                  <span>Neurology</span>
+                  <span>Robotic Surgery</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  1,000 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Max -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/max.png" alt="Max Super Speciality Hospital" />
+
+                <span class="hospital-type"> Super Specialty </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>Max Super Speciality Hospital</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.6</b>
+                  <small>(3,210 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Saket, New Delhi
+                  <em>3.8 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>Oncology</span>
+                  <span>Orthopedics</span>
+                  <span>Blood Bank</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  500 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Medanta -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/medanta.png" alt="Medanta The Medicity" />
+
+                <span class="hospital-type"> Multi-Specialty </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>Medanta - The Medicity</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.9</b>
+                  <small>(4,210 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Sector 38, Gurugram
+                  <em>8.2 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>24×7 Emergency</span>
+                  <span>Transplants</span>
+                  <span>NABH Accredited</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  1,600 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- AIIMS -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/AIIMS Delhi.png" alt="AIIMS Delhi" />
+
+                <span class="hospital-type"> Government </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>AIIMS Delhi</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.7</b>
+                  <small>(5,680 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Ansari Nagar, New Delhi
+                  <em>6.5 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>Research Center</span>
+                  <span>Trauma Care</span>
+                  <span>Diagnostic Lab</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  2,478 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Safdarjung -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/Safdarjung Hospital.png" alt="Safdarjung Hospital" />
+
+                <span class="hospital-type"> Government </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>Safdarjung Hospital</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.2</b>
+                  <small>(2,100 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Ring Road, New Delhi
+                  <em>4.9 km</em>
+                </div>
+
+                < class="hospital-tags">
+                  <span>24*7 Pharmacy</span>
+                  <span>Ambulance</span>
+                  <span>ICU</span>
+              checkbox
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  3,000 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sir Ganga Ram -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/Sir Ganga Ram Hospital.png" alt="Sir Ganga Ram Hospital" />
+
+                <span class="hospital-type"> Multi-Specialty </span>
+
+                <span class="nabh-badge"> ✓ NABH </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>Sir Ganga Ram Hospital</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.5</b>
+                  <small>(1,740 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Rajinder Nagar, New Delhi
+                  <em>7.3 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>Pediatrics</span>
+                  <span>Gynecology</span>
+                  <span>Cashless Facility</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  675 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- BLK -->
+
+            <div class="hospital-card">
+              <div class="hospital-image">
+                <img src="assets/BLK-Max Super Speciality.png" alt="BLK Max Super Speciality" />
+
+                <span class="hospital-type"> Specialty Hospital </span>
+              </div>
+
+              <div class="hospital-card-body">
+                <h3>BLK-Max Super Speciality</h3>
+
+                <div class="hospital-rating">
+                  <span>★★★★★</span>
+                  <b>4.4</b>
+                  <small>(980 reviews)</small>
+                </div>
+
+                <div class="hospital-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Pusa Road, New Delhi
+                  <em>9.1 km</em>
+                </div>
+
+                <div class="hospital-tags">
+                  <span>Bone Marrow</span>
+                  <span>Nephrology</span>
+                  <span>General Surgery</span>
+                </div>
+
+                <p class="beds">
+                  <i class="fa-solid fa-bed"></i>
+                  650 beds
+                </p>
+
+                <div class="card-buttons">
+                  <button class="view-btn">View Details</button>
+                  <button class="book-btn">Book Appointment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================
+                 PAGINATION
+            ========================= -->
+
+          <div class="pagination">
+            <button class="previous">
+              <i class="fa-solid fa-chevron-left"></i>
+              Previous
+            </button>
+
+            <button class="page active">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <button class="page">4</button>
+            <button class="page">5</button>
+
+            <span>...</span>
+
+            <button class="page">24</button>
+
+            <button class="next">
+              Next
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- =========================
+     NEWSLETTER
+========================= -->
+
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2>Stay Informed. Stay Healthy.</h2>
+
+          <p>
+            Get the latest healthcare updates, wellness tips, hospital news, and
+            exclusive health offers delivered straight to your inbox.
+          </p>
+        </div>
+
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter Your Email" />
+
+          <button>Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FOOTER
+========================= -->
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+
+          <p>
+            India's trusted healthcare marketplace.<br />
+            Search, compare and book from 2,840+<br />
+            hospitals across 180 cities.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+          <h3>SERVICES</h3>
+
+          <a href="#">Hospital Bed Booking</a>
+          <a href="#">Surgery Packages</a>
+          <a href="#">Blood Test</a>
+          <a href="#">Dialysis Booking</a>
+          <a href="#">Chemotherapy</a>
+        </div>
+
+        <!-- HOSPITALS -->
+
+        <div class="footer-column">
+          <h3>HOSPITALS</h3>
+
+          <a href="#">Browse Hospitals</a>
+          <a href="#">By City</a>
+          <a href="#">By Specialty</a>
+          <a href="#">Compare Hospitals</a>
+          <a href="#">Submit Admission</a>
+        </div>
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+          <h3>COMPANY</h3>
+
+          <a href="#">About Us</a>
+          <a href="#">How It Works</a>
+          <a href="#">Partner With Us</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- SUPPORT -->
+
+        <div class="footer-column">
+          <h3>SUPPORT</h3>
+
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Patient Stories</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Services</a>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>© 2026 HospitalBeds.com - Made with care in India 🇮🇳</p>
+          <span class="designed-by"> Design by Anuj Chaudhary </span>
+          <div class="footer-badges">
+            <span>NABH Partner</span>
+            <span>ISO 27001</span>
+            <span>PCI DSS Compliant</span>
+            <span>DPDP Compliant</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

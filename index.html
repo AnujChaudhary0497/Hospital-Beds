@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Beds</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="top-bar-right">
+        <span>
+          <i class="fa-solid fa-phone"></i>
+          +91 790 609 05 74
+        </span>
+
+        <span>
+          <i class="fa-solid fa-envelope"></i>
+          info@hospitalbeds.com
+        </span>
+      </div>
+    </div>
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+        </div>
+
+        <!-- Search Bar -->
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            placeholder=" Search hospitals, doctors, services..."
+          />
+
+          <button class="search-btn">Search</button>
+        </div>
+
+        <!-- Header Buttons -->
+        <div class="header-buttons">
+          <button class="login-btn">Login</button>
+
+          <button class="register-btn">Registration</button>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="find-hospital-beds.html" class="nav-link"
+            >Find Hospital Beds</a
+          >
+          <a href="surgery.html" class="nav-link">Surgery Packages</a>
+          <a href="blood-test.html" class="nav-link">Blood Test Comparison</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="blogs.html" class="nav-link">Blogs</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+    <!-- Menu Logo -->
+    <div class="mobile-menu-logo">
+        <img src="assets/logo.png" alt="Hospital Beds">
+    </div>
+
+    <!-- Menu Links -->
+    <div class="mobile-menu-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="find-hospital-beds.html">Find Hospital Beds</a>
+        <a href="surgery.html">Surgery Packages</a>
+        <a href="blood-test.html">Blood Test Comparison</a>
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Login + Registration -->
+    <div class="mobile-menu-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Registration</button>
+    </div>
+
+</div>
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section">
+      <!-- Background Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <p class="hero-tagline">INDIA'S #1 HEALTHCARE MARKETPLACE</p>
+
+        <h1>
+          Find, Compare &amp; Book<br />
+          Healthcare Services Online.
+        </h1>
+
+        <p class="hero-description">
+          Hospital beds, surgery packages, blood tests, dialysis &amp;
+          chemotherapy — live<br />
+          availability, transparent pricing, instant booking.
+        </p>
+
+        <!-- Search Box -->
+        <div class="hero-search-box">
+          <!-- Location -->
+          <div class="hero-search-field location-field">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <input type="text" placeholder="City or hospital name" />
+          </div>
+
+          <!-- Hospital Beds -->
+          <div class="hero-search-field">
+            <i class="fa-solid fa-bed"></i>
+
+            <input type="text" placeholder="Hospital Beds" />
+
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </div>
+
+          <!-- Category -->
+          <div class="hero-search-field category-field">
+            <i class="fa-regular fa-clipboard"></i>
+
+            <input type="text" placeholder="All Categories" />
+          </div>
+
+          <!-- Search Button -->
+          <button class="hero-search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </div>
+
+        <!-- Popular Searches -->
+        <div class="popular-searches">
+          <span>Knee Replacement</span>
+          <span>Dialysis Centers</span>
+          <span>CBC Blood Test</span>
+          <span>ICU Beds Delhi</span>
+          <span>Chemotherapy</span>
+        </div>
+      </div>
+
+      <!-- Hospital Strip -->
+      <div class="hospital-strip">
+        <span>Apollo</span>
+        <span>Fortis</span>
+        <span>Max</span>
+        <span>Narayana</span>
+        <span>Manipal</span>
+        <span>Aster</span>
+        <span>Medanta</span>
+        <span>Columbia</span>
+      </div>
+    </section>
+    <!-- ================= STATS SECTION ================= -->
+
+    <section class="stats-section">
+      <div class="stat-item">
+        <i class="fa-solid fa-hospital"></i>
+
+        <div class="stat-content">
+          <h3>2,840+</h3>
+          <p>Partner Hospitals</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <i class="fa-solid fa-bed"></i>
+
+        <div class="stat-content">
+          <h3>12,490+</h3>
+          <p>Beds Available</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <i class="fa-solid fa-chart-line"></i>
+
+        <div class="stat-content">
+          <h3>₹2.4Cr+</h3>
+          <p>Patient Savings</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <i class="fa-regular fa-star"></i>
+
+        <div class="stat-content">
+          <h3>4.8★</h3>
+          <p>Average Rating</p>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <i class="fa-solid fa-user-group"></i>
+
+        <div class="stat-content">
+          <h3>1.2L+</h3>
+          <p>Patients Served</p>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     OUR SERVICES
+========================= -->
+
+    <section class="services-section">
+      <div class="services-header">
+        <p class="services-label">OUR SERVICES</p>
+
+        <h2>Everything Healthcare, One Place</h2>
+
+        <p class="services-description">
+          From finding a hospital bed to booking complex surgeries — we cover
+          <br />
+          the full spectrum of healthcare services.
+        </p>
+      </div>
+
+      <!-- Service Cards -->
+
+      <div class="services-container">
+        <!-- Card 1 -->
+
+        <div class="service-card">
+          <div class="service-icon blue-icon">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+
+          <h3>Hospital Bed Booking</h3>
+
+          <p>
+            Check real-time bed availability across verified hospitals and
+            submit admission requests with ease.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Real-time availability
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              ICU &amp; NICU beds
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Instant confirmation
+            </li>
+          </ul>
+
+          <button class="explore-btn">
+            Explore
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="service-card">
+          <div class="service-icon pink-icon">
+            <i class="fa-solid fa-stethoscope"></i>
+          </div>
+
+          <h3>Surgery Package Comparison</h3>
+
+          <p>
+            Compare all-inclusive surgery packages across hospitals. Transparent
+            pricing with no hidden charges.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Compare across hospitals
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              All-inclusive pricing
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Pre &amp; post-op care
+            </li>
+          </ul>
+
+          <button class="explore-btn">
+            Explore
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="service-card">
+          <div class="service-icon cyan-icon">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+
+          <h3>Dialysis Booking</h3>
+
+          <p>
+            Find dialysis centers near you with real-time slot availability.
+            Book hemodialysis or peritoneal dialysis sessions.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Hemodialysis centers
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Slot scheduling
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Recurring bookings
+            </li>
+          </ul>
+
+          <button class="explore-btn">
+            Explore
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="service-card">
+          <div class="service-icon green-icon">
+            <i class="fa-solid fa-capsules"></i>
+          </div>
+
+          <h3>Chemotherapy Booking</h3>
+
+          <p>
+            Book chemotherapy sessions at NABH-accredited oncology centers.
+            Expert oncologist consultations included.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              NABH-accredited centers
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Oncologist consultation
+            </li>
+
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              Session tracking
+            </li>
+          </ul>
+
+          <button class="explore-btn">
+            Explore
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     HOW IT WORKS
+========================= -->
+
+    <section class="how-it-works">
+      <div class="how-header">
+        <p class="how-label">HOW IT WORKS</p>
+
+        <h2>Book in 4 Simple Steps</h2>
+
+        <p class="how-description">
+          We've streamlined the healthcare booking experience so you can focus
+          on what
+          <br />
+          matters — getting the best care possible.
+        </p>
+      </div>
+
+      <div class="steps-container">
+        <!-- Connecting Line -->
+        <div class="steps-line"></div>
+
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-number">01</div>
+
+          <h3>Search Hospitals</h3>
+
+          <p>
+            Enter location, treatment type, and preferred dates across our live
+            hospital network.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-number">02</div>
+
+          <h3>Compare &amp; Choose</h3>
+
+          <p>
+            Side-by-side pricing, ratings, available beds, and doctor profiles —
+            all transparent.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-number">03</div>
+
+          <h3>Submit Your Booking</h3>
+
+          <p>
+            Securely confirm your booking online with instant digital
+            confirmation.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+          <div class="step-number">04</div>
+
+          <h3>Get Hospital Confirmation</h3>
+
+          <p>
+            Receive your pre-admission checklist, hospital directions, and
+            dedicated care concierge.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FEATURED HOSPITALS
+========================= -->
+
+    <section class="featured-hospitals">
+      <div class="featured-container">
+        <!-- Section Header -->
+
+        <div class="featured-header">
+          <p>FEATURED HOSPITALS</p>
+
+          <h2>Discover Trusted Hospitals Near You</h2>
+        </div>
+
+        <!-- ================= HOSPITAL 1 ================= -->
+
+        <div class="hospital-card">
+          <div class="hospital-image">
+            <img src="assets/apollo.png" alt="Apollo Hospitals" />
+
+            <span class="nabh-badge"> NABH+ | JCI </span>
+          </div>
+
+          <div class="hospital-info">
+            <h3>Apollo Hospitals</h3>
+
+            <div class="hospital-location">
+              <i class="fa-solid fa-location-dot"></i>
+              New Delhi
+            </div>
+
+            <div class="hospital-tags">
+              <span>Cardiac Surgery</span>
+              <span>Oncology</span>
+              <span>Neurology</span>
+              <span>Orthopaedics</span>
+            </div>
+
+            <div class="hospital-meta">
+              <span class="beds">
+                <i class="fa-solid fa-circle"></i>
+                42 beds
+              </span>
+
+              <span>available now</span>
+
+              <span>Price: ₹₹₹</span>
+            </div>
+          </div>
+
+          <div class="hospital-rating">
+            <div>
+              <i class="fa-solid fa-star"></i>
+              4.9
+            </div>
+
+            <small> 2,840 reviews </small>
+          </div>
+
+          <div class="hospital-actions">
+            <button class="book-btn">Book Now</button>
+
+            <button class="admission-btn">Request Admission</button>
+          </div>
+        </div>
+
+        <!-- ================= HOSPITAL 2 ================= -->
+
+        <div class="hospital-card">
+          <div class="hospital-image">
+            <img src="assets/fortis.png" alt="Fortis Memorial" />
+
+            <span class="nabh-badge"> NABH </span>
+          </div>
+
+          <div class="hospital-info">
+            <h3>Fortis Memorial</h3>
+
+            <div class="hospital-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Gurgaon
+            </div>
+
+            <div class="hospital-tags">
+              <span>Bone Marrow Transplant</span>
+              <span>Cardiac</span>
+              <span>Renal Sciences</span>
+            </div>
+
+            <div class="hospital-meta">
+              <span class="beds">
+                <i class="fa-solid fa-circle"></i>
+                18 beds
+              </span>
+
+              <span>available now</span>
+
+              <span>Price: ₹₹₹</span>
+            </div>
+          </div>
+
+          <div class="hospital-rating">
+            <div>
+              <i class="fa-solid fa-star"></i>
+              4.8
+            </div>
+
+            <small> 1,920 reviews </small>
+          </div>
+
+          <div class="hospital-actions">
+            <button class="book-btn">Book Now</button>
+
+            <button class="admission-btn">Request Admission</button>
+          </div>
+        </div>
+
+        <!-- ================= HOSPITAL 3 ================= -->
+
+        <div class="hospital-card">
+          <div class="hospital-image">
+            <img src="assets/max.png" alt="Max Super Speciality" />
+
+            <span class="nabh-badge"> NABH </span>
+          </div>
+
+          <div class="hospital-info">
+            <h3>Max Super Speciality</h3>
+
+            <div class="hospital-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Saket, Delhi
+            </div>
+
+            <div class="hospital-tags">
+              <span>Organ Transplant</span>
+              <span>Oncology</span>
+              <span>Neurosciences</span>
+            </div>
+
+            <div class="hospital-meta">
+              <span class="beds">
+                <i class="fa-solid fa-circle"></i>
+                67 beds
+              </span>
+
+              <span>available now</span>
+
+              <span>Price: ₹₹</span>
+            </div>
+          </div>
+
+          <div class="hospital-rating">
+            <div>
+              <i class="fa-solid fa-star"></i>
+              4.7
+            </div>
+
+            <small> 3,140 reviews </small>
+          </div>
+
+          <div class="hospital-actions">
+            <button class="book-btn">Book Now</button>
+
+            <button class="admission-btn">Request Admission</button>
+          </div>
+        </div>
+
+        <!-- View All -->
+
+        <button class="view-all-btn">
+          View All Hospitals
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- =========================
+     BROWSE BY SPECIALTY
+========================= -->
+
+    <section class="specialty-section">
+      <div class="specialty-header">
+        <p class="specialty-label">BROWSE BY SPECIALTY</p>
+
+        <h2>Find Care by Medical Specialty</h2>
+      </div>
+
+      <div class="specialty-container">
+        <!-- Cardiology -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon pink-specialty">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <h3>Cardiology</h3>
+
+          <p>420 hospitals</p>
+        </div>
+
+        <!-- Neurology -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon purple-specialty">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+
+          <h3>Neurology</h3>
+
+          <p>310 hospitals</p>
+        </div>
+
+        <!-- Orthopaedics -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon orange-specialty">
+            <i class="fa-solid fa-bone"></i>
+          </div>
+
+          <h3>Orthopaedics</h3>
+
+          <p>580 hospitals</p>
+        </div>
+
+        <!-- Ophthalmology -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon cyan-specialty">
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+          <h3>Ophthalmology</h3>
+
+          <p>290 hospitals</p>
+        </div>
+
+        <!-- Pediatrics -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon pink-specialty">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+
+          <h3>Pediatrics</h3>
+
+          <p>340 hospitals</p>
+        </div>
+
+        <!-- Oncology -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon green-specialty">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+
+          <h3>Oncology</h3>
+
+          <p>195 hospitals</p>
+        </div>
+
+        <!-- Nephrology -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon blue-specialty">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+
+          <h3>Nephrology</h3>
+
+          <p>210 hospitals</p>
+        </div>
+
+        <!-- Gastroenterology -->
+
+        <div class="specialty-card">
+          <div class="specialty-icon red-specialty">
+            <i class="fa-solid fa-stethoscope"></i>
+          </div>
+
+          <h3>Gastroenterology</h3>
+
+          <p>265 hospitals</p>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     SURGERY PACKAGES
+========================= -->
+
+    <section class="surgery-packages">
+      <div class="surgery-container">
+        <div class="surgery-header">
+          <p>SURGERY PACKAGES</p>
+
+          <h2>Compare Surgery Packages Side by Side</h2>
+
+          <span>
+            Showing: Knee Replacement — 3 packages across top hospitals in Delhi
+            NCR
+          </span>
+        </div>
+
+        <div class="package-container">
+          <!-- Package 1 -->
+
+          <div class="package-card featured-package">
+            <div class="package-top">
+              <div>
+                <h3>Apollo Delhi</h3>
+                <p>Knee Replacement</p>
+              </div>
+
+              <span class="package-badge best"> Best Value </span>
+            </div>
+
+            <h4>₹2,40,000</h4>
+
+            <div class="package-meta">
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                5–7 days stay
+              </span>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.9
+              </span>
+            </div>
+
+            <ul>
+              <li>Pre-op tests</li>
+              <li>Implant</li>
+              <li>ICU</li>
+              <li>Physiotherapy</li>
+            </ul>
+
+            <button>Book This Package</button>
+          </div>
+
+          <!-- Package 2 -->
+
+          <div class="package-card">
+            <div class="package-top">
+              <div>
+                <h3>Fortis Gurgaon</h3>
+                <p>Knee Replacement</p>
+              </div>
+
+              <span class="package-badge popular"> Top Rated </span>
+            </div>
+
+            <h4>₹2,78,000</h4>
+
+            <div class="package-meta">
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                4–6 days stay
+              </span>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.8
+              </span>
+            </div>
+
+            <ul>
+              <li>Pre-op tests</li>
+              <li>Premium implant</li>
+              <li>Private room</li>
+              <li>Physio + OT</li>
+            </ul>
+
+            <button>Book This Package</button>
+          </div>
+
+          <!-- Package 3 -->
+
+          <div class="package-card">
+            <div class="package-top">
+              <div>
+                <h3>Max Saket</h3>
+                <p>Knee Replacement</p>
+              </div>
+
+              <span class="package-badge lowest"> Lowest Price </span>
+            </div>
+
+            <h4>₹1,95,000</h4>
+
+            <div class="package-meta">
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                5–7 days stay
+              </span>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.7
+              </span>
+            </div>
+
+            <ul>
+              <li>Basic tests</li>
+              <li>Standard implant</li>
+              <li>Shared room</li>
+              <li>Physiotherapy</li>
+            </ul>
+
+            <button>Book This Package</button>
+          </div>
+        </div>
+
+        <a href="#" class="all-packages">
+          View All Surgery Packages
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- =========================
+     BLOOD TEST COMPARISON
+========================= -->
+
+    <section class="blood-test-section">
+      <div class="blood-test-container">
+        <div class="blood-test-header">
+          <p>BLOOD TEST COMPARISON</p>
+
+          <h2>Compare Lab Prices. Save on Every Test.</h2>
+        </div>
+
+        <div class="blood-table-wrapper">
+          <table class="blood-table">
+            <thead>
+              <tr>
+                <th>Diagnostic Test</th>
+                <th>SRL Diagnostics</th>
+                <th>Dr. Lal PathLabs</th>
+                <th>Metropolis</th>
+                <th>Turnaround</th>
+                <th>Home Pickup</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Complete Blood Count (CBC)</td>
+
+                <td class="price">₹250</td>
+
+                <td class="lowest-price">
+                  ₹180
+                  <span>Lowest</span>
+                </td>
+
+                <td class="price">₹220</td>
+
+                <td class="turnaround">
+                  <i class="fa-regular fa-clock"></i>
+                  6 hrs
+                </td>
+
+                <td>
+                  <span class="available"> Available </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Thyroid Profile (T3/T4/TSH)</td>
+
+                <td class="price">₹480</td>
+
+                <td class="lowest-price">
+                  ₹420
+                  <span>Lowest</span>
+                </td>
+
+                <td class="price">₹550</td>
+
+                <td class="turnaround">
+                  <i class="fa-regular fa-clock"></i>
+                  12 hrs
+                </td>
+
+                <td>
+                  <span class="available"> Available </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>HbA1c (Diabetes)</td>
+
+                <td class="price">₹350</td>
+
+                <td class="lowest-price">
+                  ₹290
+                  <span>Lowest</span>
+                </td>
+
+                <td class="price">₹380</td>
+
+                <td class="turnaround">
+                  <i class="fa-regular fa-clock"></i>
+                  6 hrs
+                </td>
+
+                <td>
+                  <span class="available"> Available </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Lipid Profile</td>
+
+                <td class="price">₹480</td>
+
+                <td class="lowest-price">
+                  ₹360
+                  <span>Lowest</span>
+                </td>
+
+                <td class="price">₹420</td>
+
+                <td class="turnaround">
+                  <i class="fa-regular fa-clock"></i>
+                  8 hrs
+                </td>
+
+                <td>
+                  <span class="available"> Available </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Liver Function Test (LFT)</td>
+
+                <td class="price">₹600</td>
+
+                <td class="lowest-price">
+                  ₹540
+                  <span>Lowest</span>
+                </td>
+
+                <td class="price">₹580</td>
+
+                <td class="turnaround">
+                  <i class="fa-regular fa-clock"></i>
+                  8 hrs
+                </td>
+
+                <td>
+                  <span class="lab-only"> Lab only </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button class="browse-tests-btn">
+          Browse 500+ Tests
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+    <section class="why-choose-section">
+      <div class="why-choose-container">
+        <div class="why-header">
+          <p>WHY CHOOSE US</p>
+
+          <h2>Built for Patient-First Healthcare</h2>
+        </div>
+
+        <div class="why-grid">
+          <!-- 1 -->
+          <div class="why-card">
+            <div class="why-icon availability-icon">
+              <i class="fa-solid fa-wave-square"></i>
+            </div>
+
+            <h3>Real-Time Availability</h3>
+
+            <p>
+              Live bed counts updated every 15 minutes across all partner
+              hospitals.
+            </p>
+          </div>
+
+          <!-- 2 -->
+          <div class="why-card">
+            <div class="why-icon secure-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>Secure Booking</h3>
+
+            <p>
+              End-to-end encrypted payments with PCI-DSS compliant
+              infrastructure.
+            </p>
+          </div>
+
+          <!-- 3 -->
+          <div class="why-card">
+            <div class="why-icon price-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>Price Transparency</h3>
+
+            <p>All-inclusive package pricing. No hidden charges — ever.</p>
+          </div>
+
+          <!-- 4 -->
+          <div class="why-card">
+            <div class="why-icon reviews-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+
+            <h3>Verified Reviews</h3>
+
+            <p>
+              Only post-treatment reviews from patients who booked through our
+              platform.
+            </p>
+          </div>
+
+          <!-- 5 -->
+          <div class="why-card">
+            <div class="why-icon concierge-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <h3>24/7 Care Concierge</h3>
+
+            <p>
+              Dedicated support team available round the clock for any
+              assistance.
+            </p>
+          </div>
+
+          <!-- 6 -->
+          <div class="why-card">
+            <div class="why-icon hospitals-icon">
+              <i class="fa-regular fa-thumbs-up"></i>
+            </div>
+
+            <h3>500+ Partner Hospitals</h3>
+
+            <p>
+              NABH-accredited hospitals across 80+ cities in India and Southeast
+              Asia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     TESTIMONIALS
+========================= -->
+
+    <section class="testimonials-section">
+      <div class="testimonials-container">
+        <div class="testimonials-header">
+          <p>TESTIMONIALS</p>
+
+          <h2>Built for Patient-First Healthcare</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <!-- Testimonial 1 -->
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+              “Found a cardiac ICU bed at Apollo within 20 minutes when my
+              father had a heart attack. The real-time availability saved his
+              life. I can't thank HospitalBeds enough.”
+            </p>
+
+            <div class="testimonial-user">
+              <div class="user-avatar pink-avatar">PM</div>
+
+              <div>
+                <h3>Priya Mehta</h3>
+                <span>Mumbai · Cardiac Emergency</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+              “Saved ₹45,000 on my knee replacement by comparing packages. The
+              transparency in pricing is incredible — everything was exactly as
+              listed. Zero hidden charges.”
+            </p>
+
+            <div class="testimonial-user">
+              <div class="user-avatar blue-avatar">RK</div>
+
+              <div>
+                <h3>Rajesh Kumar</h3>
+                <span>Bangalore · Knee Replacement</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="testimonial-text">
+              “Booking dialysis sessions used to be a nightmare — calling 5
+              centers every week. Now I schedule everything from the app in 2
+              minutes. Game changer.”
+            </p>
+
+            <div class="testimonial-user">
+              <div class="user-avatar green-avatar">SS</div>
+
+              <div>
+                <h3>Sunita Sharma</h3>
+                <span>Delhi · Dialysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FAQ SECTION
+========================= -->
+
+    <section class="faq-section">
+      <div class="faq-container">
+        <!-- LEFT CONTENT -->
+
+        <div class="faq-left">
+          <p class="faq-label">FREQUENTLY ASKED QUESTIONS</p>
+
+          <h2>
+            Everything You Need to
+            <br />
+            Know Before Booking
+          </h2>
+
+          <p class="faq-description">
+            Find answers to common questions about hospital bed booking, surgery
+            packages, diagnostics, and other healthcare services available on
+            HospitalBeds.com.
+          </p>
+
+          <button class="contact-support-btn">
+            Contact Support
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- RIGHT ACCORDION -->
+
+        <div class="faq-right">
+          <!-- FAQ 1 - OPEN -->
+
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span> Is HospitalBeds.com free to use for patients? </span>
+
+              <i class="fa-solid fa-minus"></i>
+            </div>
+
+            <div class="faq-answer">
+              Yes, completely free. There are no booking fees or service charges
+              for patients. We generate revenue from our hospital partners when
+              you use a small listing fee.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span> How do I know the bed availability is accurate? </span>
+
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span> What happens after I book? </span>
+
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span> Can I compare surgery packages before booking? </span>
+
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span> Is my payment and medical data secure? </span>
+
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     NEWSLETTER
+========================= -->
+
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2>Stay Informed. Stay Healthy.</h2>
+
+          <p>
+            Get the latest healthcare updates, wellness tips, hospital news, and
+            exclusive health offers delivered straight to your inbox.
+          </p>
+        </div>
+
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter Your Email" />
+
+          <button>Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FOOTER
+========================= -->
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+
+          <p>
+            India's trusted healthcare marketplace.<br />
+            Search, compare and book from 2,840+<br />
+            hospitals across 180 cities.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+          <h3>SERVICES</h3>
+
+          <a href="#">Hospital Bed Booking</a>
+          <a href="#">Surgery Packages</a>
+          <a href="#">Blood Test</a>
+          <a href="#">Dialysis Booking</a>
+          <a href="#">Chemotherapy</a>
+        </div>
+
+        <!-- HOSPITALS -->
+
+        <div class="footer-column">
+          <h3>HOSPITALS</h3>
+
+          <a href="#">Browse Hospitals</a>
+          <a href="#">By City</a>
+          <a href="#">By Specialty</a>
+          <a href="#">Compare Hospitals</a>
+          <a href="#">Submit Admission</a>
+        </div>
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+          <h3>COMPANY</h3>
+
+          <a href="#">About Us</a>
+          <a href="#">How It Works</a>
+          <a href="#">Partner With Us</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- SUPPORT -->
+
+        <div class="footer-column">
+          <h3>SUPPORT</h3>
+
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Patient Stories</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Services</a>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>© 2026 HospitalBeds.com - Made with care in India 🇮🇳</p>
+          <span class="designed-by"> Design by Anuj Chaudhary </span>
+          <div class="footer-badges">
+            <span>NABH Partner</span>
+            <span>ISO 27001</span>
+            <span>PCI DSS Compliant</span>
+            <span>DPDP Compliant</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2782 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+  width: 100%;
+  height: 36px;
+  background-color: #0b2e78;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+/* Left Side */
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* Right Side */
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  color: white;
+  font-size: 9px;
+}
+
+.top-bar-right span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-bar-right i {
+  font-size: 9px;
+}
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.header-search {
+  width: 536px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  border: 0.2px solid #6b7280;
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.header-search > i {
+  color: #999999;
+  font-size: 11px;
+  margin-left: 14px;
+}
+
+.header-search input {
+  flex: 1;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0 10px;
+
+  font-size: 10px;
+}
+
+.header-search input::placeholder {
+  color: #aaaaaa;
+  font-size: 12px;
+  font-family: Manrope;
+}
+
+/* Red Search Button */
+
+.search-btn {
+  height: 42px;
+  width: 120px;
+
+  margin-right: 3px;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: #f7255c;
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* ------Buttons------- */
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-btn,
+.register-btn {
+  height: 36px;
+
+  padding: 0 20px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* Login */
+
+.login-btn {
+  background-color: #ffffff;
+
+  border: 1px solid #dedede;
+
+  color: #0b2e78;
+}
+
+/* Registration */
+
+.register-btn {
+  background-color: #f7255c;
+
+  border: 1px solid #f7255c;
+
+  color: #ffffff;
+}
+
+/* --------Navbar-------- */
+
+.navbar {
+  width: 100%;
+  height: 40px;
+
+  background-color: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 58px;
+}
+
+.nav-link {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  color: #111111;
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* Active Home */
+
+.nav-link.active {
+  color: #0b2e78;
+}
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 7px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #f7255c;
+}
+/* =========================
+   SURGERY HERO
+========================= */
+
+.surgery-hero {
+  width: 100%;
+  height: 440px;
+
+  position: relative;
+
+  background-color: #f8fafc;
+
+  display: flex;
+  justify-content: center;
+
+  overflow: visible;
+}
+
+.surgery-hero-content {
+  width: 1125px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 43px;
+}
+
+/* =========================
+   TAGLINE
+========================= */
+
+.surgery-tagline {
+  margin: 0 0 17px;
+
+  color: #0b2e78;
+
+  font-family: Manrope, Arial, sans-serif;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-align: center;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.surgery-hero h1 {
+  margin: 0;
+
+  color: #f7255c;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 44px;
+  line-height: 52px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  letter-spacing: -0.8px;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.surgery-search {
+  width: 650px;
+  height: 49px;
+
+  margin-top: 31px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  border-radius: 7px;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.12);
+
+  overflow: hidden;
+}
+
+/* =========================
+   SEARCH FIELDS
+========================= */
+
+.surgery-field {
+  height: 42px;
+
+  width: 195px;
+
+  padding: 0 13px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.surgery-field label {
+  margin-bottom: 5px;
+
+  color: #7b8495;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.surgery-field input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  color: #333333;
+
+  font-size: 10px;
+
+  background: transparent;
+}
+
+.surgery-field input::placeholder {
+  color: #9ca3af;
+}
+
+/* Room */
+
+.room-field {
+  width: 160px;
+}
+
+.room-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #555555;
+
+  font-size: 10px;
+}
+
+.room-select i {
+  color: #7b8495;
+
+  font-size: 6px;
+}
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+.surgery-search-btn {
+  height: 32px;
+
+  width: 100px;
+
+  margin-right: 7px;
+
+  flex-shrink: 0;
+
+  border: none;
+  margin-left: 7px;
+  border-radius: 5px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+.surgery-search-btn i {
+  margin-right: 5px;
+
+  font-size: 8px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.surgery-stats {
+  margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 67px;
+}
+
+.surgery-stat {
+  text-align: center;
+}
+
+.surgery-stat h3 {
+  margin: 0 0 4px;
+
+  color: #f7255c;
+
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+.surgery-stat p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 9px;
+}
+
+/* =========================
+   INFORMATION BOX
+========================= */
+
+.surgery-info {
+  width: 518px;
+  height: 64px;
+
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+
+  transform: translateX(-50%);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  box-shadow: rgba(15, 23, 42, 0.12) 0px 5px 18px;
+  z-index: 10;
+}
+
+.surgery-info-item {
+  padding: 10px 18px;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.surgery-info-item:last-child {
+  border-right: none;
+}
+
+.surgery-info-item h4 {
+  margin: 0 0 6px;
+
+  color: #111827;
+
+  font-size: 7px;
+
+  font-weight: 600;
+}
+
+.surgery-info-item p {
+  margin: 0;
+
+  color: #7b8495;
+
+  font-size: 6px;
+
+  line-height: 9px;
+}
+/* =========================
+   PACKAGE INCLUSIONS
+========================= */
+
+.package-inclusions {
+  width: 100%;
+  height: 280px;
+
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 35px;
+}
+
+.package-container {
+  width: 1125px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.package-tagline {
+  margin: 0 0 9px;
+
+  color: #f7255c;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.package-container h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 24px;
+  line-height: 26px;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/* =========================
+   PACKAGE GRID
+========================= */
+
+.package-grid {
+  width: 1125px;
+
+  margin-top: 17px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 76px);
+
+  gap: 18px;
+
+  background-color: transparent;
+}
+
+/* =========================
+   ITEM
+========================= */
+
+.package-item {
+  height: 76px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f8fafc;
+
+  border: none;
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+/* Remove right border from last column */
+
+.package-item:nth-child(6),
+.package-item:nth-child(12) {
+  border-right: none;
+}
+
+/* Remove bottom border from second row */
+
+.package-item:nth-child(n + 7) {
+  border-bottom: none;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.package-item i {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  color: #f7255c;
+}
+
+/* Different icon colors */
+
+.package-item:nth-child(2) i,
+.package-item:nth-child(8) i {
+  color: #22c55e;
+}
+
+.package-item:nth-child(3) i,
+.package-item:nth-child(9) i {
+  color: #0b2e78;
+}
+
+.package-item:nth-child(4) i {
+  color: #8b5cf6;
+}
+
+.package-item:nth-child(5) i,
+.package-item:nth-child(10) i {
+  color: #f59e0b;
+}
+
+.package-item:nth-child(6) i,
+.package-item:nth-child(12) i {
+  color: #06b6d4;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.package-item p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 7px;
+
+  font-weight: 400;
+}
+/* =========================
+   SURGERY DETAILS
+========================= */
+
+.surgery-details {
+  width: 100%;
+  padding: 32px 0 50px;
+
+  background-color: #ffffff;
+}
+
+.surgery-details-container {
+  width: 1125px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.details-card {
+  height: 155px;
+
+  padding: 22px 23px;
+  margin-top: 70px;
+  background-color: #ffffff;
+
+  border: 1px solid #e5eaf2;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.details-card:hover {
+  transform: translateY(-5px);
+  border-color: #f7255c;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.details-card h3 {
+  margin: 0 0 13px;
+  color: #0b2e78;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*=========================
+   LIST
+=========================*/
+
+.details-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.details-card li {
+  position: relative;
+
+  margin-bottom: 11px;
+  padding-left: 13px;
+
+  color: #6b7280;
+
+  font-size: 8px;
+  line-height: 12px;
+}
+
+.details-card li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background-color: #22c55e;
+}
+/* =========================
+   POPULAR SURGERY PACKAGES
+========================= */
+
+.popular-surgery {
+  width: 100%;
+  height: 265px;
+
+  background-color: #ffffff;
+
+  padding-top: 35px;
+}
+
+.popular-surgery-container {
+  width: 1125px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.popular-tagline {
+  margin: 0 0 9px;
+
+  color: #f7255c;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.popular-surgery-container h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.surgery-package-grid {
+  width: 100%;
+
+  margin-top: 38px;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 16px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.surgery-package-card {
+  height: 108px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f8fafc;
+
+  border: 1px solid #e1e7f0;
+
+  border-radius: 11px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.surgery-package-card:hover {
+  transform: translateY(-5px);
+  border-color: #f7255c;
+  background-color: #fff7f9;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.package-icon {
+  width: 31px;
+  height: 31px;
+
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff0f4;
+
+  border-radius: 8px;
+}
+
+.package-icon i {
+  color: #f7255c;
+
+  font-size: 12px;
+}
+
+/* Different icon backgrounds */
+
+.surgery-package-card:nth-child(2) .package-icon {
+  background-color: #f1edff;
+}
+
+.surgery-package-card:nth-child(2) .package-icon i {
+  color: #8b5cf6;
+}
+
+.surgery-package-card:nth-child(3) .package-icon {
+  background-color: #fff6e5;
+}
+
+.surgery-package-card:nth-child(3) .package-icon i {
+  color: #f59e0b;
+}
+
+.surgery-package-card:nth-child(4) .package-icon {
+  background-color: #eafaff;
+}
+
+.surgery-package-card:nth-child(4) .package-icon i {
+  color: #06b6d4;
+}
+
+.surgery-package-card:nth-child(5) .package-icon {
+  background-color: #fcecf7;
+}
+
+.surgery-package-card:nth-child(5) .package-icon i {
+  color: #ec4899;
+}
+
+.surgery-package-card:nth-child(6) .package-icon {
+  background-color: #eaf8f1;
+}
+
+.surgery-package-card:nth-child(6) .package-icon i {
+  color: #22c55e;
+}
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.surgery-package-card h3 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 8px;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.surgery-package-card p {
+  margin: 0;
+
+  color: #f7255c;
+
+  font-size: 8px;
+
+  font-weight: 500;
+}
+/* =========================
+   PACKAGE COMPARISON
+========================= */
+
+.package-comparison {
+  width: 100%;
+  height: 445px;
+
+  background-color: #f8fafc;
+
+  padding-top: 50px;
+}
+
+.comparison-container {
+  width: 1125px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.comparison-tagline {
+  margin: 0 0 10px;
+
+  color: #f7255c;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.comparison-container h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.comparison-cards {
+  width: 600px;
+
+  margin-top: 33px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.comparison-card {
+  height: 223px;
+
+  padding: 14px 15px 12px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #aebbd0;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-5px);
+  border-color: #f7255c;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.13);
+}
+
+/* Apollo active card */
+
+.apollo-card {
+  border-color: #f7255c;
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.comparison-card-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+}
+
+.comparison-card-header h3 {
+  margin: 0 0 4px;
+
+  color: #111827;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.comparison-card-header p {
+  margin: 0;
+
+  color: #8a94a6;
+
+  font-size: 9px;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.value-badge,
+.top-rated-badge,
+.lowest-badge {
+  padding: 4px 7px;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 5px;
+
+  white-space: nowrap;
+}
+
+.value-badge {
+  background-color: #22c55e;
+}
+
+.top-rated-badge {
+  background-color: #f59e0b;
+}
+
+.lowest-badge {
+  background-color: #0b2e78;
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.package-price {
+  margin-top: 16px;
+
+  color: #0b2e78;
+
+  font-family: monospace;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   META
+========================= */
+
+.package-meta {
+  margin-top: 4px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #7b8495;
+
+  font-size: 8px;
+}
+
+.package-meta span:last-child {
+  color: #f59e0b;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.package-features {
+  list-style: none;
+
+  margin: 13px 0 0;
+
+  padding: 0;
+}
+
+.package-features li {
+  position: relative;
+
+  margin-bottom: 8px;
+
+  padding-left: 11px;
+
+  color: #5f6b7d;
+
+  font-size: 9px;
+}
+
+.package-features li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 3px;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background-color: #22c55e;
+}
+
+/* =========================
+   BOOK BUTTON
+========================= */
+
+.book-package-btn {
+  width: 100%;
+  height: 27px;
+
+  margin-top: auto;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+.blue-btn {
+  background-color: #0b2e78;
+}
+
+/* =========================
+   VIEW ALL
+========================= */
+
+.view-all-packages {
+  width: 148px;
+  height: 28px;
+
+  margin-top: 32px;
+
+  border: 1px solid #f7255c;
+
+  border-radius: 6px;
+
+  background-color: #ffffff;
+
+  color: #f7255c;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+.view-all-packages i {
+  margin-left: 5px;
+
+  font-size: 6px;
+}
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+  width: 100%;
+  height: 400px;
+
+  background-color: #ffffff;
+  padding-top: 48px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.how-header {
+  text-align: center;
+}
+
+/* Pink Label */
+
+.how-label {
+  margin: 0 0 12px;
+
+  color: #f7255c;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Heading */
+
+.how-header h2 {
+  margin: 0 0 14px;
+
+  color: #0b2e78;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* Description */
+
+.how-description {
+  margin: 0;
+
+  color: #7b8495;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* =========================
+   STEPS
+========================= */
+
+.steps-container {
+  width: 1125px;
+
+  margin: 48px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+/* Connecting Line */
+
+.steps-line {
+  position: absolute;
+
+  top: 15px;
+  left: 10%;
+  right: 10%;
+
+  height: 1px;
+
+  background-color: #f7255c;
+
+  z-index: 1;
+}
+/* =========================
+   INDIVIDUAL STEP
+========================= */
+
+.step {
+  width: 210px;
+
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+}
+
+/* Number */
+
+.step-number {
+  width: 30px;
+  height: 30px;
+
+  margin: 0 auto 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  box-shadow: 0 4px 10px rgba(247, 37, 92, 0.2);
+}
+
+/* Step Heading */
+
+.step h3 {
+  margin: 0 0 10px;
+
+  color: #0b2e78;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Step Description */
+
+.step p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 7px;
+  line-height: 1.55;
+}
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter-section {
+  width: 100%;
+  height: 150px;
+
+  background-color: #f7255c;
+
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-container {
+  width: 1125px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.newsletter-content {
+  width: 480px;
+}
+
+.newsletter-content h2 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.newsletter-content p {
+  width: 440px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.newsletter-form {
+  width: 460px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 20px;
+
+  background-color: #ffffff;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+
+.newsletter-form input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  color: #555555;
+
+  font-size: 8px;
+}
+
+.newsletter-form input::placeholder {
+  color: #9ca3af;
+
+  font-size: 8px;
+}
+
+/* =========================
+   SUBSCRIBE BUTTON
+========================= */
+
+.newsletter-form button {
+  width: 135px;
+  height: 36px;
+
+  margin-right: 2px;
+
+  border: none;
+
+  border-radius: 22px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+  width: 100%;
+  height: 245px;
+
+  background-color: #071226;
+
+  color: #ffffff;
+}
+
+/* =========================
+   MAIN FOOTER
+========================= */
+
+.footer-container {
+  width: 1125px;
+  height: 215px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 38px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.footer-about {
+  width: 290px;
+}
+
+.footer-about img {
+  width: 145px;
+  height: auto;
+
+  display: block;
+
+  margin-bottom: 12px;
+}
+
+.footer-about p {
+  margin: 0;
+
+  color: #c4cad5;
+
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+/* =========================
+   SOCIALS
+========================= */
+
+.footer-socials {
+  display: flex;
+
+  gap: 7px;
+
+  margin-top: 14px;
+}
+
+.footer-socials a {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #172238;
+
+  border-radius: 6px;
+
+  color: #aeb7c8;
+
+  text-decoration: none;
+
+  font-size: 8px;
+}
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-column {
+  width: 145px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  margin: 5px 0 16px;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+.footer-column a {
+  margin-bottom: 12px;
+
+  color: #7f8a9e;
+
+  text-decoration: none;
+
+  font-size: 9px;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+  width: 100%;
+  height: 30px;
+
+  border-top: 1px solid #263148;
+}
+
+.footer-bottom-container {
+  width: 1125px;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #d2d7df;
+
+  font-size: 9px;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.footer-badges {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.footer-badges span {
+  color: #d2d7df;
+
+  font-size: 6px;
+
+  font-weight: 600;
+}
+
+.designed-by {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #7f8a9e;
+  font-size: 9px;
+}
+
+.footer-bottom-container {
+  position: relative;
+}
+
+
+/* =========================
+   HOVER EFFECTS
+========================= */
+
+.search-btn:hover,
+.register-btn:hover,
+.surgery-search-btn:hover,
+.newsletter-form button:hover,
+.book-package-btn:hover {
+  background-color: #d91f4f;
+  transform: translateY(-1px);
+}
+
+.login-btn:hover {
+  border-color: #f7255c;
+  color: #f7255c;
+}
+
+.blue-btn:hover {
+  background-color: #08245f;
+}
+
+.view-all-packages:hover {
+  background-color: #f7255c;
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #0b2e78;
+}
+
+.top-bar-left a:hover,
+.footer-socials a:hover {
+  color: #f7255c;
+}
+/* =========================================================
+   RESPONSIVE CSS ONLY
+========================================================= */
+
+
+/* =========================
+   TABLET
+   769px - 1024px
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .top-bar {
+    padding: 0 4%;
+  }
+
+  .header-container {
+    padding: 0 4%;
+  }
+
+  .logo img {
+    width: 125px;
+  }
+
+  .header-search {
+    width: 42%;
+    height: 45px;
+  }
+
+  .search-btn {
+    width: 90px;
+    height: 39px;
+    font-size: 9px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0 13px;
+    font-size: 9px;
+  }
+
+  .nav-container {
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 9px;
+  }
+
+
+  /* HERO */
+
+  .surgery-hero {
+    height: auto;
+    min-height: 440px;
+    padding-bottom: 45px;
+  }
+
+  .surgery-hero-content {
+    width: calc(100% - 50px);
+  }
+
+  .surgery-hero h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .surgery-search {
+    width: 650px;
+    max-width: 100%;
+  }
+
+  .surgery-info {
+    width: 500px;
+    max-width: 90%;
+  }
+
+
+  /* PACKAGE INCLUSIONS */
+
+  .package-inclusions {
+    height: auto;
+    padding: 35px 25px 45px;
+  }
+
+  .package-container {
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  .package-grid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 14px;
+  }
+
+  .package-item {
+    height: 80px;
+  }
+
+
+  /* SURGERY DETAILS */
+
+  .surgery-details {
+    padding: 25px 25px 45px;
+  }
+
+  .surgery-details-container {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .details-card {
+    margin-top: 45px;
+  }
+
+
+  /* POPULAR PACKAGES */
+
+  .popular-surgery {
+    height: auto;
+    padding: 35px 25px 45px;
+  }
+
+  .popular-surgery-container {
+    width: 100%;
+  }
+
+  .surgery-package-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+
+  /* COMPARISON */
+
+  .package-comparison {
+    height: auto;
+    padding: 45px 25px;
+  }
+
+  .comparison-container {
+    width: 100%;
+  }
+
+  .comparison-cards {
+    width: 650px;
+    max-width: 100%;
+  }
+
+
+  /* HOW IT WORKS */
+
+  .how-it-works {
+    height: auto;
+    padding: 45px 25px 55px;
+  }
+
+  .steps-container {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .step {
+    width: 22%;
+  }
+
+  .step p {
+    font-size: 8px;
+  }
+
+
+  /* NEWSLETTER */
+
+  .newsletter-section {
+    height: auto;
+    padding: 30px 25px;
+  }
+
+  .newsletter-container {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .newsletter-content {
+    width: 48%;
+  }
+
+  .newsletter-content p {
+    width: 100%;
+  }
+
+  .newsletter-form {
+    width: 48%;
+  }
+
+
+  /* FOOTER */
+
+  .footer-section {
+    height: auto;
+  }
+
+  .footer-container {
+    width: calc(100% - 50px);
+    height: auto;
+    padding: 40px 0 30px;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .footer-about {
+    width: 25%;
+  }
+
+  .footer-column {
+    width: 15%;
+  }
+
+  .footer-bottom-container {
+    width: calc(100% - 50px);
+  }
+}
+
+
+
+/* =========================
+   MOBILE
+   0px - 768px
+========================= */
+
+@media (max-width: 768px) {
+
+  /* TOP BAR */
+
+  .top-bar {
+    height: auto;
+    min-height: 34px;
+    padding: 7px 18px;
+  }
+
+  .top-bar-left {
+    gap: 12px;
+  }
+
+  .top-bar-left a {
+    font-size: 9px;
+  }
+
+  .top-bar-right {
+    gap: 10px;
+    font-size: 8px;
+  }
+
+
+  /* HEADER */
+
+  .main-header {
+    height: auto;
+  }
+
+  .header-container {
+    height: auto;
+    padding: 13px 18px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .header-buttons {
+    gap: 5px;
+  }
+
+  .login-btn,
+  .register-btn {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 8px;
+  }
+
+  .header-search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    height: 42px;
+  }
+
+  .header-search input {
+    font-size: 9px;
+  }
+
+  .header-search input::placeholder {
+    font-size: 9px;
+  }
+
+  .search-btn {
+    width: 75px;
+    height: 36px;
+    font-size: 8px;
+  }
+
+
+  /* NAVBAR */
+
+  .navbar {
+    height: 40px;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-container {
+    width: max-content;
+    min-width: 100%;
+    padding: 0 18px;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .nav-link {
+    flex-shrink: 0;
+    font-size: 9px;
+  }
+
+
+  /* =========================
+     SURGERY HERO
+  ========================= */
+
+  .surgery-hero {
+    height: auto;
+    min-height: 0;
+    padding: 30px 18px 55px;
+  }
+
+  .surgery-hero-content {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+  }
+
+  .surgery-tagline {
+    font-size: 8px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .surgery-hero h1 {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.3px;
+  }
+
+
+  /* SEARCH */
+
+  .surgery-search {
+    width: 100%;
+    height: auto;
+    margin-top: 22px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: visible;
+  }
+
+  .surgery-field,
+  .room-field {
+    width: 100%;
+    height: 48px;
+    padding: 0 12px;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .surgery-field:last-of-type {
+    border-bottom: none;
+  }
+
+  .surgery-field label {
+    font-size: 8px;
+  }
+
+  .surgery-field input,
+  .room-select {
+    font-size: 9px;
+  }
+
+  .surgery-search-btn {
+    width: 100%;
+    height: 38px;
+    margin: 3px 0 0;
+    font-size: 9px;
+  }
+
+
+  /* STATS */
+
+  .surgery-stats {
+    width: 100%;
+    margin-top: 28px;
+    gap: 0;
+    justify-content: space-around;
+  }
+
+  .surgery-stat h3 {
+    font-size: 17px;
+  }
+
+  .surgery-stat p {
+    font-size: 8px;
+  }
+
+
+  /* INFO BOX */
+
+  .surgery-info {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    grid-template-columns: 1fr;
+  }
+
+  .surgery-info-item {
+    padding: 12px 15px;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .surgery-info-item:last-child {
+    border-bottom: none;
+  }
+
+  .surgery-info-item h4 {
+    font-size: 8px;
+  }
+
+  .surgery-info-item p {
+    font-size: 7px;
+    line-height: 11px;
+  }
+
+
+  /* =========================
+     PACKAGE INCLUSIONS
+  ========================= */
+
+  .package-inclusions {
+    height: auto;
+    padding: 40px 18px;
+  }
+
+  .package-container {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .package-tagline {
+    font-size: 8px;
+  }
+
+  .package-container h2 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .package-grid {
+    width: 100%;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .package-item {
+    height: 80px;
+  }
+
+  .package-item i {
+    font-size: 14px;
+  }
+
+  .package-item p {
+    font-size: 8px;
+  }
+
+
+  /* =========================
+     SURGERY DETAILS
+  ========================= */
+
+  .surgery-details {
+    padding: 20px 18px 45px;
+  }
+
+  .surgery-details-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .details-card {
+    height: auto;
+    min-height: 155px;
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .details-card h3 {
+    font-size: 13px;
+  }
+
+  .details-card li {
+    font-size: 8px;
+  }
+
+
+  /* =========================
+     POPULAR SURGERY
+  ========================= */
+
+  .popular-surgery {
+    height: auto;
+    padding: 40px 18px 45px;
+  }
+
+  .popular-surgery-container {
+    width: 100%;
+  }
+
+  .popular-tagline {
+    font-size: 8px;
+  }
+
+  .popular-surgery-container h2 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .surgery-package-grid {
+    width: 100%;
+    margin-top: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .surgery-package-card {
+    height: 105px;
+  }
+
+
+  /* =========================
+     PACKAGE COMPARISON
+  ========================= */
+
+  .package-comparison {
+    height: auto;
+    padding: 40px 18px 45px;
+  }
+
+  .comparison-container {
+    width: 100%;
+  }
+
+  .comparison-tagline {
+    font-size: 8px;
+  }
+
+  .comparison-container h2 {
+    font-size: 21px;
+    text-align: center;
+    line-height: 27px;
+  }
+
+  .comparison-cards {
+    width: 100%;
+    margin-top: 25px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .comparison-card {
+    height: auto;
+    min-height: 223px;
+  }
+
+  .package-price {
+    font-size: 20px;
+  }
+
+  .view-all-packages {
+    margin-top: 25px;
+  }
+
+
+  /* =========================
+     HOW IT WORKS
+  ========================= */
+
+  .how-it-works {
+    height: auto;
+    padding: 40px 18px 50px;
+  }
+
+  .how-label {
+    font-size: 10px;
+  }
+
+  .how-header h2 {
+    font-size: 23px;
+  }
+
+  .how-description {
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .how-description br {
+    display: none;
+  }
+
+  .steps-container {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+
+  .steps-line {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+  }
+
+  .step h3 {
+    font-size: 10px;
+  }
+
+  .step p {
+    font-size: 7px;
+    line-height: 13px;
+  }
+
+
+  /* =========================
+     NEWSLETTER
+  ========================= */
+
+  .newsletter-section {
+    height: auto;
+    padding: 35px 18px;
+  }
+
+  .newsletter-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .newsletter-content {
+    width: 100%;
+  }
+
+  .newsletter-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .newsletter-content p {
+    width: 100%;
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 500px;
+    height: 42px;
+    padding-left: 13px;
+  }
+
+  .newsletter-form input {
+    font-size: 8px;
+  }
+
+  .newsletter-form button {
+    width: 110px;
+    height: 38px;
+    font-size: 9px;
+  }
+
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  .footer-section {
+    height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    padding: 38px 18px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+  }
+
+  .footer-about {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    height: auto;
+  }
+
+  .footer-bottom-container {
+    width: 100%;
+    height: auto;
+    min-height: 90px;
+    padding: 12px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 8px;
+  }
+
+  .designed-by {
+    position: static;
+    transform: none;
+    font-size: 8px;
+  }
+
+  .footer-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px 14px;
+  }
+
+  .footer-badges span {
+    font-size: 7px;
+  }
+}
+
+
+
+/* =========================
+   SMALL MOBILE
+   0px - 480px
+========================= */
+
+@media (max-width: 480px) {
+
+  .top-bar {
+    justify-content: center;
+  }
+
+  .top-bar-right {
+    display: none;
+  }
+
+  .header-container {
+    padding: 12px 14px;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0 8px;
+    font-size: 8px;
+  }
+
+
+  .nav-container {
+    padding: 0 14px;
+    gap: 20px;
+  }
+
+
+  /* HERO */
+
+  .surgery-hero {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .surgery-hero h1 {
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  .surgery-tagline {
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+
+
+  /* STATS */
+
+  .surgery-stats {
+    gap: 5px;
+  }
+
+  .surgery-stat h3 {
+    font-size: 15px;
+  }
+
+  .surgery-stat p {
+    font-size: 7px;
+  }
+
+
+  /* PACKAGE */
+
+  .package-inclusions,
+  .surgery-details,
+  .popular-surgery,
+  .package-comparison,
+  .how-it-works,
+  .newsletter-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .package-container h2,
+  .popular-surgery-container h2,
+  .comparison-container h2 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .package-grid {
+    gap: 8px;
+  }
+
+  .package-item {
+    height: 75px;
+  }
+
+  .package-item p {
+    font-size: 7px;
+  }
+
+
+  /* POPULAR */
+
+  .surgery-package-grid {
+    gap: 9px;
+  }
+
+  .surgery-package-card {
+    height: 100px;
+  }
+
+
+  /* COMPARISON */
+
+  .comparison-card {
+    padding: 13px;
+  }
+
+  .package-price {
+    font-size: 19px;
+  }
+
+
+  /* HOW IT WORKS */
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+
+.footer-section {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    padding: 40px 20px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px 20px;
+  }
+
+  /* =====================================================
+       ABOUT
+    ===================================================== */
+
+  .footer-about {
+    width: 100%;
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  .footer-about img {
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: 10px;
+  }
+
+  .footer-about p {
+    width: 100%;
+
+    font-size: 8px;
+    line-height: 14px;
+
+    margin: 0 auto;
+  }
+
+  /* Social Icons */
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 12px;
+  }
+
+  .footer-socials a {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+  }
+
+  /* =====================================================
+       FOOTER COLUMNS
+    ===================================================== */
+
+  .footer-column {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 9px;
+    line-height: 14px;
+
+    margin-bottom: 10px;
+  }
+
+  .footer-column a {
+    display: block;
+
+    font-size: 7px;
+    line-height: 13px;
+
+    margin-bottom: 6px;
+  }
+
+  /* =====================================================
+       FOOTER BOTTOM
+    ===================================================== */
+
+  .footer-bottom {
+    width: 100%;
+  }
+
+  .footer-bottom-container {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    padding: 15px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    text-align: center;
+  }
+
+  .footer-bottom-container p {
+    font-size: 7px;
+    line-height: 12px;
+    margin: 0;
+  }
+
+  .designed-by {
+    font-size: 7px;
+    line-height: 12px;
+  }
+
+  /* Badges */
+
+  .footer-badges {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 5px;
+  }
+
+  .footer-badges span {
+    font-size: 6px;
+    line-height: 10px;
+
+    padding: 7px 6px;
+
+    white-space: nowrap;
+  }
+
+}

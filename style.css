@@ -1,0 +1,5692 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+  width: 100%;
+  height: 36px;
+  background-color: #0b2e78;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+/* Left Side */
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* Right Side */
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  color: white;
+  font-size: 9px;
+}
+
+.top-bar-right span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-bar-right i {
+  font-size: 9px;
+}
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.header-search {
+  width: 400px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  border: 0.2px solid #6b7280;
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.header-search > i {
+  color: #999999;
+  font-size: 11px;
+  margin-left: 14px;
+}
+
+.header-search input {
+  flex: 1;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0 10px;
+
+  font-size: 10px;
+}
+
+.header-search input::placeholder {
+  color: #aaaaaa;
+  font-size: 12px;
+  font-family: Manrope;
+}
+
+/* Red Search Button */
+
+.search-btn {
+  height: 35px;
+  width: 90px;
+
+  margin-right: 3px;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: #f7255c;
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* ------Buttons------- */
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-btn,
+.register-btn {
+  height: 36px;
+
+  padding: 0 20px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* Login */
+
+.login-btn {
+  background-color: #ffffff;
+
+  border: 1px solid #dedede;
+
+  color: #0b2e78;
+}
+
+/* Registration */
+
+.register-btn {
+  background-color: #f7255c;
+
+  border: 1px solid #f7255c;
+
+  color: #ffffff;
+}
+
+/* --------Navbar-------- */
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  background-color: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 58px;
+}
+
+.nav-links {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 58px;
+}
+
+.nav-link {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  color: #111111;
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* Active Home */
+
+.nav-link.active {
+  color: #0b2e78;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f7255c;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  width: 100%;
+  height: 400px;
+
+  position: relative;
+
+  background-image: url("assets/hero1.png");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(255, 255, 255, 0.58);
+
+  backdrop-filter: blur(2px);
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 58px;
+}
+
+/* =========================
+   TAGLINE
+========================= */
+
+.hero-tagline {
+  margin: 0 0 13px;
+
+  color: #0b2e78;
+
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.hero-content h1 {
+  margin: 0 0 19px;
+
+  color: #f7255c;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero-description {
+  margin: 0 0 28px;
+
+  color: #111827;
+
+  font-size: 8px;
+  line-height: 15px;
+
+  text-align: center;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.hero-search-box {
+  width: 530px;
+  height: 42px;
+
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.45);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   SEARCH FIELD
+========================= */
+
+.hero-search-field {
+  height: 30px;
+
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+
+  background-color: #ffffff;
+
+  border-radius: 18px;
+
+  gap: 6px;
+
+  color: #999999;
+
+  font-size: 7px;
+}
+
+/* Location Field */
+
+.hero-search-field.location-field {
+  width: 195px;
+  flex: none;
+}
+
+/* Category Field */
+
+.hero-search-field.category-field {
+  width: 105px;
+  flex: none;
+}
+
+/* =========================
+   FIELD ICON
+========================= */
+
+.hero-search-field > i:first-child {
+  flex-shrink: 0;
+
+  color: #f7255c;
+
+  font-size: 9px;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+.hero-search-field input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #333333;
+
+  font-size: 7px;
+}
+
+.hero-search-field input::placeholder {
+  color: #aaaaaa;
+}
+
+/* =========================
+   DROPDOWN ICON
+========================= */
+
+.hero-search-field .dropdown-icon {
+  flex-shrink: 0;
+
+  margin-left: auto;
+
+  color: #999999;
+
+  font-size: 6px;
+}
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+.hero-search-button {
+  width: 80px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  margin-left: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.hero-search-button i {
+  font-size: 7px;
+}
+
+/* =========================
+   POPULAR SEARCHES
+========================= */
+
+.popular-searches {
+  height: 25px;
+
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.popular-searches span {
+  padding: 4px 8px;
+
+  color: #ffffff;
+
+  font-size: 6px;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 15px;
+
+  background-color: rgba(50, 50, 50, 0.28);
+
+  white-space: nowrap;
+}
+
+/* =========================
+   HOSPITAL STRIP
+========================= */
+
+.hospital-strip {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 45px;
+
+  background-color: rgba(30, 30, 30, 0.6);
+
+  color: #ffffff;
+
+  font-size: 7px;
+
+  z-index: 5;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+
+.stats-section {
+  width: 100%;
+  height: 100px;
+
+  background-color: #0b2e78;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 100px;
+}
+
+/* Individual Stat */
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  height: 51px;
+  gap: 12px;
+}
+
+/* Icon */
+
+.stat-item > i {
+  color: #f7255c;
+
+  font-size: 17px;
+}
+
+/* Text */
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Number */
+
+.stat-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  line-height: 1.2;
+}
+
+/* Label */
+
+.stat-content p {
+  margin: 3px 0 0;
+
+  color: #bfcbea;
+
+  font-size: 8px;
+  font-weight: 400;
+}
+
+/* =========================
+   OUR SERVICES
+========================= */
+
+.services-section {
+  width: 100%;
+  min-height: 600px;
+
+  background-color: #f8fafc;
+
+  padding-top: 58px;
+}
+
+/* =========================
+   SERVICES HEADER
+========================= */
+
+.services-header {
+  text-align: center;
+}
+
+/* Pink Label */
+
+.services-label {
+  margin: 0 0 14px;
+
+  color: #f7255c;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Heading */
+
+.services-header h2 {
+  margin: 0 0 18px;
+
+  color: #0b2e78;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* Description */
+
+.services-description {
+  margin: 0;
+
+  color: #7b8495;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.services-container {
+  width: 1125px;
+  max-width: calc(100% - 40px);
+
+  margin: 65px auto 0;
+
+  display: flex;
+  gap: 15px;
+}
+
+.service-card {
+  width: 270px;
+  min-height: 290px;
+
+  flex: 1;
+  min-width: 0;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+  border-radius: 18px;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.service-icon {
+  width: 47px;
+  height: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  margin-bottom: 15px;
+
+  background-color: #f8fafc;
+
+  font-size: 24px;
+}
+
+/* Icon Colors */
+
+.blue-icon {
+  color: #0b2e78;
+}
+
+.pink-icon {
+  color: #f7255c;
+}
+
+.cyan-icon {
+  color: #00b8d9;
+}
+
+.green-icon {
+  color: #22c55e;
+}
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.service-card h3 {
+  margin: 0 0 10px;
+
+  color: #0b2e78;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.service-card > p {
+  margin: 0 0 12px;
+
+  color: #7b8495;
+
+  font-size: 9px;
+
+  line-height: 1.55;
+}
+
+/* =========================
+   CARD LIST
+========================= */
+
+.service-card ul {
+  margin: 0 0 15px;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.service-card li {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 8px;
+}
+
+.service-card li i {
+  color: #0b2e78;
+
+  font-size: 8px;
+}
+
+/* =========================
+   EXPLORE BUTTON
+========================= */
+
+.explore-btn {
+  width: 68px;
+  height: 23px;
+
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  border: none;
+  border-radius: 3px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+.explore-btn i {
+  font-size: 7px;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+  width: 100%;
+  min-height: 400px;
+
+  background-color: #ffffff;
+  padding-top: 48px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.how-header {
+  text-align: center;
+}
+
+/* Pink Label */
+
+.how-label {
+  margin: 0 0 12px;
+
+  color: #f7255c;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Heading */
+
+.how-header h2 {
+  margin: 0 0 14px;
+
+  color: #0b2e78;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* Description */
+
+.how-description {
+  margin: 0;
+
+  color: #7b8495;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* =========================
+   STEPS
+========================= */
+
+.steps-container {
+  width: 1125px;
+
+  margin: 48px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+/* Connecting Line */
+
+.steps-line {
+  position: absolute;
+
+  top: 15px;
+  left: 10%;
+  right: 10%;
+
+  height: 1px;
+
+  background-color: #f7255c;
+
+  z-index: 1;
+}
+/* =========================
+   INDIVIDUAL STEP
+========================= */
+
+.step {
+  width: 210px;
+
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+}
+
+/* Number */
+
+.step-number {
+  width: 30px;
+  height: 30px;
+
+  margin: 0 auto 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  box-shadow: 0 4px 10px rgba(247, 37, 92, 0.2);
+}
+
+/* Step Heading */
+
+.step h3 {
+  margin: 0 0 10px;
+
+  color: #0b2e78;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Step Description */
+
+.step p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 7px;
+  line-height: 1.55;
+}
+
+/* =========================
+   FEATURED HOSPITALS
+========================= */
+
+.featured-hospitals {
+  width: 100%;
+  min-height: 700px;
+  background-color: #f8fafc;
+
+  padding: 64px 0;
+}
+
+.featured-container {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.featured-header {
+  margin-bottom: 30px;
+}
+
+.featured-header p {
+  margin: 0 0 12px;
+
+  color: #f7255c;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.featured-header h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 29px;
+  font-weight: 700;
+}
+
+/* =========================
+   HOSPITAL CARD
+========================= */
+
+.hospital-card {
+  width: 100%;
+  height: 179px;
+
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: stretch;
+
+  background-color: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+
+  overflow: hidden;
+}
+
+/* =========================
+   HOSPITAL IMAGE
+========================= */
+
+.hospital-image {
+  width: 176px;
+  height: auto;
+
+  position: relative;
+
+  flex-shrink: 0;
+}
+
+.hospital-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* NABH */
+
+.nabh-badge {
+  position: absolute;
+
+  top: 8px;
+  left: 8px;
+
+  padding: 4px 9px;
+
+  background-color: #22c55e;
+
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+/* =========================
+   HOSPITAL INFO
+========================= */
+
+.hospital-info {
+  flex: 1;
+
+  padding: 17px 17px 10px;
+}
+
+.hospital-info h3 {
+  margin: 0 0 5px;
+
+  color: #111827;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Location */
+
+.hospital-location {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  margin-bottom: 18px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+.hospital-location i {
+  font-size: 10px;
+}
+
+/* Tags */
+
+.hospital-tags {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 9px;
+}
+
+.hospital-tags span {
+  padding: 8px 7px;
+
+  background-color: #eef2ff;
+
+  color: #0b2e78;
+
+  border-radius: 8px;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+}
+
+/* Meta */
+
+.hospital-meta {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #9ca3af;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.hospital-meta .beds {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.hospital-meta .beds i {
+  font-size: 7px;
+  margin-right: 3px;
+}
+
+/* =========================
+   RATING
+========================= */
+
+.hospital-rating {
+  width: 85px;
+
+  padding-top: 18px;
+
+  text-align: left;
+}
+
+.hospital-rating div {
+  color: #111827;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.hospital-rating i {
+  color: #f59e0b;
+
+  font-size: 9px;
+
+  margin-right: 3px;
+}
+
+.hospital-rating small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #9ca3af;
+
+  font-size: 7px;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.hospital-actions {
+  width: 128px;
+
+  padding: 30px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 7px;
+
+  border-left: 1px solid #f0f0f0;
+}
+
+/* Book */
+
+.book-btn {
+  width: 97px;
+  height: 26px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Admission */
+
+.admission-btn {
+  width: 97px;
+  height: 24px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+
+  background-color: #ffffff;
+
+  color: #6b7280;
+
+  font-size: 7px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   VIEW ALL
+========================= */
+
+.view-all-btn {
+  width: 143px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin: 24px auto 0;
+  border: 1px solid #f7255c;
+  border-radius: 8px;
+
+  background-color: transparent;
+
+  color: #f7255c;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.view-all-btn i {
+  font-size: 7px;
+}
+/* =========================
+   BROWSE BY SPECIALTY
+========================= */
+
+.specialty-section {
+  width: 100%;
+  min-height: 370px;
+
+  background-color: #ffffff;
+
+  padding-top: 65px;
+}
+
+/* Header */
+
+.specialty-header {
+  text-align: center;
+}
+
+.specialty-label {
+  margin: 0 0 13px;
+
+  color: #f7255c;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.specialty-header h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* =========================
+   SPECIALTY CONTAINER
+========================= */
+
+.specialty-container {
+  width: 1125px;
+  margin: 65px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* =========================
+   SPECIALTY CARD
+========================= */
+
+.specialty-card {
+  width: 120px;
+  height: 130px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 16px;
+
+  background-color: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+/* Icon */
+
+.specialty-icon {
+  width: 31px;
+  height: 31px;
+
+  margin-bottom: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+}
+
+/* Icon backgrounds */
+
+.pink-specialty {
+  color: #f7255c;
+  background-color: #fce7f3;
+}
+
+.purple-specialty {
+  color: #8b5cf6;
+  background-color: #ede9fe;
+}
+
+.orange-specialty {
+  color: #f59e0b;
+  background-color: #fff7ed;
+}
+
+.cyan-specialty {
+  color: #06b6d4;
+  background-color: #e0f7fa;
+}
+
+.green-specialty {
+  color: #22c55e;
+  background-color: #e9f9ef;
+}
+
+.blue-specialty {
+  color: #0b2e78;
+  background-color: #e8edf7;
+}
+
+.red-specialty {
+  color: #f7255c;
+  background-color: #fce7f3;
+}
+
+/* Card Heading */
+
+.specialty-card h3 {
+  margin: 0 0 7px;
+
+  color: #111827;
+
+  font-size: 8px;
+  font-weight: 500;
+}
+
+/* Hospital Count */
+
+.specialty-card p {
+  margin: 0;
+
+  color: #f7255c;
+
+  font-size: 7px;
+}
+/* =========================================================
+   SURGERY PACKAGES
+========================================================= */
+
+.surgery-packages {
+  width: 100%;
+  min-height: 460px;
+  background-color: #f8fafc;
+  padding: 48px 0 40px;
+}
+
+.surgery-container {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.surgery-header {
+  text-align: center;
+}
+
+.surgery-header p {
+  margin: 0 0 12px;
+  color: #f7255c;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.surgery-header h2 {
+  margin: 0 0 14px;
+  color: #0b2e78;
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.surgery-header span {
+  color: #7b8495;
+  font-size: 8px;
+}
+
+/* =========================================================
+   PACKAGE CONTAINER
+========================================================= */
+
+.package-container {
+  width: 100%;
+  margin-top: 66px;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+}
+
+/* =========================================================
+   PACKAGE CARD
+========================================================= */
+
+.package-card {
+  width: 270px;
+  height: 238px;
+
+  padding: 14px 16px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #b9c6dc;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+/* First card border */
+
+.featured-package {
+  border: 1px solid #b9c6dc;
+}
+
+/* =========================================================
+   PACKAGE TOP
+========================================================= */
+
+.package-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.package-top > div {
+  min-width: 0;
+}
+
+.package-top h3 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 700;
+}
+
+.package-top p {
+  margin: 3px 0 0;
+
+  color: #9ca3af;
+
+  font-size: 7px;
+  line-height: 10px;
+}
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.package-badge {
+  flex-shrink: 0;
+
+  padding: 3px 7px;
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  font-size: 6px;
+  line-height: 10px;
+
+  white-space: nowrap;
+}
+
+.best {
+  background-color: #22c55e;
+}
+
+.popular {
+  background-color: #f59e0b;
+}
+
+.lowest {
+  background-color: #0b2e78;
+}
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.package-card h4 {
+  margin: 13px 0 7px;
+
+  color: #0b2e78;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   META
+========================================================= */
+
+.package-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #7b8495;
+
+  font-size: 6px;
+  line-height: 10px;
+}
+
+.package-meta span {
+  white-space: nowrap;
+}
+
+.package-meta i {
+  margin-right: 3px;
+  font-size: 6px;
+}
+
+.package-meta .fa-star {
+  color: #f59e0b;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.package-card ul {
+  margin: 10px 0 12px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.package-card li {
+  position: relative;
+
+  margin-bottom: 6px;
+  padding-left: 12px;
+
+  color: #4b5563;
+
+  font-size: 7px;
+  line-height: 12px;
+}
+
+.package-card li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 3px;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background-color: #22c55e;
+}
+
+/* =========================================================
+   BOOK BUTTON
+========================================================= */
+
+.package-card button {
+  width: 100%;
+  height: 29px;
+
+  margin-top: auto;
+
+  background-color: #0b2e78;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 7px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+/* ONLY HOVER = RED */
+
+.package-card button:hover {
+  background-color: #f7255c;
+}
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.all-packages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 220px;
+  height: 38px;
+
+  margin: 34px auto 0;
+
+  background: transparent;
+
+  border: 1px solid #f7255c;
+  border-radius: 7px;
+
+  color: #f7255c;
+
+  font-size: 9px;
+  line-height: 12px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.all-packages i {
+  margin-left: 7px;
+  font-size: 8px;
+}
+
+.all-packages:hover {
+  background-color: #f7255c;
+  color: #ffffff;
+}
+/* =========================
+   BLOOD TEST COMPARISON
+========================= */
+
+.blood-test-section {
+  width: 100%;
+  min-height: 455px;
+
+  background-color: #ffffff;
+
+  padding-top: 52px;
+}
+
+.blood-test-container {
+  width: 1125px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.blood-test-header {
+  text-align: center;
+}
+
+.blood-test-header p {
+  margin: 0 0 12px;
+
+  color: #f7255c;
+
+  font-size: 12px;
+}
+
+.blood-test-header h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.blood-table-wrapper {
+  width: 100%;
+
+  margin-top: 54px;
+
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 6px;
+}
+
+.blood-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.blood-table thead {
+  background-color: #0b2e78;
+}
+
+.blood-table th {
+  height: 25px;
+
+  padding: 0 14px;
+
+  color: #ffffff;
+
+  font-size: 7px;
+  font-weight: 500;
+
+  text-align: left;
+}
+
+/* =========================
+   TABLE ROW
+========================= */
+
+.blood-table tbody tr {
+  height: 31px;
+}
+
+.blood-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.blood-table td {
+  padding: 0 14px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #111827;
+
+  font-size: 7px;
+}
+
+/* =========================
+   COLUMN WIDTHS
+========================= */
+
+.blood-table th:nth-child(1),
+.blood-table td:nth-child(1) {
+  width: 27%;
+}
+
+.blood-table th:nth-child(2),
+.blood-table td:nth-child(2) {
+  width: 15%;
+}
+
+.blood-table th:nth-child(3),
+.blood-table td:nth-child(3) {
+  width: 15%;
+}
+
+.blood-table th:nth-child(4),
+.blood-table td:nth-child(4) {
+  width: 15%;
+}
+
+.blood-table th:nth-child(5),
+.blood-table td:nth-child(5) {
+  width: 14%;
+}
+
+.blood-table th:nth-child(6),
+.blood-table td:nth-child(6) {
+  width: 14%;
+}
+
+/* =========================
+   PRICES
+========================= */
+
+.price {
+  color: #0b2e78 !important;
+
+  font-weight: 600;
+}
+
+.lowest-price {
+  color: #22c55e !important;
+
+  font-weight: 600;
+}
+
+.lowest-price span {
+  margin-left: 4px;
+
+  padding: 2px 4px;
+
+  background-color: #dcfce7;
+
+  border-radius: 2px;
+
+  font-size: 5px;
+}
+
+/* =========================
+   TURNAROUND
+========================= */
+
+.turnaround {
+  color: #6b7280 !important;
+}
+
+.turnaround i {
+  margin-right: 4px;
+
+  font-size: 6px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.available,
+.lab-only {
+  display: inline-block;
+
+  padding: 2px 5px;
+
+  border-radius: 3px;
+
+  font-size: 5px;
+}
+
+.available {
+  color: #16a34a;
+
+  background-color: #dcfce7;
+}
+
+.lab-only {
+  color: #ef4444;
+
+  background-color: #fee2e2;
+}
+
+/* =========================
+   BROWSE BUTTON
+========================= */
+
+.browse-tests-btn {
+  width: 127px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin: 21px auto 0;
+
+  border: 1px solid #f7255c;
+
+  border-radius: 7px;
+
+  background-color: #ffffff;
+
+  color: #f7255c;
+
+  font-size: 7px;
+
+  cursor: pointer;
+}
+
+.browse-tests-btn i {
+  font-size: 6px;
+}
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-choose-section {
+  width: 100%;
+  min-height: 480px;
+
+  background-color: #f8fafc;
+
+  padding-top: 55px;
+}
+
+.why-choose-container {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.why-header {
+  text-align: center;
+}
+
+.why-header p {
+  margin: 0 0 13px;
+
+  color: #f7255c;
+
+  font-size: 12px;
+}
+
+.why-header h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.why-grid {
+  width: 100%;
+  margin-top: 53px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 13px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.why-card {
+  min-height: 115px;
+
+  padding: 15px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.why-icon {
+  width: 31px;
+  height: 31px;
+
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f8fafc;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+}
+
+/* Icon Colors */
+
+.availability-icon {
+  color: #f7255c;
+}
+
+.secure-icon {
+  color: #22c55e;
+}
+
+.price-icon {
+  color: #0b2e78;
+}
+
+.reviews-icon {
+  color: #8b5cf6;
+}
+
+.concierge-icon {
+  color: #f59e0b;
+}
+
+.hospitals-icon {
+  color: #06b6d4;
+}
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.why-card h3 {
+  margin: 0 0 7px;
+
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.why-card p {
+  margin: 0;
+
+  color: #7b8495;
+
+  font-size: 10px;
+
+  line-height: 1.59;
+}
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials-section {
+  width: 100%;
+  min-height: 355px;
+
+  background-color: #ffffff;
+
+  padding-top: 53px;
+}
+
+.testimonials-container {
+  width: 1125px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.testimonials-header {
+  text-align: center;
+}
+
+.testimonials-header p {
+  margin: 0 0 12px;
+
+  color: #f7255c;
+
+  font-size: 14px;
+}
+
+.testimonials-header h2 {
+  margin: 0;
+
+  color: #0b2e78;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* =========================
+   TESTIMONIAL GRID
+========================= */
+
+.testimonial-grid {
+  width: 100%;
+
+  margin-top: 52px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.testimonial-card {
+  min-height: 140px;
+
+  padding: 14px 16px;
+
+  background-color: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+/* =========================
+   STARS
+========================= */
+
+.stars {
+  margin-bottom: 8px;
+
+  color: #f59e0b;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+/* =========================
+   TESTIMONIAL TEXT
+========================= */
+
+.testimonial-text {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 8px;
+
+  line-height: 1.59;
+
+  font-style: italic;
+}
+
+/* =========================
+   USER
+========================= */
+
+.testimonial-user {
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+/* Avatar */
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pink-avatar {
+  background-color: #f7255c;
+}
+
+.blue-avatar {
+  background-color: #0b2e78;
+}
+
+.green-avatar {
+  background-color: #22c55e;
+}
+
+/* User Name */
+
+.testimonial-user h3 {
+  margin: 0 0 2px;
+
+  color: #111827;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+/* User Details */
+
+.testimonial-user span {
+  color: #9ca3af;
+  font-size: 8px;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-section {
+  width: 100%;
+  min-height: 330px;
+
+  background-color: #f8fafc;
+
+  padding-top: 54px;
+}
+
+.faq-container {
+  width: 1125px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 70px;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.faq-left {
+  width: 360px;
+
+  flex-shrink: 0;
+}
+
+.faq-label {
+  margin: 0 0 13px;
+
+  color: #f7255c;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.faq-left h2 {
+  margin: 0 0 17px;
+
+  color: #0b2e78;
+
+  font-size: 27px;
+  line-height: 1.12;
+
+  font-weight: 700;
+}
+
+.faq-description {
+  width: 330px;
+
+  margin: 0 0 19px;
+
+  color: #7b8495;
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.contact-support-btn {
+  width: 118px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.contact-support-btn i {
+  font-size: 9px;
+}
+
+/* =========================
+   FAQ RIGHT
+========================= */
+
+.faq-right {
+  width: 675px;
+}
+
+/* =========================
+   FAQ ITEM
+========================= */
+
+.faq-item {
+  width: 100%;
+
+  min-height: 39px;
+
+  margin-bottom: 6px;
+
+  padding: 0 14px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 9px;
+
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.02);
+}
+
+.faq-item.active {
+  min-height: 66px;
+}
+
+/* =========================
+   QUESTION
+========================= */
+
+.faq-question {
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  color: #0b2e78;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.faq-question i {
+  color: #f7255c;
+
+  font-size: 9px;
+}
+
+/* =========================
+   ANSWER
+========================= */
+
+.faq-answer {
+  padding: 0 0 10px;
+
+  color: #7b8495;
+
+  font-size: 9px;
+
+  line-height: 1.59;
+}
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter-section {
+  width: 100%;
+  min-height: 150px;
+
+  background-color: #f7255c;
+
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-container {
+  width: 1125px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.newsletter-content {
+  width: 480px;
+}
+
+.newsletter-content h2 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.newsletter-content p {
+  width: 440px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.newsletter-form {
+  width: 460px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 20px;
+
+  background-color: #ffffff;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+
+.newsletter-form input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  color: #555555;
+
+  font-size: 8px;
+}
+
+.newsletter-form input::placeholder {
+  color: #9ca3af;
+
+  font-size: 8px;
+}
+
+/* =========================
+   SUBSCRIBE BUTTON
+========================= */
+
+.newsletter-form button {
+  width: 135px;
+  height: 36px;
+
+  margin-right: 2px;
+
+  border: none;
+
+  border-radius: 22px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+  width: 100%;
+  min-height: 245px;
+
+  background-color: #071226;
+
+  color: #ffffff;
+}
+
+/* =========================
+   MAIN FOOTER
+========================= */
+
+.footer-container {
+  width: 1125px;
+  height: 215px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 38px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.footer-about {
+  width: 290px;
+}
+
+.footer-about img {
+  width: 145px;
+  height: auto;
+
+  display: block;
+
+  margin-bottom: 12px;
+}
+
+.footer-about p {
+  margin: 0;
+
+  color: #c4cad5;
+
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+/* =========================
+   SOCIALS
+========================= */
+
+.footer-socials {
+  display: flex;
+
+  gap: 7px;
+
+  margin-top: 14px;
+}
+
+.footer-socials a {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #172238;
+
+  border-radius: 6px;
+
+  color: #aeb7c8;
+
+  text-decoration: none;
+
+  font-size: 8px;
+}
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-column {
+  width: 145px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  margin: 5px 0 16px;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+.footer-column a {
+  margin-bottom: 12px;
+
+  color: #7f8a9e;
+
+  text-decoration: none;
+
+  font-size: 7px;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+  width: 100%;
+  height: 30px;
+
+  border-top: 1px solid #263148;
+}
+
+.footer-bottom-container {
+  width: 1125px;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #d2d7df;
+
+  font-size: 7px;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.footer-badges {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.footer-badges span {
+  color: #d2d7df;
+
+  font-size: 6px;
+
+  font-weight: 600;
+}
+
+.designed-by {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #7f8a9e;
+  font-size: 7px;
+}
+
+.footer-bottom-container {
+  position: relative;
+}
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* =========================================================
+   TOP BAR + MAIN HEADER RESPONSIVE
+   TABLET: 769px - 1024px
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ---------- TOP BAR ---------- */
+
+  .top-bar {
+    padding: 0 4%;
+  }
+
+  .header-container {
+    padding: 0 4%;
+  }
+
+  .logo img {
+    width: 125px;
+  }
+
+  .header-search {
+    width: 42%;
+    height: 45px;
+  }
+
+  .search-btn {
+    width: 90px;
+    height: 39px;
+    font-size: 9px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0 13px;
+    font-size: 9px;
+  }
+
+  .nav-container {
+    gap: 30px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 9px;
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* =====================================================
+       HERO CONTENT
+    ===================================================== */
+
+  .hero-content {
+    width: 100%;
+    height: calc(100% - 29px);
+
+    padding: 55px 25px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Tagline */
+
+  .hero-tagline {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1.8px;
+  }
+
+  /* Heading */
+
+  .hero-content h1 {
+    width: 100%;
+
+    margin: 0 0 15px;
+
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: -1px;
+  }
+
+  /* Description */
+
+  .hero-description {
+    width: 100%;
+    height: auto;
+
+    margin: 0 0 22px;
+
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  /* =====================================================
+       SEARCH BOX
+    ===================================================== */
+
+  .hero-search-box {
+    width: min(900px, 100%);
+    height: 58px;
+
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  /* Search Fields */
+
+  .hero-search-field {
+    min-width: 0;
+    height: 44px;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+  }
+
+  .hero-search-field input {
+    min-width: 0;
+
+    font-size: 11px;
+  }
+
+  .hero-search-field > i:first-child {
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  .hero-search-field .dropdown-icon {
+    font-size: 8px;
+    flex-shrink: 0;
+  }
+
+  /* Location */
+
+  .hero-search-field.location-field {
+    flex: 1.2;
+    width: auto;
+  }
+
+  /* Category */
+
+  .hero-search-field.category-field {
+    flex: 1;
+    width: auto;
+  }
+
+  /* Search Button */
+
+  .hero-search-button {
+    flex: 0 0 115px;
+
+    width: 115px;
+    height: 44px;
+
+    margin-left: 8px;
+
+    font-size: 11px;
+  }
+
+  .hero-search-button i {
+    font-size: 11px;
+  }
+
+  /* =====================================================
+       POPULAR SEARCHES
+    ===================================================== */
+
+  .popular-searches {
+    width: 100%;
+    height: auto;
+
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding: 0 10px;
+
+    scrollbar-width: none;
+  }
+
+  .popular-searches::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popular-searches span {
+    flex-shrink: 0;
+
+    padding: 5px 9px;
+
+    font-size: 8px;
+  }
+
+  /* =====================================================
+       HOSPITAL STRIP
+    ===================================================== */
+
+  .hospital-strip {
+    width: 100%;
+    height: 29px;
+
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 35px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .hospital-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hospital-strip span {
+    flex-shrink: 0;
+
+    font-size: 9px;
+  }
+
+  .stats-section {
+    height: auto;
+    min-height: 100px;
+
+    padding: 20px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .stat-item > i {
+    flex-shrink: 0;
+  }
+
+  .stat-content {
+    min-width: 0;
+  }
+
+  .stat-content h3 {
+    white-space: nowrap;
+  }
+
+  .stat-content p {
+    white-space: nowrap;
+  }
+  .services-section {
+    min-height: auto;
+    padding: 55px 25px 60px;
+  }
+
+  .services-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-description {
+    width: 100%;
+  }
+
+  .services-description br {
+    display: none;
+  }
+
+  .services-container {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 100%;
+    min-width: 0;
+    height: 290px;
+  }
+  .how-it-works {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+
+    padding: 50px 25px 60px;
+  }
+
+  .how-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .how-description {
+    width: 100%;
+  }
+
+  .how-description br {
+    display: none;
+  }
+
+  .steps-container {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 45px 40px;
+  }
+
+  .steps-line {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .step p {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .featured-hospitals {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 25px 60px;
+  }
+
+  .featured-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .featured-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .featured-header p {
+    font-size: 10px;
+  }
+
+  .featured-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hospital-card {
+    width: 100%;
+    height: auto;
+    min-height: 140px;
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr) 80px;
+    gap: 15px;
+    padding: 12px;
+    margin-bottom: 18px;
+  }
+
+  .hospital-image {
+    width: 170px;
+    height: 115px;
+  }
+
+  .hospital-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hospital-info {
+    min-width: 0;
+  }
+
+  .hospital-info h3 {
+    font-size: 15px;
+  }
+
+  .hospital-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .hospital-tags span {
+    font-size: 8px;
+  }
+
+  .hospital-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hospital-rating {
+    width: auto;
+    text-align: center;
+  }
+
+  .hospital-actions {
+    grid-column: 2 / 4;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .book-btn,
+  .admission-btn {
+    height: 32px;
+    font-size: 9px;
+  }
+
+  .view-all-btn {
+    display: flex;
+    margin: 30px auto 0;
+  }
+  .specialty-section {
+    width: 100%;
+    min-height: auto;
+    padding: 50px 25px 55px;
+  }
+
+  .specialty-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .specialty-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .specialty-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .specialty-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .specialty-card {
+    width: 100%;
+    min-width: 0;
+    height: 130px;
+  }
+
+  .specialty-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .specialty-card h3 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .specialty-card p {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+  .surgery-packages {
+    min-height: auto;
+    padding: 50px 25px 55px;
+  }
+
+  .surgery-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .surgery-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .surgery-header span {
+    display: block;
+    font-size: 9px;
+    line-height: 16px;
+  }
+
+  .package-container {
+    width: 100%;
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .package-card {
+    width: 100%;
+    height: auto;
+    min-height: 215px;
+  }
+
+  .package-top h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .package-top p {
+    font-size: 9px;
+  }
+
+  .package-badge {
+    font-size: 7px;
+  }
+
+  .package-card h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .package-meta {
+    font-size: 8px;
+  }
+
+  .package-meta i {
+    font-size: 7px;
+  }
+
+  .package-card li {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .package-card button {
+    height: 32px;
+    font-size: 8px;
+  }
+
+  .all-packages {
+    margin-top: 30px;
+  }
+  .blood-test-section {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 25px 60px;
+  }
+
+  .blood-test-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .blood-test-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .blood-test-header p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .blood-test-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .blood-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+  }
+
+  .blood-table {
+    min-width: 850px;
+    width: 100%;
+  }
+
+  .blood-table th,
+  .blood-table td {
+    font-size: 9px;
+    padding: 12px 8px;
+  }
+
+  .browse-tests-btn {
+    display: flex;
+    margin: 25px auto 0;
+  }
+
+  /* =====================================================
+       WHY CHOOSE US — TABLET
+    ===================================================== */
+
+  .why-choose-section {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 25px 60px;
+  }
+
+  .why-choose-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .why-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .why-header p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .why-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .why-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .why-card {
+    width: 100%;
+    min-width: 0;
+  }
+  .testimonials-section {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 25px 60px;
+  }
+
+  .testimonials-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .testimonials-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .testimonials-header p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .testimonials-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .testimonial-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    min-width: 0;
+  }
+  .faq-section {
+    width: 100%;
+    min-height: auto;
+    padding: 55px 25px 60px;
+  }
+
+  .faq-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+  }
+
+  /* Left */
+
+  .faq-left {
+    width: 35%;
+    flex-shrink: 0;
+  }
+
+  .faq-label {
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 1px;
+  }
+
+  .faq-left h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .faq-description {
+    font-size: 9px;
+    line-height: 16px;
+  }
+
+  .contact-support-btn {
+    font-size: 8px;
+    height: 32px;
+    padding: 0 12px;
+  }
+
+  /* Right */
+
+  .faq-right {
+    width: 65%;
+    min-width: 0;
+  }
+
+  .faq-question {
+    min-height: 45px;
+    padding: 12px 14px;
+    font-size: 9px;
+  }
+
+  .faq-question i {
+    font-size: 8px;
+  }
+
+  .faq-answer {
+    padding: 0 14px 14px;
+    font-size: 8px;
+    line-height: 14px;
+  }
+  .newsletter-section {
+    width: 100%;
+    min-height: auto;
+    padding: 40px 25px;
+  }
+
+  .newsletter-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+  }
+
+  .newsletter-content {
+    width: 55%;
+    min-width: 0;
+  }
+
+  .newsletter-content h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .newsletter-content p {
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .newsletter-form {
+    width: 45%;
+    max-width: 420px;
+    height: 40px;
+
+    display: flex;
+  }
+
+  .newsletter-form input {
+    min-width: 0;
+    flex: 1;
+    font-size: 9px;
+    padding: 0 12px;
+  }
+
+  .newsletter-form button {
+    flex-shrink: 0;
+    font-size: 8px;
+    padding: 0 12px;
+  }
+  .footer-section {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    min-height: 230px;
+
+    padding: 40px 25px;
+
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  .footer-about {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-about img {
+    max-width: 140px;
+    height: auto;
+  }
+
+  .footer-about p {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 8px;
+  }
+
+  .footer-socials a {
+    width: 25px;
+    height: 25px;
+    font-size: 9px;
+  }
+
+  .footer-column {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 9px;
+    margin-bottom: 12px;
+  }
+
+  .footer-column a {
+    display: block;
+    font-size: 7px;
+    line-height: 14px;
+    margin-bottom: 5px;
+  }
+
+  /* Bottom */
+
+  .footer-bottom {
+    width: 100%;
+  }
+
+  .footer-bottom-container {
+    width: 100%;
+    height: auto;
+    min-height: 55px;
+
+    padding: 12px 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+  }
+
+  .footer-bottom-container p,
+  .designed-by {
+    font-size: 7px;
+  }
+
+  .footer-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .footer-badges span {
+    font-size: 6px;
+    padding: 4px 6px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   MOBILE: 0px - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+  /* ---------- TOP BAR ---------- */
+
+  .top-bar {
+    height: 32px;
+    padding: 0 15px;
+  }
+  .top-bar {
+    display: none;
+  }
+
+  .top-bar-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .top-bar-right {
+    display: none;
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: 650px;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: auto;
+    min-height: 620px;
+
+    padding: 45px 15px 50px;
+  }
+
+  /* ---------- TAGLINE ---------- */
+
+  .hero-tagline {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 14px;
+
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+  }
+
+  /* ---------- HEADING ---------- */
+
+  .hero-content h1 {
+    width: 100%;
+
+    margin: 0 0 18px;
+
+    font-size: 32px;
+    line-height: 40px;
+
+    letter-spacing: -0.5px;
+  }
+
+  /* ---------- DESCRIPTION ---------- */
+
+  .hero-description {
+    width: 100%;
+    height: auto;
+
+    margin: 0 0 20px;
+
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  /* ---------- SEARCH BOX ---------- */
+
+  .hero-search-box {
+    width: 100%;
+    height: auto;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  /* ---------- SEARCH FIELDS ---------- */
+
+  .hero-search-field,
+  .hero-search-field.location-field,
+  .hero-search-field.category-field {
+    width: 100%;
+    height: 42px;
+
+    flex: none;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+  }
+
+  .hero-search-field input {
+    font-size: 11px;
+  }
+
+  .hero-search-field > i:first-child {
+    font-size: 12px;
+  }
+
+  .hero-search-field .dropdown-icon {
+    font-size: 8px;
+  }
+
+  /* ---------- SEARCH BUTTON ---------- */
+
+  .hero-search-button {
+    width: 100%;
+    height: 42px;
+
+    margin-left: 0;
+
+    font-size: 11px;
+  }
+
+  .hero-search-button i {
+    font-size: 11px;
+  }
+
+  /* ---------- POPULAR SEARCHES ---------- */
+
+  .popular-searches {
+    width: 100%;
+    height: auto;
+    min-height: 35px;
+
+    margin-top: 10px;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding: 0 5px;
+
+    gap: 7px;
+
+    scrollbar-width: none;
+  }
+
+  .popular-searches::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popular-searches span {
+    flex-shrink: 0;
+
+    padding: 5px 9px;
+
+    font-size: 8px;
+  }
+
+  /* ---------- HOSPITAL STRIP ---------- */
+
+  .hospital-strip {
+    height: 32px;
+
+    padding: 0 15px;
+
+    gap: 28px;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .hospital-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hospital-strip span {
+    flex-shrink: 0;
+    font-size: 9px;
+  }
+  .stats-section {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+
+    padding: 20px 15px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px 10px;
+  }
+
+  .stat-item {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+  }
+
+  .stat-item > i {
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  .stat-content {
+    min-width: 0;
+  }
+
+  .stat-content h3 {
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .stat-content p {
+    margin: 0;
+    font-size: 8px;
+    white-space: nowrap;
+  }
+  .services-section {
+    width: 100%;
+    min-height: auto;
+
+    padding: 45px 15px 50px;
+  }
+
+  /* ---------- HEADER ---------- */
+
+  .services-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-label {
+    font-size: 9px;
+  }
+
+  .services-header h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .services-description {
+    width: 100%;
+    height: auto;
+
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .services-description br {
+    display: none;
+  }
+
+  /* ---------- CARDS ---------- */
+
+  .services-container {
+    width: 100%;
+
+    margin: 35px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+  .service-card {
+    width: 100%;
+    min-width: 0;
+    height: 285px;
+
+    padding: 15px;
+  }
+
+  /* ---------- CARD CONTENT ---------- */
+
+  .service-icon {
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 12px;
+
+    font-size: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .service-card > p {
+    font-size: 8px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .service-card ul {
+    margin-bottom: 12px;
+  }
+
+  .service-card li {
+    gap: 5px;
+    margin-bottom: 6px;
+    font-size: 7px;
+  }
+
+  .service-card li i {
+    font-size: 7px;
+    flex-shrink: 0;
+  }
+
+  /* ---------- BUTTON ---------- */
+
+  .explore-btn {
+    width: 65px;
+    height: 23px;
+
+    font-size: 8px;
+  }
+  .how-it-works {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+
+    padding: 45px 15px 55px;
+  }
+
+  /* ---------- HEADER ---------- */
+
+  .how-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .how-label {
+    font-size: 9px;
+  }
+
+  .how-header h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .how-description {
+    width: 100%;
+    height: auto;
+
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .how-description br {
+    display: none;
+  }
+
+  /* ---------- STEPS ---------- */
+
+  .steps-container {
+    width: 100%;
+
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 40px 20px;
+  }
+
+  .steps-line {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+    min-width: 0;
+
+    text-align: center;
+  }
+
+  /* ---------- NUMBER ---------- */
+
+  .step-number {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------- TEXT ---------- */
+
+  .step h3 {
+    font-size: 11px;
+    line-height: 16px;
+
+    margin-top: 12px;
+  }
+
+  .step p {
+    max-width: 160px;
+
+    margin: 8px auto 0;
+
+    font-size: 8px;
+    line-height: 14px;
+  }
+  .featured-hospitals {
+    width: 100%;
+    min-height: auto;
+    padding: 45px 15px 50px;
+  }
+
+  .featured-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .featured-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .featured-header p {
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .featured-header h2 {
+    width: 100%;
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  /* Hospital Card */
+
+  .hospital-card {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 95px minmax(0, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Hospital Image */
+
+  .hospital-image {
+    width: 95px;
+    height: 100px;
+  }
+
+  .hospital-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nabh-badge {
+    font-size: 6px;
+    padding: 3px 5px;
+  }
+
+  /* Hospital Information */
+
+  .hospital-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hospital-info h3 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+
+  .hospital-location {
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+
+  .hospital-location i {
+    font-size: 8px;
+  }
+
+  .hospital-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 7px;
+  }
+
+  .hospital-tags span {
+    font-size: 6px;
+    padding: 5px 5px;
+  }
+
+  .hospital-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 6px;
+  }
+
+  .hospital-meta .beds {
+    font-size: 6px;
+  }
+
+  .hospital-meta .beds i {
+    font-size: 7px;
+  }
+
+  /* Rating */
+
+  .hospital-rating {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2px 0;
+    border-top: 1px solid #eee;
+  }
+
+  .hospital-rating > div {
+    font-size: 9px;
+  }
+
+  .hospital-rating > div i {
+    font-size: 8px;
+  }
+
+  .hospital-rating small {
+    font-size: 7px;
+  }
+
+  /* Buttons */
+
+  .hospital-actions {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+    gap: 7px;
+  }
+
+  .book-btn,
+  .admission-btn {
+    width: 55%;
+    height: 35px;
+    font-size: 12px;
+    line-height: 38px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  /* View All */
+
+  .view-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 105px;
+    height: 48px;
+
+    margin: 25px auto 0;
+
+    font-size: 9px;
+    line-height: 12px;
+
+    padding: 0 8px;
+  }
+
+  .view-all-btn i {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  .specialty-section {
+    width: 100%;
+    min-height: auto;
+    padding: 45px 15px 50px;
+  }
+
+  .specialty-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .specialty-label {
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .specialty-header h2 {
+    width: 100%;
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .specialty-container {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    padding-bottom: 5px;
+  }
+
+  .specialty-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .specialty-card {
+    flex: 0 0 calc((100% - 12px) / 2);
+    width: calc((100% - 12px) / 2);
+    min-width: calc((100% - 12px) / 2);
+
+    height: 125px;
+
+    scroll-snap-align: start;
+
+    padding: 12px 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .specialty-icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .specialty-card h3 {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .specialty-card p {
+    font-size: 7px;
+    line-height: 12px;
+    margin-top: 4px;
+    text-align: center;
+  }
+  /* Section */
+  .surgery-packages {
+    min-height: auto;
+    padding: 50px 25px 55px;
+  }
+
+  .surgery-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .surgery-header h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .surgery-header span {
+    display: block;
+    font-size: 9px;
+    line-height: 16px;
+  }
+
+  .package-container {
+    width: 100%;
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .package-card {
+    width: 100%;
+    height: auto;
+    min-height: 215px;
+  }
+
+  .package-top h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .package-top p {
+    font-size: 9px;
+  }
+
+  .package-badge {
+    font-size: 7px;
+  }
+
+  .package-card h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .package-meta {
+    font-size: 8px;
+  }
+
+  .package-meta i {
+    font-size: 7px;
+  }
+
+  .package-card li {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .package-card button {
+    height: 32px;
+    font-size: 8px;
+  }
+
+  .all-packages {
+    width: 155px;
+    height: 34px;
+
+    margin: 25px auto 0;
+
+    font-size: 8px;
+  }
+
+  .all-packages i {
+    margin-left: 5px;
+    font-size: 7px;
+  }
+
+  .blood-test-section {
+    width: 100%;
+    min-height: auto;
+    padding: 45px 15px 50px;
+  }
+
+  .blood-test-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Header */
+
+  .blood-test-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .blood-test-header p {
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .blood-test-header h2 {
+    width: 100%;
+    margin: 0;
+
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  /* =====================================================
+       TABLE HORIZONTAL SCROLL
+    ===================================================== */
+
+  .blood-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    padding-bottom: 5px;
+  }
+
+  .blood-table-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blood-table {
+    width: 750px;
+    min-width: 750px;
+    table-layout: fixed;
+  }
+
+  /* Table Head */
+
+  .blood-table th {
+    height: 40px;
+
+    padding: 8px 6px;
+
+    font-size: 7px;
+    line-height: 11px;
+    white-space: nowrap;
+  }
+
+  /* Table Body */
+
+  .blood-table td {
+    height: 48px;
+
+    padding: 8px 6px;
+
+    font-size: 7px;
+    line-height: 11px;
+    white-space: nowrap;
+  }
+
+  .blood-table td:first-child {
+    white-space: normal;
+  }
+
+  /* Prices */
+
+  .blood-table .price,
+  .blood-table .lowest-price {
+    font-size: 8px;
+  }
+
+  .blood-table .lowest-price span {
+    display: block;
+
+    width: fit-content;
+
+    margin-top: 2px;
+
+    font-size: 5px;
+    line-height: 8px;
+    padding: 1px 4px;
+  }
+
+  /* Turnaround */
+
+  .blood-table .turnaround {
+    font-size: 7px;
+  }
+
+  .blood-table .turnaround i {
+    font-size: 7px;
+    margin-right: 2px;
+  }
+
+  /* Available / Lab only */
+
+  .blood-table .available,
+  .blood-table .lab-only {
+    font-size: 6px;
+    padding: 3px 5px;
+    white-space: nowrap;
+  }
+
+  /* Browse Button */
+
+  .browse-tests-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 32px;
+
+    margin: 20px auto 0;
+
+    font-size: 8px;
+  }
+
+  .browse-tests-btn i {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+
+  /* =====================================================
+       WHY CHOOSE US — MOBILE
+    ===================================================== */
+
+  .why-choose-section {
+    width: 100%;
+    min-height: auto;
+    padding: 45px 15px 50px;
+  }
+
+  .why-choose-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Header */
+
+  .why-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .why-header p {
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .why-header h2 {
+    width: 100%;
+    margin: 0;
+
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  /* Cards Grid */
+
+  .why-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+  .why-card {
+    width: 100%;
+    min-width: 0;
+
+    padding: 15px 10px;
+
+    min-height: 150px;
+  }
+
+  /* Icon */
+
+  .why-icon {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 10px;
+
+    font-size: 17px;
+  }
+
+  /* Card Heading */
+
+  .why-card h3 {
+    font-size: 9px;
+    line-height: 14px;
+
+    margin-bottom: 6px;
+
+    text-align: center;
+  }
+
+  /* Card Description */
+
+  .why-card p {
+    font-size: 7px;
+    line-height: 13px;
+
+    text-align: center;
+  }
+  .testimonials-section {
+    width: 100%;
+    min-height: auto;
+    padding: 45px 15px 50px;
+  }
+
+  .testimonials-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Header */
+
+  .testimonials-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .testimonials-header p {
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .testimonials-header h2 {
+    width: 100%;
+    margin: 0;
+
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  /* =====================================================
+       TESTIMONIAL SLIDER
+    ===================================================== */
+
+  .testimonial-grid {
+    width: 100%;
+
+    display: flex;
+    gap: 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    padding-bottom: 5px;
+  }
+
+  .testimonial-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* =====================================================
+       TESTIMONIAL CARD
+    ===================================================== */
+
+  .testimonial-card {
+    flex: 0 0 calc((100% - 12px) / 2);
+
+    width: calc((100% - 12px) / 2);
+    min-width: calc((100% - 12px) / 2);
+
+    min-height: 190px;
+    height: auto;
+
+    padding: 15px;
+
+    scroll-snap-align: start;
+  }
+
+  /* Stars */
+
+  .stars {
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  /* Testimonial Text */
+
+  .testimonial-text {
+    font-size: 8px;
+    line-height: 14px;
+
+    margin-bottom: 15px;
+  }
+
+  /* User */
+
+  .testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Avatar */
+
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+  }
+
+  /* User Name */
+
+  .testimonial-user h3 {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  /* User Details */
+
+  .testimonial-user span {
+    display: block;
+
+    font-size: 6px;
+    line-height: 10px;
+  }
+
+  .faq-section {
+    width: 100%;
+    min-height: auto;
+
+    padding: 45px 15px 50px;
+  }
+
+  .faq-container {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  /* =====================================================
+       LEFT CONTENT
+    ===================================================== */
+
+  .faq-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .faq-label {
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+  }
+
+  .faq-left h2 {
+    width: 100%;
+    margin: 0 0 12px;
+
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .faq-description {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto 18px;
+
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .contact-support-btn {
+    height: 32px;
+
+    padding: 0 13px;
+    font-size: 9px;
+  }
+
+  .contact-support-btn i {
+    font-size: 7px;
+    margin-left: 5px;
+  }
+
+  /* =====================================================
+       RIGHT ACCORDION
+    ===================================================== */
+
+  .faq-right {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .faq-item {
+    width: 100%;
+  }
+
+  .faq-question {
+    width: 100%;
+    min-height: 48px;
+
+    padding: 12px 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .faq-question span {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .faq-question i {
+    flex-shrink: 0;
+
+    font-size: 8px;
+  }
+
+  /* Open Answer */
+
+  .faq-answer {
+    width: 100%;
+
+    padding: 0 12px 14px;
+
+    font-size: 9px;
+    line-height: 14px;
+  }
+  .newsletter-section {
+    width: 100%;
+    min-height: auto;
+
+    padding: 35px 15px 40px;
+  }
+
+  .newsletter-container {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Content */
+
+  .newsletter-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter-content h2 {
+    width: 100%;
+    margin: 0 0 8px;
+
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .newsletter-content p {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  /* Form */
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+
+    display: flex;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    min-width: 0;
+
+    flex: 1;
+
+    padding: 0 11px;
+
+    font-size: 9px;
+  }
+
+  .newsletter-form button {
+    flex-shrink: 0;
+
+    height: 35px;
+
+    padding: 0 12px;
+
+    font-size: 10px;
+  }
+  .footer-section {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    padding: 40px 20px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px 20px;
+  }
+
+  /* =====================================================
+       ABOUT
+    ===================================================== */
+
+  .footer-about {
+    width: 100%;
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  .footer-about img {
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+
+    margin-bottom: 10px;
+  }
+
+  .footer-about p {
+    width: 100%;
+
+    font-size: 8px;
+    line-height: 14px;
+
+    margin: 0 auto;
+  }
+
+  /* Social Icons */
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 12px;
+  }
+
+  .footer-socials a {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+  }
+
+  /* =====================================================
+       FOOTER COLUMNS
+    ===================================================== */
+
+  .footer-column {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 9px;
+    line-height: 14px;
+
+    margin-bottom: 10px;
+  }
+
+  .footer-column a {
+    display: block;
+
+    font-size: 7px;
+    line-height: 13px;
+
+    margin-bottom: 6px;
+  }
+
+  /* =====================================================
+       FOOTER BOTTOM
+    ===================================================== */
+
+  .footer-bottom {
+    width: 100%;
+  }
+
+  .footer-bottom-container {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    padding: 15px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    text-align: center;
+  }
+
+  .footer-bottom-container p {
+    font-size: 7px;
+    line-height: 12px;
+    margin: 0;
+  }
+
+  .designed-by {
+    font-size: 7px;
+    line-height: 12px;
+  }
+
+  /* Badges */
+
+  .footer-badges {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 5px;
+  }
+  .top-bar {
+    display: none;
+}
+
+
+  /* ---------- MOBILE HEADER ---------- */
+
+  /* ---------- MAIN HEADER ---------- */
+
+  .main-header {
+    width: 100%;
+    height: 70px;
+
+    background: #ffffff;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10001;
+  }
+
+  .header-container {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Logo LEFT */
+
+  .logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+  }
+
+  /* Header Search HIDDEN */
+
+  .header-search {
+    display: none;
+  }
+
+  /* Desktop Login/Register HIDDEN */
+
+  .header-buttons {
+    display: none;
+  }
+
+  /* =====================================================
+       HAMBURGER
+       SAME LINE AS LOGO
+    ===================================================== */
+
+  .navbar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background: transparent;
+
+    z-index: 10002;
+
+    pointer-events: none;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    pointer-events: none;
+  }
+  /* Hide Desktop Nav */
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Hamburger Button */
+
+  .mobile-menu-btn {
+    position: fixed;
+
+    top: 14px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    pointer-events: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #0b2e78;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.1);
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .mobile-menu-btn:hover {
+    background-color: #ffffff;
+    color: #0b2e78;
+  }
+
+  .mobile-menu-btn i {
+    pointer-events: none;
+  }
+
+  /* =====================================================
+       LEFT SIDE MENU
+    ===================================================== */
+
+  .mobile-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: min(320px, 82vw);
+    height: 100vh;
+
+    padding: 0 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+
+    border-right: 1px solid #e5e7eb;
+
+    box-shadow: 8px 0 30px rgba(15, 23, 42, 0.15);
+
+    z-index: 10001;
+
+    overflow-y: auto;
+
+    transform: translateX(-105%);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  /* OPEN */
+
+  .mobile-menu.show {
+    transform: translateX(0);
+
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* =====================================================
+       LOGO INSIDE SIDE MENU
+    ===================================================== */
+
+  .mobile-menu-logo {
+    width: 100%;
+
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #eeeeee;
+
+    margin-bottom: 8px;
+  }
+
+  .mobile-menu-logo img {
+    width: 145px;
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+  }
+
+  /* =====================================================
+       MOBILE LINKS
+    ===================================================== */
+
+  .mobile-menu-links {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-links a {
+    width: 100%;
+
+    padding: 15px 5px;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #eeeeee;
+
+    transition:
+      color 0.2s ease,
+      padding-left 0.2s ease;
+  }
+
+  .mobile-menu-links a:hover {
+    color: #f7255c;
+    padding-left: 9px;
+  }
+
+  .mobile-menu-links a.active {
+    color: #f7255c;
+  }
+
+  /* =====================================================
+       LOGIN + REGISTRATION
+       AFTER NAV LINKS
+    ===================================================== */
+
+  .mobile-menu-buttons {
+    width: 100%;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  .mobile-menu-buttons .login-btn,
+  .mobile-menu-buttons .register-btn {
+    flex: 1;
+
+    height: 40px;
+
+    padding: 0 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+  }
+}
+
+/* =========================================================
+   DESKTOP CARD HOVER EFFECTS
+   Minimal visual enhancement - no layout redesign
+========================================================= */
+
+@media (min-width: 1025px) {
+  /* Common smooth transition */
+  .service-card,
+  .hospital-card,
+  .specialty-card,
+  .package-card,
+  .why-card,
+  .testimonial-card,
+  .faq-item {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease,
+      background-color 0.25s ease;
+  }
+
+  /* OUR SERVICES */
+  .service-card {
+    border: 1px solid transparent;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: #f7255c;
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.13);
+  }
+
+  .service-card:hover .service-icon {
+    transform: scale(1.05);
+  }
+
+  .service-icon {
+    transition: transform 0.25s ease;
+  }
+
+  /* FEATURED HOSPITALS */
+  .hospital-card {
+    border: 1px solid #e5e7eb;
+  }
+
+  .hospital-card:hover {
+    transform: translateY(-5px);
+    border-color: #f7255c;
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.13);
+  }
+
+  .hospital-image img {
+    transition: transform 0.3s ease;
+  }
+
+  .hospital-card:hover .hospital-image img {
+    transform: scale(1.03);
+  }
+
+  /* SPECIALTY CARDS */
+  .specialty-card {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease,
+      background-color 0.25s ease;
+  }
+
+  .specialty-card:hover {
+    transform: translateY(-5px);
+    border-color: #f7255c;
+    background-color: #fff7f9;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.11);
+  }
+
+  .specialty-icon {
+    transition: transform 0.25s ease;
+  }
+
+  .specialty-card:hover .specialty-icon {
+    transform: scale(1.08);
+  }
+
+  /* SURGERY PACKAGE CARDS */
+  .package-card {
+    border-color: #b9c6dc;
+  }
+
+  .package-card:hover {
+    transform: translateY(-5px);
+    border-color: #f7255c;
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.13);
+  }
+
+  /* Keep the first package normal by default.
+     Pink border appears only on hover. */
+  .featured-package {
+    border-color: #b9c6dc;
+  }
+
+  /* WHY CHOOSE US */
+  .why-card {
+    border: 1px solid #e5e7eb;
+  }
+
+  .why-card:hover {
+    transform: translateY(-4px);
+    border-color: #f7255c;
+    background-color: #fff7f9;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.11);
+  }
+
+  .why-icon {
+    transition: transform 0.25s ease;
+  }
+
+  .why-card:hover .why-icon {
+    transform: scale(1.08);
+  }
+
+  /* TESTIMONIAL CARDS */
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: #f7255c;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+  }
+
+  /* FAQ ITEMS */
+  .faq-item:hover {
+    border-color: #f7255c;
+    box-shadow: 0 7px 16px rgba(15, 23, 42, 0.08);
+  }
+
+  /* BUTTON HOVER - subtle only */
+  .book-btn,
+  .admission-btn,
+  .explore-btn,
+  .browse-tests-btn,
+  .contact-support-btn,
+  .hero-search-button,
+  .search-btn,
+  .register-btn,
+  .newsletter-form button {
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .book-btn:hover,
+  .explore-btn:hover,
+  .browse-tests-btn:hover,
+  .contact-support-btn:hover,
+  .hero-search-button:hover,
+  .search-btn:hover,
+  .register-btn:hover,
+  .newsletter-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+  }
+
+  .admission-btn:hover {
+    border-color: #f7255c;
+    color: #f7255c;
+  }
+}
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+@media (min-width: 769px) {
+  .mobile-menu,
+  .mobile-menu-btn {
+    display: none;
+  }
+}
