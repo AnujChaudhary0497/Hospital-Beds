@@ -48,7 +48,7 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="logo">
-        </a><img src="assets/logo.png" alt="Hospital Beds" />
+          <img src="assets/logo.png" alt="Hospital Beds" />
         </div>
 
         <!-- Search Bar -->
@@ -68,21 +68,54 @@
           <button class="login-btn">Login</button>
 
           <button class="register-btn">Registration</button>
-      </div>
+        </div>
       </div>
     </header>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="find-hospital-beds.html" class="nav-link active">Find Hospital Beds</a>
-        <a href="surgery.html" class="nav-link">Surgery Packages</a>
-        <a href="blood-test.html" class="nav-link">Blood Test Comparison</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="blogs.html" class="nav-link">Blogs</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <!-- Desktop Links -->
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="find-hospital-beds.html" class="nav-link active"
+            >Find Hospital Beds</a
+          >
+          <a href="surgery.html" class="nav-link">Surgery Packages</a>
+          <a href="blood-test.html" class="nav-link">Blood Test Comparison</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="blogs.html" class="nav-link">Blogs</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
+
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-logo">
+        <img src="assets/logo.png" alt="Hospital Beds" />
+      </div>
+
+      <div class="mobile-menu-links">
+        <a href="index.html">Home</a>
+        <a href="find-hospital-beds.html" class="active">Find Hospital Beds</a>
+        <a href="surgery.html">Surgery Packages</a>
+        <a href="blood-test.html">Blood Test Comparison</a>
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="mobile-menu-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Registration</button>
+      </div>
+    </div>
+
     <!-- =========================
      FIND HOSPITALS
 ========================= -->
@@ -217,12 +250,12 @@
               <i class="fa-solid fa-chevron-up"></i>
             </div>
 
-            <label><input type="checkbox"/> Multi-Specialty</label>
-            <label><input type="checkbox"/> Super Specialty</label>
-            <label><input type="checkbox"/> General Hospital</label>
-            <label><input type="checkbox"/> Specialty Hospital</label>
-            <label><input type="checkbox"/> Government</label>
-            <label><input type="checkbox"/> Private</label>
+            <label><input type="checkbox" /> Multi-Specialty</label>
+            <label><input type="checkbox" /> Super Specialty</label>
+            <label><input type="checkbox" /> General Hospital</label>
+            <label><input type="checkbox" /> Specialty Hospital</label>
+            <label><input type="checkbox" /> Government</label>
+            <label><input type="checkbox" /> Private</label>
           </div>
 
           <!-- Rating -->
@@ -558,7 +591,10 @@
 
             <div class="hospital-card">
               <div class="hospital-image">
-                <img src="assets/Safdarjung Hospital.png" alt="Safdarjung Hospital" />
+                <img
+                  src="assets/Safdarjung Hospital.png"
+                  alt="Safdarjung Hospital"
+                />
 
                 <span class="hospital-type"> Government </span>
 
@@ -581,10 +617,10 @@
                 </div>
 
                 < class="hospital-tags">
-                  <span>24*7 Pharmacy</span>
-                  <span>Ambulance</span>
-                  <span>ICU</span>
-              checkbox
+                <span>24*7 Pharmacy</span>
+                <span>Ambulance</span>
+                <span>ICU</span>
+                checkbox
                 <p class="beds">
                   <i class="fa-solid fa-bed"></i>
                   3,000 beds
@@ -601,7 +637,10 @@
 
             <div class="hospital-card">
               <div class="hospital-image">
-                <img src="assets/Sir Ganga Ram Hospital.png" alt="Sir Ganga Ram Hospital" />
+                <img
+                  src="assets/Sir Ganga Ram Hospital.png"
+                  alt="Sir Ganga Ram Hospital"
+                />
 
                 <span class="hospital-type"> Multi-Specialty </span>
 
@@ -645,7 +684,10 @@
 
             <div class="hospital-card">
               <div class="hospital-image">
-                <img src="assets/BLK-Max Super Speciality.png" alt="BLK Max Super Speciality" />
+                <img
+                  src="assets/BLK-Max Super Speciality.png"
+                  alt="BLK Max Super Speciality"
+                />
 
                 <span class="hospital-type"> Specialty Hospital </span>
               </div>
@@ -822,5 +864,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -217,6 +217,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav-links {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   gap: 58px;
 }
@@ -722,7 +730,10 @@ body {
   border: 1px solid #e5eaf2;
   border-radius: 8px;
   box-shadow: 0 3px 12px rgba(15, 23, 42, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .details-card:hover {
@@ -853,7 +864,11 @@ body {
   border: 1px solid #e1e7f0;
 
   border-radius: 11px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .surgery-package-card:hover {
@@ -1031,7 +1046,10 @@ body {
 
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .comparison-card:hover {
@@ -1685,7 +1703,6 @@ body {
   position: relative;
 }
 
-
 /* =========================
    HOVER EFFECTS
 ========================= */
@@ -1725,14 +1742,12 @@ body {
    RESPONSIVE CSS ONLY
 ========================================================= */
 
-
 /* =========================
    TABLET
    769px - 1024px
 ========================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
   .top-bar {
     padding: 0 4%;
   }
@@ -1770,7 +1785,6 @@ body {
     font-size: 9px;
   }
 
-
   /* HERO */
 
   .surgery-hero {
@@ -1798,7 +1812,6 @@ body {
     max-width: 90%;
   }
 
-
   /* PACKAGE INCLUSIONS */
 
   .package-inclusions {
@@ -1822,7 +1835,6 @@ body {
     height: 80px;
   }
 
-
   /* SURGERY DETAILS */
 
   .surgery-details {
@@ -1837,7 +1849,6 @@ body {
   .details-card {
     margin-top: 45px;
   }
-
 
   /* POPULAR PACKAGES */
 
@@ -1855,7 +1866,6 @@ body {
     gap: 15px;
   }
 
-
   /* COMPARISON */
 
   .package-comparison {
@@ -1871,7 +1881,6 @@ body {
     width: 650px;
     max-width: 100%;
   }
-
 
   /* HOW IT WORKS */
 
@@ -1892,7 +1901,6 @@ body {
   .step p {
     font-size: 8px;
   }
-
 
   /* NEWSLETTER */
 
@@ -1917,7 +1925,6 @@ body {
   .newsletter-form {
     width: 48%;
   }
-
 
   /* FOOTER */
 
@@ -1946,15 +1953,12 @@ body {
   }
 }
 
-
-
 /* =========================
    MOBILE
    0px - 768px
 ========================= */
 
 @media (max-width: 768px) {
-
   /* TOP BAR */
 
   .top-bar {
@@ -1975,7 +1979,6 @@ body {
     gap: 10px;
     font-size: 8px;
   }
-
 
   /* HEADER */
 
@@ -2027,7 +2030,6 @@ body {
     font-size: 8px;
   }
 
-
   /* NAVBAR */
 
   .navbar {
@@ -2048,7 +2050,6 @@ body {
     flex-shrink: 0;
     font-size: 9px;
   }
-
 
   /* =========================
      SURGERY HERO
@@ -2077,7 +2078,6 @@ body {
     line-height: 35px;
     letter-spacing: -0.3px;
   }
-
 
   /* SEARCH */
 
@@ -2121,7 +2121,6 @@ body {
     font-size: 9px;
   }
 
-
   /* STATS */
 
   .surgery-stats {
@@ -2138,7 +2137,6 @@ body {
   .surgery-stat p {
     font-size: 8px;
   }
-
 
   /* INFO BOX */
 
@@ -2169,7 +2167,6 @@ body {
     font-size: 7px;
     line-height: 11px;
   }
-
 
   /* =========================
      PACKAGE INCLUSIONS
@@ -2214,7 +2211,6 @@ body {
     font-size: 8px;
   }
 
-
   /* =========================
      SURGERY DETAILS
   ========================= */
@@ -2243,7 +2239,6 @@ body {
   .details-card li {
     font-size: 8px;
   }
-
 
   /* =========================
      POPULAR SURGERY
@@ -2277,7 +2272,6 @@ body {
   .surgery-package-card {
     height: 105px;
   }
-
 
   /* =========================
      PACKAGE COMPARISON
@@ -2321,7 +2315,6 @@ body {
   .view-all-packages {
     margin-top: 25px;
   }
-
 
   /* =========================
      HOW IT WORKS
@@ -2379,7 +2372,6 @@ body {
     line-height: 13px;
   }
 
-
   /* =========================
      NEWSLETTER
   ========================= */
@@ -2427,7 +2419,6 @@ body {
     height: 38px;
     font-size: 9px;
   }
-
 
   /* =========================
      FOOTER
@@ -2492,15 +2483,12 @@ body {
   }
 }
 
-
-
 /* =========================
    SMALL MOBILE
    0px - 480px
 ========================= */
 
 @media (max-width: 480px) {
-
   .top-bar {
     justify-content: center;
   }
@@ -2523,12 +2511,10 @@ body {
     font-size: 8px;
   }
 
-
   .nav-container {
     padding: 0 14px;
     gap: 20px;
   }
-
 
   /* HERO */
 
@@ -2547,7 +2533,6 @@ body {
     letter-spacing: 1.5px;
   }
 
-
   /* STATS */
 
   .surgery-stats {
@@ -2561,7 +2546,6 @@ body {
   .surgery-stat p {
     font-size: 7px;
   }
-
 
   /* PACKAGE */
 
@@ -2594,7 +2578,6 @@ body {
     font-size: 7px;
   }
 
-
   /* POPULAR */
 
   .surgery-package-grid {
@@ -2604,7 +2587,6 @@ body {
   .surgery-package-card {
     height: 100px;
   }
-
 
   /* COMPARISON */
 
@@ -2616,7 +2598,6 @@ body {
     font-size: 19px;
   }
 
-
   /* HOW IT WORKS */
 
   .steps-container {
@@ -2624,8 +2605,7 @@ body {
     gap: 28px;
   }
 
-
-.footer-section {
+  .footer-section {
     width: 100%;
     min-height: auto;
   }
@@ -2778,5 +2758,295 @@ body {
 
     white-space: nowrap;
   }
+}
 
+/* =========================================================
+   MOBILE HEADER + SIDE MENU
+========================================================= */
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* =========================
+   TABLET
+   769px - 1024px
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-header {
+    position: sticky;
+    top: 0;
+    z-index: 10001;
+  }
+}
+
+/* =========================
+   MOBILE
+   0px - 768px
+========================= */
+
+@media (max-width: 768px) {
+  /* Hide top bar */
+  .top-bar {
+    display: none;
+  }
+
+  /* Sticky header */
+  .main-header {
+    position: sticky;
+    top: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+  }
+
+  /* Header only logo */
+  .header-container {
+    width: 100%;
+    height: 70px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo img {
+    width: 125px;
+    height: auto;
+  }
+
+  /* Hide search */
+  .header-search {
+    display: none;
+  }
+
+  /* Hide desktop buttons */
+  .header-buttons {
+    display: none;
+  }
+
+  /* =========================
+       NAVBAR OVERLAY
+    ========================= */
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    background: transparent;
+    z-index: 10002;
+    pointer-events: none;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none;
+  }
+
+  /* =========================
+       HAMBURGER
+    ========================= */
+
+  .mobile-menu-btn {
+    display: flex;
+
+    position: fixed;
+    top: 14px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #0b2e78;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    z-index: 10005;
+    pointer-events: auto;
+
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  }
+
+  /* =========================
+       SIDE DRAWER
+    ========================= */
+
+  .mobile-menu {
+    display: flex;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: min(320px, 82vw);
+    height: 100vh;
+
+    padding: 22px 20px;
+
+    background: #ffffff;
+
+    flex-direction: column;
+
+    transform: translateX(-105%);
+    transition: transform 0.3s ease;
+
+    z-index: 10004;
+
+    box-shadow: 5px 0 20px rgba(15, 23, 42, 0.15);
+  }
+
+  .mobile-menu.show {
+    transform: translateX(0);
+  }
+
+  /* Drawer logo */
+
+  .mobile-menu-logo {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .mobile-menu-logo img {
+    width: 125px;
+    height: auto;
+    display: block;
+  }
+
+  /* Drawer links */
+
+  .mobile-menu-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-links a {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 44px;
+
+    padding: 0 5px;
+
+    color: #111111;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .mobile-menu-links a.active {
+    color: #f7255c;
+  }
+
+  /* Login + Registration */
+
+  .mobile-menu-buttons {
+    width: 100%;
+
+    display: flex;
+    gap: 10px;
+
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  .mobile-menu-buttons .login-btn,
+  .mobile-menu-buttons .register-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+
+    height: 38px;
+
+    padding: 0 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   0px - 480px
+========================= */
+
+@media (max-width: 480px) {
+  .main-header {
+    height: 64px;
+  }
+
+  .header-container {
+    height: 64px;
+    padding: 0 15px;
+  }
+
+  .logo img {
+    width: 115px;
+  }
+
+  .mobile-menu-btn {
+    top: 11px;
+    right: 13px;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+
+  .mobile-menu {
+    width: min(300px, 84vw);
+    padding: 20px 17px;
+  }
+
+  .mobile-menu-logo img {
+    width: 115px;
+  }
+
+  .mobile-menu-links a {
+    min-height: 42px;
+    font-size: 12px;
+  }
 }

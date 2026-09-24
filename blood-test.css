@@ -58,158 +58,427 @@ body {
 .top-bar-right i {
   font-size: 9px;
 }
-.main-navbar {
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
   width: 100%;
-  height: 60px;
-  background: #ffffff;
-
-  border-bottom: 1px solid #eeeeee;
-
-  display: flex;
-  align-items: center;
+  height: 64px;
+  background-color: #ffffff;
 }
 
-.nav-container {
-  position: relative;
-
+.header-container {
   width: 100%;
-  max-width: 1125px;
-  margin: 0 auto;
-  padding: 0 20px;
+  height: 100%;
+
+  padding: 0 7%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Logo */
+/* =========================
+   LOGO
+========================= */
 
-.nav-logo {
+.logo {
   display: flex;
   align-items: center;
-
-  flex-shrink: 0;
 }
 
-.nav-logo img {
-  width: 135px;
+.logo img {
+  width: 150px;
   height: auto;
-
   display: block;
 }
 
-/* Navigation Links */
+/* =========================
+   SEARCH
+========================= */
 
-.nav-links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.header-search {
+  width: 536px;
+  height: 50px;
 
   display: flex;
   align-items: center;
-  gap: 25px;
 
-  white-space: nowrap;
+  border: 0.2px solid #6b7280;
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
 }
 
-.nav-links a {
-  position: relative;
+.header-search > i {
+  color: #999999;
+  font-size: 11px;
+  margin-left: 14px;
+}
 
-  color: #222222;
-  text-decoration: none;
+.header-search input {
+  flex: 1;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0 10px;
 
   font-size: 10px;
-  font-weight: 500;
-
-  white-space: nowrap;
-
-  padding: 21px 0;
-
-  transition: color 0.25s ease;
 }
 
-.nav-links a:hover {
-  color: #0b2e78;
+.header-search input::placeholder {
+  color: #aaaaaa;
+  font-size: 12px;
+  font-family: Manrope;
 }
 
-.nav-links a.active {
-  color: #0b2e78;
-  font-weight: 600;
+/* Red Search Button */
+
+.search-btn {
+  height: 42px;
+  width: 120px;
+
+  margin-right: 3px;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: #f7255c;
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
 }
 
-.nav-links a.active::after {
-  content: "";
+/* ------Buttons------- */
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 11px;
-
-  height: 1px;
-
-  background: #f7255c;
-}
-
-/* Buttons */
-
-.nav-actions {
+.header-buttons {
   display: flex;
   align-items: center;
-
-  gap: 7px;
-
-  flex-shrink: 0;
+  gap: 8px;
 }
 
 .login-btn,
-.registration-btn {
-  height: 32px;
+.register-btn {
+  height: 36px;
+
+  padding: 0 20px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* Login */
+
+.login-btn {
+  background-color: #ffffff;
+
+  border: 1px solid #dedede;
+
+  color: #0b2e78;
+}
+
+/* Registration */
+
+.register-btn {
+  background-color: #f7255c;
+
+  border: 1px solid #f7255c;
+
+  color: #ffffff;
+}
+
+/* --------Navbar-------- */
+
+.navbar {
+  width: 100%;
+  height: 40px;
+
+  background-color: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
+  gap: 58px;
+}
+.nav-link {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  color: #111111;
   text-decoration: none;
 
-  border-radius: 18px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Active Home */
+
+.nav-link.active {
+  color: #0b2e78;
+}
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 7px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #f7255c;
+}
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.header-search {
+  width: 536px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  border: 0.2px solid #6b7280;
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.header-search > i {
+  color: #999999;
+  font-size: 11px;
+  margin-left: 14px;
+}
+
+.header-search input {
+  flex: 1;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0 10px;
 
   font-size: 10px;
-  font-weight: 500;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
 }
 
-.login-btn {
-  width: 58px;
-
-  color: #0b2e78;
-
-  background: #ffffff;
-
-  border: 1px solid #e1e4e8;
+.header-search input::placeholder {
+  color: #aaaaaa;
+  font-size: 12px;
+  font-family: Manrope;
 }
 
-.registration-btn {
-  width: 88px;
+/* Red Search Button */
 
+.search-btn {
+  height: 42px;
+  width: 120px;
+
+  margin-right: 3px;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: #f7255c;
   color: #ffffff;
 
-  background: #f7255c;
+  font-size: 10px;
+
+  cursor: pointer;
 }
 
-.login-btn:hover,
-.registration-btn:hover {
-  transform: translateY(-2px);
+/* ------Buttons------- */
 
-  box-shadow: 0 5px 12px rgba(15, 23, 42, 0.12);
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.registration-btn:hover {
-  background: #df164c;
+.login-btn,
+.register-btn {
+  height: 36px;
+
+  padding: 0 20px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  cursor: pointer;
 }
+
+/* Login */
+
+.login-btn {
+  background-color: #ffffff;
+
+  border: 1px solid #dedede;
+
+  color: #0b2e78;
+}
+
+/* Registration */
+
+.register-btn {
+  background-color: #f7255c;
+
+  border: 1px solid #f7255c;
+
+  color: #ffffff;
+}
+
+/* --------Navbar-------- */
+
+.navbar {
+  width: 100%;
+  height: 40px;
+
+  background-color: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 58px;
+}
+.nav-link {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  color: #111111;
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Active Home */
+
+.nav-link.active {
+  color: #0b2e78;
+}
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 7px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #f7255c;
+}
+
 .blood-comparison-hero {
   width: 100%;
   background: #f8fafc;
@@ -1720,29 +1989,37 @@ body {
   .top-bar {
     padding: 0 4%;
   }
-  .nav-container {
-    padding: 0 25px;
-    gap: 15px;
+  .header-container {
+    padding: 0 4%;
   }
 
-  .nav-logo img {
-    width: 120px;
+  .logo img {
+    width: 125px;
   }
 
-  .nav-links {
-    gap: 16px;
+  .header-search {
+    width: 42%;
+    height: 45px;
   }
 
-  .nav-links a {
+  .search-btn {
+    width: 90px;
+    height: 39px;
     font-size: 9px;
   }
 
-  .login-btn {
-    width: 55px;
+  .login-btn,
+  .register-btn {
+    padding: 0 13px;
+    font-size: 9px;
   }
 
-  .registration-btn {
-    width: 80px;
+  .nav-links {
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 9px;
   }
   .blood-comparison-hero {
     padding: 35px 25px 20px;
@@ -2023,39 +2300,79 @@ body {
   .top-bar-right {
     display: none;
   }
-  .main-navbar {
+  .main-header {
     height: auto;
-    min-height: 58px;
   }
 
-  .nav-container {
-    padding: 10px 16px;
+  .header-container {
+    height: auto;
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
   }
 
-  .nav-links {
-    display: none;
-  }
-
-  .nav-logo img {
+  .logo img {
     width: 125px;
   }
 
-  .nav-actions {
-    gap: 6px;
+  .header-buttons {
+    gap: 5px;
   }
 
   .login-btn,
-  .registration-btn {
-    height: 31px;
+  .register-btn {
+    height: 32px;
+    padding: 0 12px;
     font-size: 9px;
   }
 
-  .login-btn {
-    width: 55px;
+  .header-search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    height: 42px;
   }
 
-  .registration-btn {
-    width: 80px;
+  .header-search > i {
+    font-size: 11px;
+    margin-left: 12px;
+  }
+
+  .header-search input {
+    font-size: 10px;
+    padding: 0 7px;
+  }
+
+  .header-search input::placeholder {
+    font-size: 10px;
+  }
+
+  .search-btn {
+    width: 82px;
+    height: 36px;
+    font-size: 9px;
+  }
+
+  .navbar {
+    height: auto;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-container {
+    width: max-content;
+    min-width: 100%;
+    padding: 0 18px;
+    gap: 25px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .nav-link {
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 9px;
   }
   .blood-comparison-hero {
     padding: 32px 16px 20px;
@@ -2499,22 +2816,24 @@ body {
   }
 }
 
-
 @media (max-width: 480px) {
+  .header-container {
+    padding: 12px 14px;
+  }
+
+  .logo img {
+    width: 112px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0 10px;
+    font-size: 8px;
+  }
+
   .nav-container {
-    padding: 9px 12px;
-  }
-
-  .nav-logo img {
-    width: 115px;
-  }
-
-  .login-btn {
-    width: 52px;
-  }
-
-  .registration-btn {
-    width: 75px;
+    padding: 0 14px;
+    gap: 21px;
   }
   .blood-comparison-hero {
     padding: 28px 12px 18px;
@@ -2737,7 +3056,7 @@ body {
   .difference-card p {
     font-size: 8.5px;
   }
-   .newsletter-content p {
+  .newsletter-content p {
     font-size: 9px;
     line-height: 15px;
   }
@@ -2746,3 +3065,293 @@ body {
   }
 }
 
+/* =========================================================
+   MOBILE HEADER + SIDE MENU
+========================================================= */
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* =========================
+   TABLET
+   769px - 1024px
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-header {
+    position: sticky;
+    top: 0;
+    z-index: 10001;
+  }
+}
+
+/* =========================
+   MOBILE
+   0px - 768px
+========================= */
+
+@media (max-width: 768px) {
+  /* Hide top bar */
+  .top-bar {
+    display: none;
+  }
+
+  /* Sticky header */
+  .main-header {
+    position: sticky;
+    top: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+  }
+
+  /* Header only logo */
+  .header-container {
+    width: 100%;
+    height: 70px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo img {
+    width: 125px;
+    height: auto;
+  }
+
+  /* Hide search */
+  .header-search {
+    display: none;
+  }
+
+  /* Hide desktop buttons */
+  .header-buttons {
+    display: none;
+  }
+
+  /* =========================
+       NAVBAR OVERLAY
+    ========================= */
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    background: transparent;
+    z-index: 10002;
+    pointer-events: none;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none;
+  }
+
+  /* =========================
+       HAMBURGER
+    ========================= */
+
+  .mobile-menu-btn {
+    display: flex;
+
+    position: fixed;
+    top: 14px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #0b2e78;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    z-index: 10005;
+    pointer-events: auto;
+
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  }
+
+  /* =========================
+       SIDE DRAWER
+    ========================= */
+
+  .mobile-menu {
+    display: flex;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: min(320px, 82vw);
+    height: 100vh;
+
+    padding: 22px 20px;
+
+    background: #ffffff;
+
+    flex-direction: column;
+
+    transform: translateX(-105%);
+    transition: transform 0.3s ease;
+
+    z-index: 10004;
+
+    box-shadow: 5px 0 20px rgba(15, 23, 42, 0.15);
+  }
+
+  .mobile-menu.show {
+    transform: translateX(0);
+  }
+
+  /* Drawer logo */
+
+  .mobile-menu-logo {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .mobile-menu-logo img {
+    width: 125px;
+    height: auto;
+    display: block;
+  }
+
+  /* Drawer links */
+
+  .mobile-menu-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-links a {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 44px;
+
+    padding: 0 5px;
+
+    color: #111111;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .mobile-menu-links a.active {
+    color: #f7255c;
+  }
+
+  /* Login + Registration */
+
+  .mobile-menu-buttons {
+    width: 100%;
+
+    display: flex;
+    gap: 10px;
+
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  .mobile-menu-buttons .login-btn,
+  .mobile-menu-buttons .register-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+
+    height: 38px;
+
+    padding: 0 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   0px - 480px
+========================= */
+
+@media (max-width: 480px) {
+  .main-header {
+    height: 64px;
+  }
+
+  .header-container {
+    height: 64px;
+    padding: 0 15px;
+  }
+
+  .logo img {
+    width: 115px;
+  }
+
+  .mobile-menu-btn {
+    top: 11px;
+    right: 13px;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+
+  .mobile-menu {
+    width: min(300px, 84vw);
+    padding: 20px 17px;
+  }
+
+  .mobile-menu-logo img {
+    width: 115px;
+  }
+
+  .mobile-menu-links a {
+    min-height: 42px;
+    font-size: 12px;
+  }
+}
