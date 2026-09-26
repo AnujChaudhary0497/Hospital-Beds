@@ -1,0 +1,1447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs - Hospital Beds</title>
+    <link rel="stylesheet" href="hospital-details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="top-bar-right">
+        <span>
+          <i class="fa-solid fa-phone"></i>
+          +91 790 609 05 74
+        </span>
+
+        <span>
+          <i class="fa-solid fa-envelope"></i>
+          info@hospitalbeds.com
+        </span>
+      </div>
+    </div>
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Hospital Beds" />
+          </a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            placeholder=" Search hospitals, doctors, services..."
+          />
+
+          <button class="search-btn">Search</button>
+        </div>
+
+        <!-- Header Buttons -->
+        <div class="header-buttons">
+          <button class="login-btn">Login</button>
+
+          <button class="register-btn">Registration</button>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Desktop Links -->
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="find-hospital-beds.html" class="nav-link active"
+            >Find Hospital Beds</a
+          >
+          <a href="surgery.html" class="nav-link">Surgery Packages</a>
+          <a href="blood-test.html" class="nav-link">Blood Test Comparison</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="blogs.html" class="nav-link">Blogs</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-logo">
+        <img src="assets/logo.png" alt="Hospital Beds" />
+      </div>
+
+      <div class="mobile-menu-links">
+        <a href="index.html">Home</a>
+        <a href="find-hospital-beds.html" class="active">Find Hospital Beds</a>
+        <a href="surgery.html">Surgery Packages</a>
+        <a href="blood-test.html">Blood Test Comparison</a>
+        <a href="about.html">About</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="mobile-menu-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Registration</button>
+      </div>
+    </div>
+
+    <!-- =========================
+     HOSPITAL DETAIL HERO
+========================= -->
+
+    <section class="hospital-detail">
+      <!-- Breadcrumb -->
+      <div class="hospital-detail-container">
+        <div class="hospital-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="find-hospital-beds.html">Find Hospitals</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Apollo Hospitals</span>
+        </div>
+
+        <!-- Main Detail -->
+        <div class="hospital-detail-main">
+          <!-- LEFT : GALLERY -->
+          <div class="hospital-gallery">
+            <div class="gallery-main">
+              <img src="assets/apollo.png" alt="Apollo Hospitals" />
+
+              <button class="gallery-arrow gallery-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+
+              <button class="gallery-arrow gallery-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <span class="gallery-count">
+                <i class="fa-regular fa-images"></i>
+                View all 6 photos
+              </span>
+            </div>
+
+            <div class="gallery-thumbnails">
+              <div class="gallery-thumb active">
+                <img src="assets/apollo.png" alt="Apollo Hospital" />
+              </div>
+
+              <div class="gallery-thumb">
+                <img src="assets/fortis.png" alt="Apollo Hospital" />
+              </div>
+
+              <div class="gallery-thumb">
+                <img
+                  src="assets/Safdarjung Hospital.png"
+                  alt="Apollo Hospital"
+                />
+              </div>
+
+              <div class="gallery-thumb">
+                <img src="assets/max.png" alt="Apollo Hospital" />
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT : HOSPITAL INFORMATION -->
+          <div class="hospital-detail-info">
+            <div class="hospital-badges">
+              <span class="badge-accredited">
+                <i class="fa-regular fa-circle-check"></i>
+                NABH Accredited
+              </span>
+
+              <span>Multi-Specialty</span>
+              <span>Government</span>
+            </div>
+
+            <h1>Apollo Hospitals, Indraprastha</h1>
+
+            <p class="hospital-subtitle">
+              New Delhi's largest multi-speciality quaternary care hospital
+            </p>
+
+            <!-- Rating -->
+            <div class="detail-rating">
+              <strong>4.8</strong>
+
+              <span class="stars">★★★★★</span>
+
+              <span>2,450 reviews</span>
+
+              <span>710 beds</span>
+            </div>
+
+            <!-- Location -->
+            <div class="detail-location">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <span>
+                Sarita Vihar, Delhi Mathura Road, New Delhi - 110 076
+              </span>
+            </div>
+
+            <p class="distance">2.4 km away</p>
+
+            <!-- Facilities -->
+            <div class="detail-tags">
+              <span>24/7 Emergency</span>
+              <span>NABH Accredited</span>
+              <span>ICU</span>
+              <span>Blood Bank</span>
+              <span>In-House Lab</span>
+            </div>
+
+            <!-- Main CTA -->
+            <button class="book-appointment-btn">Book Appointment</button>
+
+            <!-- Secondary Buttons -->
+            <div class="detail-actions">
+              <button>
+                <i class="fa-solid fa-phone"></i>
+                Call Now
+              </button>
+
+              <button>
+                <i class="fa-regular fa-message"></i>
+                Send Enquiry
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     HOSPITAL DETAIL TABS
+========================= -->
+
+    <nav class="hospital-detail-tabs">
+      <div class="hospital-tabs-container">
+        <a href="#" class="hospital-tab active"> Overview </a>
+
+        <a href="#" class="hospital-tab"> Doctors </a>
+
+        <a href="#" class="hospital-tab"> Rooms & Beds </a>
+
+        <a href="#" class="hospital-tab"> Packages </a>
+
+        <a href="#" class="hospital-tab"> Facilities </a>
+
+        <a href="#" class="hospital-tab"> Dialysis & Chemo </a>
+
+        <a href="#" class="hospital-tab"> Gallery </a>
+
+        <a href="#" class="hospital-tab"> Enquiry </a>
+      </div>
+    </nav>
+    <!-- =========================
+     HOSPITAL OVERVIEW
+========================= -->
+
+    <section class="hospital-overview">
+      <div class="hospital-overview-container">
+        <!-- LEFT CONTENT -->
+        <div class="overview-content">
+          <p class="overview-label">OVERVIEW</p>
+
+          <h2>About Apollo Hospitals</h2>
+
+          <p>
+            Apollo Hospitals, Indraprastha is one of India's foremost quaternary
+            care hospitals, part of the Apollo Hospitals Group – Asia's largest
+            integrated healthcare enterprise. Since its founding in 1996, it has
+            been a pioneer in clinical excellence, medical education, and
+            patient-centred care across more than 50 clinical specialties.
+          </p>
+
+          <p>
+            The hospital's 710-bed capacity is matched by a specialist workforce
+            of over 350 senior consultants and a team of 4,000+ clinical staff.
+            Apollo Delhi is the first hospital in South Asia to perform
+            robot-assisted cardiac surgery and has conducted over 16,000 cardiac
+            procedures.
+          </p>
+
+          <p>
+            Backed by NABH, JCI, and ISO 9001:2015 accreditations, the hospital
+            maintains clinical protocols benchmarked against global standards,
+            with a commitment to zero preventable infections and continuous
+            quality improvement.
+          </p>
+
+          <h3>Key Specialties</h3>
+
+          <div class="specialty-tags">
+            <span>Cardiology</span>
+            <span>Neurology</span>
+            <span>Oncology</span>
+            <span>Orthopedics</span>
+            <span>Nephrology</span>
+            <span>Gastroenterology</span>
+            <span>Transplants</span>
+            <span>Robotic Surgery</span>
+            <span>Pediatrics</span>
+            <span>Gynecology</span>
+          </div>
+        </div>
+
+        <!-- RIGHT INFO CARD -->
+        <div class="hospital-glance">
+          <div class="glance-heading">HOSPITAL AT A GLANCE</div>
+
+          <div class="glance-row">
+            <span>Established</span>
+            <strong>1996</strong>
+          </div>
+
+          <div class="glance-row">
+            <span>Total Beds</span>
+            <strong>710</strong>
+          </div>
+
+          <div class="glance-row">
+            <span>Specialties</span>
+            <strong>50+</strong>
+          </div>
+
+          <div class="glance-row">
+            <span>Senior Consultants</span>
+            <strong>350+</strong>
+          </div>
+
+          <div class="glance-row">
+            <span>Annual Procedures</span>
+            <strong>60,000+</strong>
+          </div>
+
+          <div class="glance-row">
+            <span>Accreditation</span>
+            <strong>NABH · JCI · ISO</strong>
+          </div>
+
+          <div class="glance-row">
+            <span>Emergency</span>
+            <strong>24 / 7 / 365</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     SPECIALISTS / DOCTORS
+========================= -->
+
+    <section class="specialists-section">
+      <div class="specialists-container">
+        <div class="specialists-header">
+          <div>
+            <p class="specialists-label">OUR SPECIALISTS</p>
+            <h2>Meet the Doctors</h2>
+          </div>
+
+          <a href="#" class="view-all-doctors">
+            View all doctors
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="doctors-grid">
+          <!-- Doctor 1 -->
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="assets/doctor1.png" alt="Dr. Rajesh Mehta" />
+
+              <span>Avail. Today</span>
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Rajesh Mehta</h3>
+
+              <p>Cardiology · 22 yrs exp.</p>
+
+              <div class="doctor-rating">
+                <span class="doctor-rating-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <small>4.9 (1240)</small>
+              </div>
+            </div>
+
+            <div class="doctor-bottom">
+              <strong>₹1,500</strong>
+
+              <button>Book</button>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="assets/doctor2.png" alt="Dr. Sunita Patel" />
+
+              <span>Avail. Tomorrow</span>
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Sunita Patel</h3>
+
+              <p>Neurology · 18 yrs exp.</p>
+
+              <div class="doctor-rating">
+                <span class="doctor-rating-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <small>4.8 (890)</small>
+              </div>
+            </div>
+
+            <div class="doctor-bottom">
+              <strong>₹1,200</strong>
+
+              <button>Book</button>
+            </div>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="assets/doctor3.png" alt="Dr. Amit Sharma" />
+
+              <span>Avail. Today</span>
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Amit Sharma</h3>
+
+              <p>Orthopedics · 15 yrs exp.</p>
+
+              <div class="doctor-rating">
+                <span class="doctor-rating-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <small>4.7 (672)</small>
+              </div>
+            </div>
+
+            <div class="doctor-bottom">
+              <strong>₹1,000</strong>
+
+              <button>Book</button>
+            </div>
+          </div>
+
+          <!-- Doctor 4 -->
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="assets/doctor4.png" alt="Dr. Priya Iyer" />
+
+              <span>Avail. Aug 15</span>
+            </div>
+
+            <div class="doctor-info">
+              <h3>Dr. Priya Iyer</h3>
+
+              <p>Oncology · 20 yrs exp.</p>
+
+              <div class="doctor-rating">
+                <span class="doctor-rating-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <small>4.9 (1050)</small>
+              </div>
+            </div>
+
+            <div class="doctor-bottom">
+              <strong>₹2,000</strong>
+
+              <button>Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     ROOMS & BEDS
+========================= -->
+
+    <section class="rooms-beds-section">
+      <div class="rooms-beds-container">
+        <div class="rooms-header">
+          <p>ACCOMMODATION</p>
+          <h2>Rooms &amp; Beds</h2>
+        </div>
+
+        <div class="rooms-table">
+          <!-- Table Header -->
+          <div class="rooms-table-header">
+            <span>ROOM TYPE</span>
+            <span>PRICE / DAY</span>
+            <span>AMENITIES</span>
+            <span>BEDS AVAIL.</span>
+            <span>STATUS</span>
+            <span></span>
+          </div>
+
+          <!-- General Ward -->
+          <div class="room-row">
+            <div class="room-name">General Ward</div>
+
+            <div class="room-price">₹2,500</div>
+
+            <div class="room-amenities">
+              <span>Shared room (6 beds)</span>
+              <span>Basic nursing care</span>
+              <span>Meals included</span>
+              <small>+1 more</small>
+            </div>
+
+            <div class="beds-available">12 beds</div>
+
+            <div class="room-status available">Available</div>
+
+            <button class="enquire-btn">Enquire</button>
+          </div>
+
+          <!-- Twin Sharing -->
+          <div class="room-row">
+            <div class="room-name">Twin Sharing</div>
+
+            <div class="room-price">₹4,800</div>
+
+            <div class="room-amenities">
+              <span>2-bed room</span>
+              <span>AC</span>
+              <span>Attached bathroom</span>
+              <small>+2 more</small>
+            </div>
+
+            <div class="beds-available">6 beds</div>
+
+            <div class="room-status available">Available</div>
+
+            <button class="enquire-btn">Enquire</button>
+          </div>
+
+          <!-- Private Room -->
+          <div class="room-row">
+            <div class="room-name">Private Room</div>
+
+            <div class="room-price">₹7,500</div>
+
+            <div class="room-amenities">
+              <span>Single occupancy</span>
+              <span>AC</span>
+              <span>Private bathroom</span>
+              <small>+3 more</small>
+            </div>
+
+            <div class="beds-available">4 beds</div>
+
+            <div class="room-status available">Available</div>
+
+            <button class="enquire-btn">Enquire</button>
+          </div>
+
+          <!-- Deluxe Suite -->
+          <div class="room-row">
+            <div class="room-name">Deluxe Suite</div>
+
+            <div class="room-price">₹14,000</div>
+
+            <div class="room-amenities">
+              <span>Premium single room</span>
+              <span>AC + purifier</span>
+              <span>Jacuzzi bathroom</span>
+              <small>+4 more</small>
+            </div>
+
+            <div class="beds-available">2 beds</div>
+
+            <div class="room-status limited">Limited</div>
+
+            <button class="enquire-btn">Enquire</button>
+          </div>
+
+          <!-- ICU -->
+          <div class="room-row">
+            <div class="room-name">ICU</div>
+
+            <div class="room-price">₹18,000</div>
+
+            <div class="room-amenities">
+              <span>Critical care unit</span>
+              <span>24/7 monitoring</span>
+              <span>Ventilator support</span>
+              <small>+1 more</small>
+            </div>
+
+            <div class="beds-available">8 beds</div>
+
+            <div class="room-status available">Available</div>
+
+            <button class="enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     SURGERY PACKAGES
+========================= -->
+
+    <section class="surgery-packages-section">
+      <div class="surgery-packages-container">
+        <div class="surgery-packages-header">
+          <p>SURGERY PACKAGES</p>
+
+          <h2>Compare Surgery Packages</h2>
+
+          <span>
+            All-inclusive packages with transparent pricing. No hidden charges.
+          </span>
+        </div>
+
+        <div class="surgery-packages-grid">
+          <!-- Card 1 -->
+          <div class="surgery-package-card">
+            <span class="package-badge"> Most Popular </span>
+
+            <h3>Cardiac Care Package</h3>
+
+            <div class="package-price">
+              ₹2,40,000
+              <small>onwards</small>
+            </div>
+
+            <ul class="package-features">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Coronary Angiography
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Bypass Surgery (CABG)
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                ICU — 3 days
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Post-op physiotherapy
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Medications (7 days)
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Follow-up consultation
+              </li>
+            </ul>
+
+            <button class="package-btn">Book This Package</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="surgery-package-card">
+            <span class="package-badge value"> Best Value </span>
+
+            <h3>Knee Replacement</h3>
+
+            <div class="package-price">
+              ₹1,75,000
+              <small>onwards</small>
+            </div>
+
+            <ul class="package-features">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Total knee replacement
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Implant (standard)
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Physiotherapy — 10 sessions
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Private room — 4 days
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Medications (14 days)
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Dietitian consultation
+              </li>
+            </ul>
+
+            <button class="package-btn">Book This Package</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="surgery-package-card">
+            <h3>Cancer Screening</h3>
+
+            <div class="package-price">
+              ₹28,000
+              <small>onwards</small>
+            </div>
+
+            <ul class="package-features">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Full-body CT scan
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Tumour marker panel
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Biopsy (if required)
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Oncologist consultation
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Radiology report
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Follow-up call
+              </li>
+            </ul>
+
+            <button class="package-btn">Book This Package</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FACILITIES & AMENITIES
+========================= -->
+
+    <section class="facilities-section">
+      <div class="facilities-container">
+        <div class="facilities-header">
+          <p>INFRASTRUCTURE</p>
+          <h2>Facilities &amp; Amenities</h2>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card">
+            <i class="fa-solid fa-truck-medical"></i>
+            <span>24/7 Emergency</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-building"></i>
+            <span>NABH Accredited</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-vial"></i>
+            <span>In-House Lab</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-capsules"></i>
+            <span>24/7 Pharmacy</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-x-ray"></i>
+            <span>Advanced Imaging</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Dietary Kitchen</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-droplet"></i>
+            <span>Blood Bank</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-capsules"></i>
+            <span>Ample Parking</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-truck-medical"></i>
+            <span>Ambulance Fleet</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-syringe"></i>
+            <span>ICU &amp; NICU</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-microscope"></i>
+            <span>Research Centre</span>
+          </div>
+
+          <div class="facility-card">
+            <i class="fa-solid fa-wheelchair"></i>
+            <span>Wheelchair Access</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     DIALYSIS & CHEMOTHERAPY
+========================= -->
+
+    <section class="specialised-services-section">
+      <div class="specialised-services-container">
+        <div class="specialised-services-header">
+          <p>SPECIALISED SERVICES</p>
+          <h2>Dialysis &amp; Chemotherapy</h2>
+        </div>
+
+        <div class="specialised-services-grid">
+          <!-- Dialysis -->
+          <div class="specialised-service-card">
+            <div class="service-image">
+              <img src="assets/dialysis.png" alt="Dialysis Unit" />
+            </div>
+
+            <div class="service-content">
+              <h3>Dialysis Unit</h3>
+
+              <p>
+                24-station hemodialysis unit with Fresenius machines. Peritoneal
+                dialysis training and home dialysis support also available.
+              </p>
+
+              <ul>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  24 HD stations
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Peritoneal dialysis
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Home dialysis training
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Nephrology consultation
+                </li>
+              </ul>
+
+              <div class="service-bottom">
+                <div>
+                  <small>Per session</small>
+                  <strong>₹2,800 onwards</strong>
+                </div>
+
+                <button class="service-enquire-btn">Enquire</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chemotherapy -->
+          <div class="specialised-service-card">
+            <div class="service-image">
+              <img src="assets/chemotherapy.png" alt="Chemotherapy Centre" />
+            </div>
+
+            <div class="service-content">
+              <h3>Chemotherapy Centre</h3>
+
+              <p>
+                Dedicated day-care chemotherapy unit with 20 recliners. Full
+                oncology support including targeted therapy, immunotherapy, and
+                oral chemo.
+              </p>
+
+              <ul>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  20 day-care stations
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Targeted therapy
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Immunotherapy
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Oral chemotherapy
+                </li>
+              </ul>
+
+              <div class="service-bottom">
+                <div>
+                  <small>Per cycle (estimate)</small>
+                  <strong>₹45,000 onwards</strong>
+                </div>
+
+                <button class="service-enquire-btn">Enquire</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     HOSPITAL GALLERY
+========================= -->
+
+    <section class="hospital-gallery-section">
+      <div class="hospital-gallery-container">
+        <div class="gallery-section-header">
+          <div>
+            <p>GALLERY</p>
+            <h2>Inside Apollo Hospitals</h2>
+          </div>
+
+          <a href="#" class="view-all-photos">
+            View all photos
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hospital-gallery-grid">
+          <!-- Large Image -->
+          <div class="gallery-item gallery-large">
+            <img src="assets/apollo1.png" alt="Apollo Hospitals" />
+          </div>
+
+          <!-- Small Image 1 -->
+          <div class="gallery-item">
+            <img src="assets/emergency.png" alt="Apollo Hospital" />
+          </div>
+
+          <!-- Small Image 2 -->
+          <div class="gallery-item">
+            <img src="assets/dialysis.png" alt="Apollo Hospital" />
+          </div>
+
+          <!-- Small Image 3 -->
+          <div class="gallery-item">
+            <img src="assets/hospital-room.png" alt="Apollo Hospital" />
+          </div>
+
+          <!-- Small Image 4 -->
+          <div class="gallery-item">
+            <img src="assets/chemotherapy.png" alt="Apollo Hospital" />
+          </div>
+
+          <!-- More Photos -->
+          <div class="gallery-item gallery-more">
+            <img src="assets/apollo.png" alt="More Apollo Hospital photos" />
+
+            <div class="gallery-more-overlay">
+              <strong>+1</strong>
+              <span>more photos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     PATIENT ENQUIRY
+========================= -->
+
+    <section class="patient-enquiry-section">
+      <div class="patient-enquiry-container">
+        <!-- LEFT CONTENT -->
+        <div class="enquiry-info">
+          <p class="enquiry-label">PATIENT ENQUIRY</p>
+
+          <h2>Book an Appointment or Send an Enquiry</h2>
+
+          <p class="enquiry-description">
+            Fill in the form and our patient care coordinator will call you
+            within 2 hours to confirm availability, discuss your needs, and
+            guide you through the next steps.
+          </p>
+
+          <div class="enquiry-benefits">
+            <div class="enquiry-benefit">
+              <div class="benefit-icon phone">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <h3>Immediate Response</h3>
+                <p>Our team calls you back within 2 hours on business days.</p>
+              </div>
+            </div>
+
+            <div class="enquiry-benefit">
+              <div class="benefit-icon calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+
+              <div>
+                <h3>Appointment Scheduling</h3>
+                <p>
+                  We co-ordinate directly with the specialist to find the
+                  earliest slot.
+                </p>
+              </div>
+            </div>
+
+            <div class="enquiry-benefit">
+              <div class="benefit-icon cost">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+              </div>
+
+              <div>
+                <h3>Cost Estimate</h3>
+                <p>
+                  Get a detailed cost breakdown before you commit to anything.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="enquiry-form-card">
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" placeholder="Enter your name" />
+              </div>
+
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="contact number" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+
+              <input type="email" placeholder="Enter your Email" />
+            </div>
+
+            <div class="form-group">
+              <label>Service Required</label>
+
+              <select>
+                <option>Select a service</option>
+                <option>Hospital Beds</option>
+                <option>Surgery Package</option>
+                <option>Dialysis</option>
+                <option>Chemotherapy</option>
+                <option>Doctor Appointment</option>
+                <option>Emergency</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Message (optional)</label>
+
+              <textarea
+                placeholder="Tell us more about your needs..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-enquiry-btn">
+              Submit Enquiry
+            </button>
+
+            <p class="form-note">
+              We'll call you back within 2 hours · No spam, ever
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     SIMILAR HOSPITALS
+========================= -->
+
+    <section class="similar-hospitals-section">
+      <div class="similar-hospitals-container">
+        <div class="similar-hospitals-header">
+          <div>
+            <p>NEARBY HOSPITALS</p>
+            <h2>Similar Hospitals in Delhi NCR</h2>
+          </div>
+
+          <a href="find-hospital-beds.html">
+            View all hospitals
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="similar-hospitals-grid">
+          <!-- Hospital 1 -->
+          <div class="similar-hospital-card">
+            <div class="similar-hospital-image">
+              <img
+                src="assets/fortis.png"
+                alt="Fortis Memorial Research Institute"
+              />
+
+              <span class="hospital-type"> Super Specialty </span>
+
+              <span class="nabh-badge">
+                <i class="fa-solid fa-check"></i>
+                NABH
+              </span>
+            </div>
+
+            <div class="similar-hospital-content">
+              <div class="hospital-title-row">
+                <h3>Fortis Memorial Research Institute</h3>
+                <span>
+                  <i class="fa-solid fa-bed"></i>
+                  1,000 beds
+                </span>
+              </div>
+
+              <div class="similar-rating">
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                4.7
+                <small>(1,890 reviews)</small>
+              </div>
+
+              <div class="similar-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Gurugram, Haryana
+                <span>5.1 km</span>
+              </div>
+
+              <div class="similar-tags">
+                <span>Cardiac Care</span>
+                <span>Neurology</span>
+                <span>Robotic Surgery</span>
+              </div>
+
+              <div class="similar-actions">
+                <a href="hospital-details.html" class="similar-view-btn">
+                  View Details
+                </a>
+
+                <button class="similar-book-btn">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hospital 2 -->
+          <div class="similar-hospital-card">
+            <div class="similar-hospital-image">
+              <img src="assets/max.png" alt="Max Super Speciality Hospital" />
+
+              <span class="hospital-type"> Super Specialty </span>
+
+              <span class="nabh-badge">
+                <i class="fa-solid fa-check"></i>
+                NABH
+              </span>
+            </div>
+
+            <div class="similar-hospital-content">
+              <div class="hospital-title-row">
+                <h3>Max Super Speciality Hospital</h3>
+                <span>
+                  <i class="fa-solid fa-bed"></i>
+                  500 beds
+                </span>
+              </div>
+
+              <div class="similar-rating">
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                4.6
+                <small>(3,120 reviews)</small>
+              </div>
+
+              <div class="similar-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Saket, New Delhi
+                <span>3.8 km</span>
+              </div>
+
+              <div class="similar-tags">
+                <span>Oncology</span>
+                <span>Orthopedics</span>
+                <span>Blood Bank</span>
+              </div>
+
+              <div class="similar-actions">
+                <a href="hospital-details.html" class="similar-view-btn">
+                  View Details
+                </a>
+
+                <button class="similar-book-btn">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hospital 3 -->
+          <div class="similar-hospital-card">
+            <div class="similar-hospital-image">
+              <img src="assets/AIIMS Delhi.png" alt="AIIMS Delhi" />
+
+              <span class="hospital-type government"> Government </span>
+
+              <span class="nabh-badge">
+                <i class="fa-solid fa-check"></i>
+                NABH
+              </span>
+            </div>
+
+            <div class="similar-hospital-content">
+              <div class="hospital-title-row">
+                <h3>AIIMS Delhi</h3>
+                <span>
+                  <i class="fa-solid fa-bed"></i>
+                  2,478 beds
+                </span>
+              </div>
+
+              <div class="similar-rating">
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                4.7
+                <small>(5,680 reviews)</small>
+              </div>
+
+              <div class="similar-location">
+                <i class="fa-solid fa-location-dot"></i>
+                Ansari Nagar, New Delhi
+                <span>6.5 km</span>
+              </div>
+
+              <div class="similar-tags">
+                <span>Research Center</span>
+                <span>Trauma Care</span>
+                <span>Diagnostic Lab</span>
+              </div>
+
+              <div class="similar-actions">
+                <a href="hospital-details.html" class="similar-view-btn">
+                  View Details
+                </a>
+
+                <button class="similar-book-btn">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     NEWSLETTER
+========================= -->
+
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2>Stay Informed. Stay Healthy.</h2>
+
+          <p>
+            Get the latest healthcare updates, wellness tips, hospital news, and
+            exclusive health offers delivered straight to your inbox.
+          </p>
+        </div>
+
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter Your Email" />
+
+          <button>Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FOOTER
+========================= -->
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+
+          <p>
+            India's trusted healthcare marketplace.<br />
+            Search, compare and book from 2,840+<br />
+            hospitals across 180 cities.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+          <h3>SERVICES</h3>
+
+          <a href="#">Hospital Bed Booking</a>
+          <a href="#">Surgery Packages</a>
+          <a href="#">Blood Test</a>
+          <a href="#">Dialysis Booking</a>
+          <a href="#">Chemotherapy</a>
+        </div>
+
+        <!-- HOSPITALS -->
+
+        <div class="footer-column">
+          <h3>HOSPITALS</h3>
+
+          <a href="#">Browse Hospitals</a>
+          <a href="#">By City</a>
+          <a href="#">By Specialty</a>
+          <a href="#">Compare Hospitals</a>
+          <a href="#">Submit Admission</a>
+        </div>
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+          <h3>COMPANY</h3>
+
+          <a href="#">About Us</a>
+          <a href="#">How It Works</a>
+          <a href="#">Partner With Us</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <!-- SUPPORT -->
+
+        <div class="footer-column">
+          <h3>SUPPORT</h3>
+
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Patient Stories</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Services</a>
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>© 2026 HospitalBeds.com - Made with care in India 🇮🇳</p>
+          <span class="designed-by"> Design by Anuj Chaudhary </span>
+          <div class="footer-badges">
+            <span>NABH Partner</span>
+            <span>ISO 27001</span>
+            <span>PCI DSS Compliant</span>
+            <span>DPDP Compliant</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

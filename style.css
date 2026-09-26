@@ -67,6 +67,9 @@ body {
   width: 100%;
   height: 64px;
   background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  z-index: 10001;
 }
 
 .header-container {
@@ -204,12 +207,13 @@ body {
   width: 100%;
   height: 40px;
   background-color: #f8fafc;
-
+  position: sticky;
+  top: 60px;
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .nav-container {
   height: 100%;
 
@@ -366,7 +370,7 @@ body {
   height: 42px;
 
   padding: 5px;
-
+  gap: 5px;
   display: flex;
   align-items: center;
 
@@ -435,6 +439,21 @@ body {
    INPUT
 ========================= */
 
+.hero-search-field select {
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #333333;
+
+  font-size: 10px;
+}
 .hero-search-field input {
   width: 100%;
   height: 100%;
@@ -448,10 +467,13 @@ body {
 
   color: #333333;
 
-  font-size: 7px;
+  font-size: 10px;
 }
 
-.hero-search-field input::placeholder {
+.hero-search-field select::placeholder {
+  color: #aaaaaa;
+}
+.hero-search-field text::placeholder {
   color: #aaaaaa;
 }
 
@@ -2849,7 +2871,7 @@ body {
 
   .hero-section {
     width: 100%;
-    height: 600px;
+    height: 470px;
     position: relative;
     overflow: hidden;
   }
@@ -2920,7 +2942,7 @@ body {
     height: 58px;
 
     margin-top: 5px;
-
+    gap: 5px;
     display: flex;
     align-items: center;
   }
@@ -3955,6 +3977,10 @@ body {
 
     gap: 20px 10px;
   }
+  .stats-section .stat-item:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 
   .stat-item {
     width: 100%;
@@ -4092,7 +4118,7 @@ body {
   .how-it-works {
     width: 100%;
     height: auto;
-    min-height: 600px;
+    min-height: 520px;
 
     padding: 45px 15px 55px;
   }
@@ -4208,29 +4234,40 @@ body {
     width: 100%;
     height: auto;
     min-height: 0;
-    display: grid;
-    grid-template-columns: 95px minmax(0, 1fr);
-    gap: 10px;
-    padding: 10px;
-    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
   /* Hospital Image */
 
   .hospital-image {
-    width: 95px;
-    height: 100px;
+    width: 100%;
+    height: 220px;
+
+    position: relative;
   }
 
   .hospital-image img {
     width: 100%;
     height: 100%;
+
+    display: block;
+
     object-fit: cover;
+    object-position: center;
   }
 
   .nabh-badge {
-    font-size: 6px;
-    padding: 3px 5px;
+    font-size: 7px;
+    padding: 4px 7px;
+
+    top: 10px;
+    left: 10px;
   }
 
   /* Hospital Information */
@@ -4238,44 +4275,53 @@ body {
   .hospital-info {
     width: 100%;
     min-width: 0;
+
+    padding: 16px 15px 10px;
   }
 
   .hospital-info h3 {
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-bottom: 8px;
   }
 
   .hospital-location {
-    font-size: 9px;
-    margin-bottom: 7px;
+    font-size: 10px;
+    margin-bottom: 10px;
   }
 
   .hospital-location i {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .hospital-tags {
     display: flex;
     flex-wrap: wrap;
+
     gap: 6px;
-    margin-bottom: 7px;
+
+    margin-bottom: 10px;
   }
 
   .hospital-tags span {
-    font-size: 6px;
-    padding: 5px 5px;
+    font-size: 7px;
+    padding: 5px 6px;
   }
 
   .hospital-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-    font-size: 6px;
+
+    gap: 7px;
+
+    margin-top: 5px;
+
+    font-size: 7px;
   }
 
   .hospital-meta .beds {
-    font-size: 6px;
+    font-size: 7px;
   }
 
   .hospital-meta .beds i {
@@ -4285,21 +4331,25 @@ body {
   /* Rating */
 
   .hospital-rating {
-    grid-column: 1 / -1;
-    width: 100%;
+    width: calc(100% - 30px);
+
+    margin: 0 15px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 2px 0;
-    border-top: 1px solid #eee;
+
+    padding: 10px 2px;
+
+    border-top: 1px solid #eeeeee;
   }
 
   .hospital-rating > div {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .hospital-rating > div i {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .hospital-rating small {
@@ -4309,22 +4359,34 @@ body {
   /* Buttons */
 
   .hospital-actions {
-    grid-column: 1 / -1;
     width: 100%;
+
     display: flex;
-    gap: 7px;
+    flex-direction: column;
+
+    gap: 9px;
+
+    padding: 10px 15px 18px;
+
+    border-left: none;
   }
 
   .book-btn,
   .admission-btn {
-    width: 55%;
-    height: 35px;
-    font-size: 12px;
-    line-height: 38px;
+    width: 70%;
+
+    height: 42px;
+
+    font-size: 13px;
+    line-height: 42px;
+
     padding: 0;
+
     display: block;
+
     margin: 0 auto;
-    border-radius: 20px;
+
+    border-radius: 22px;
   }
 
   /* View All */
@@ -4726,13 +4788,9 @@ body {
   /* Icon */
 
   .why-icon {
-    width: 40px;
-    height: 40px;
-
-    margin-bottom: 10px;
-
-    font-size: 17px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
 
   /* Card Heading */
 
@@ -5078,144 +5136,83 @@ body {
     min-height: auto;
   }
 
+  .footer-section {
+    height: auto;
+  }
+
   .footer-container {
     width: 100%;
     height: auto;
-    min-height: 0;
-
-    padding: 40px 20px 30px;
-
+    padding: 40px 18px 30px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 30px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 22px;
   }
-
-  /* =====================================================
-       ABOUT
-    ===================================================== */
 
   .footer-about {
     width: 100%;
-
     grid-column: 1 / -1;
-
-    text-align: center;
   }
 
   .footer-about img {
-    width: 130px;
-    max-width: 100%;
-    height: auto;
-
-    margin-bottom: 10px;
+    width: 140px;
   }
 
   .footer-about p {
-    width: 100%;
-
-    font-size: 8px;
-    line-height: 14px;
-
-    margin: 0 auto;
+    font-size: 9px;
+    line-height: 17px;
   }
-
-  /* Social Icons */
 
   .footer-socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 8px;
-
-    margin-top: 12px;
+    margin-top: 14px;
   }
-
-  .footer-socials a {
-    width: 28px;
-    height: 28px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 9px;
-  }
-
-  /* =====================================================
-       FOOTER COLUMNS
-    ===================================================== */
 
   .footer-column {
     width: 100%;
-    min-width: 0;
   }
 
   .footer-column h3 {
     font-size: 9px;
-    line-height: 14px;
-
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   .footer-column a {
-    display: block;
-
-    font-size: 7px;
-    line-height: 13px;
-
-    margin-bottom: 6px;
+    font-size: 8px;
+    margin-bottom: 10px;
   }
 
-  /* =====================================================
-       FOOTER BOTTOM
-    ===================================================== */
-
   .footer-bottom {
-    width: 100%;
+    height: auto;
   }
 
   .footer-bottom-container {
     width: 100%;
-    height: auto;
-    min-height: 0;
-
-    padding: 15px 20px;
-
+    min-height: 75px;
+    padding: 12px 18px;
     display: flex;
     flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
+    gap: 10px;
     text-align: center;
   }
 
-  .footer-bottom-container p {
-    font-size: 7px;
-    line-height: 12px;
-    margin: 0;
+  .footer-bottom p {
+    font-size: 8px;
   }
 
   .designed-by {
-    font-size: 7px;
-    line-height: 12px;
+    position: static;
+    transform: none;
+    font-size: 8px;
   }
 
-  /* Badges */
-
   .footer-badges {
-    width: 100%;
-
-    display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
+    gap: 8px 14px;
+  }
 
-    gap: 5px;
+  .footer-badges span {
+    font-size: 7px;
   }
   .top-bar {
     display: none;
@@ -5929,8 +5926,8 @@ body {
 
     border-radius: 20px;
 
-    font-size: 11px;
-
+    font-size: 12px;
+    text-decoration: none;
     cursor: pointer;
   }
 }

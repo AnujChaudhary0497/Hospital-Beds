@@ -47,7 +47,9 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="logo">
-          <img src="assets/logo.png" alt="Hospital Beds" />
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Hospital Beds" />
+          </a>
         </div>
 
         <!-- Search Bar -->
@@ -64,8 +66,9 @@
 
         <!-- Header Buttons -->
         <div class="header-buttons">
-          <button class="login-btn">Login</button>
-
+          <a href="login.html">
+            <button class="login-btn">Login</button>
+          </a>
           <button class="register-btn">Registration</button>
         </div>
       </div>
@@ -100,17 +103,17 @@
       </div>
 
       <div class="mobile-menu-links">
-        <a href="index.html"class="active">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="find-hospital-beds.html">Find Hospital Beds</a>
         <a href="surgery.html">Surgery Packages</a>
         <a href="blood-test.html">Blood Test Comparison</a>
         <a href="about.html">About</a>
-        <a href="blogs.html" >Blogs</a>
+        <a href="blogs.html">Blogs</a>
         <a href="contact.html">Contact</a>
       </div>
 
       <div class="mobile-menu-buttons">
-        <button class="login-btn">Login</button>
+       <a href="login.html" class="login-btn">Login</a>
         <button class="register-btn">Registration</button>
       </div>
     </div>
@@ -149,16 +152,31 @@
           <div class="hero-search-field">
             <i class="fa-solid fa-bed"></i>
 
-            <input type="text" placeholder="Hospital Beds" />
-
-            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            <select>
+              <option value="" selected disabled>Select Hospital</option>
+              <option value="apollo">Apollo Hospitals</option>
+              <option value="fortis">Fortis Memorial</option>
+              <option value="max">Max Super Speciality</option>
+              <option value="medanta">Medanta - The Medicity</option>
+              <option value="manipal">Manipal Hospitals</option>
+            </select>
           </div>
 
-          <!-- Category -->
+          <!-- Category Dropdown -->
           <div class="hero-search-field category-field">
             <i class="fa-regular fa-clipboard"></i>
 
-            <input type="text" placeholder="All Categories" />
+            <select>
+              <option value="" selected disabled>Select Category</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="oncology">Oncology</option>
+              <option value="neurology">Neurology</option>
+              <option value="orthopaedics">Orthopaedics</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="gastroenterology">Gastroenterology</option>
+              <option value="urology">Urology</option>
+              <option value="general-surgery">General Surgery</option>
+            </select>
           </div>
 
           <!-- Search Button -->
