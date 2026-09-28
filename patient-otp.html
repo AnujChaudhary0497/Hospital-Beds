@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Patient - OTP Verification</title>
+
+    <link rel="stylesheet" href="patient-otp.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="patient-header">
+      <div class="patient-header-container">
+        <a href="index.html" class="patient-logo">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+        </a>
+
+        <div class="patient-help">
+          Need help?
+          <span>+91 7906 0905 74</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="patient-login-section">
+      <div class="patient-page-container">
+        <!-- BACK -->
+
+        <a href="patient-login.html" class="back-link">
+          <i class="fa-solid fa-chevron-left"></i>
+          Back to hospitalbeds.com
+        </a>
+
+        <div class="patient-login-wrapper">
+          <!-- ================= OTP CARD ================= -->
+
+          <div class="patient-login-card">
+            <div class="patient-form-content">
+              <span class="welcome-text"> SECURE SIGN IN </span>
+
+              <h1>
+                Verify Your Mobile<br />
+                Number
+              </h1>
+
+              <p class="patient-description">
+                Enter the 6-digit verification code sent to +91 XXXXXX XX69.
+              </p>
+
+              <!-- OTP -->
+
+              <label> Enter OTP </label>
+
+              <div class="otp-inputs">
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+              </div>
+
+              <!-- VERIFY -->
+
+              <button
+              type="button"
+              class="continue-btn"
+              onclick="window.location.href = 'patient-personal-info.html'"
+            >
+              Continue
+            </button>
+
+              <p class="resend-text">
+                Didn't receive the code?
+                <a href="#">Resend OTP</a>
+              </p>
+
+              <a href="patient-login.html" class="change-number">
+                Change mobile number
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= IMAGE ================= -->
+
+          <div class="patient-image">
+            <img src="assets/patient-login.jpg" alt="Hospital Care" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= OTP JS ================= -->
+
+    <script>
+      const otpInputs = document.querySelectorAll(".otp-inputs input");
+
+      otpInputs.forEach((input, index) => {
+        input.addEventListener("input", () => {
+          if (input.value && index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus();
+          }
+        });
+
+        input.addEventListener("keydown", (event) => {
+          if (event.key === "Backspace" && !input.value && index > 0) {
+            otpInputs[index - 1].focus();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

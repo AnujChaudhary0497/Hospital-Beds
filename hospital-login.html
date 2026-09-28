@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hospital - Login</title>
+
+    <link rel="stylesheet" href="hospital-login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="hospital-header">
+      <div class="hospital-header-container">
+        <a href="index.html" class="hospital-logo">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+        </a>
+
+        <div class="hospital-help">
+          Need help?
+          <span>+91 7906 0905 74</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="hospital-login-section">
+      <div class="hospital-page-container">
+        <!-- BACK -->
+
+        <a href="login.html" class="back-link">
+          <i class="fa-solid fa-chevron-left"></i>
+          Back to hospitalbeds.com
+        </a>
+
+        <div class="hospital-login-wrapper">
+          <!-- ================= LOGIN CARD ================= -->
+
+          <div class="hospital-login-card">
+            <div class="hospital-form-content">
+              <span class="welcome-text"> WELCOME TO HOSPITALBEDS </span>
+
+              <h1>
+                Healthcare Journey,<br />
+                Made Simple
+              </h1>
+
+              <p class="hospital-description">
+                Access your appointments, hospital bookings, health services and
+                important updates — all in one place.
+              </p>
+
+              <!-- EMAIL -->
+
+              <div class="form-group">
+                <label for="email"> Email Address </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter email address"
+                />
+              </div>
+
+              <!-- PASSWORD -->
+
+              <div class="form-group">
+                <label for="password"> Password </label>
+
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+              </div>
+
+              <!-- REMEMBER + FORGOT -->
+
+              <div class="login-options">
+                <label class="remember-me">
+                  <input type="checkbox" id="remember" />
+
+                  <span>Remember me</span>
+                </label>
+
+                <a href="#" class="forgot-password"> Forgot Password? </a>
+              </div>
+
+              <!-- CONTINUE -->
+
+              <button type="button" class="continue-btn">Continue</button>
+
+              <!-- REGISTER -->
+
+              <p class="register-text">
+                Don't have an account?
+                <a href="hospital-register.html"> Register Now </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- ================= IMAGE ================= -->
+
+          <div class="hospital-image">
+            <img src="assets/patient-login.jpg" alt="Hospital Care" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

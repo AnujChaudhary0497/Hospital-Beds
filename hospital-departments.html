@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hospital - Departments Info</title>
+
+    <link rel="stylesheet" href="hospital-departments.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="hospital-header">
+      <div class="hospital-header-container">
+        <a href="index.html" class="hospital-logo">
+          <img src="assets/logo.png" alt="Hospital Beds" />
+        </a>
+
+        <div class="hospital-help">
+          Need help?
+          <span>+91 98765 43210</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="hospital-departments-section">
+      <div class="hospital-departments-container">
+        <!-- ================= STEPS ================= -->
+
+        <div class="hospital-steps">
+          <!-- STEP 1 -->
+
+          <div class="hospital-step completed">
+            <div class="step-number">01</div>
+
+            <span> Hospital Information </span>
+          </div>
+
+          <!-- STEP 2 -->
+
+          <div class="hospital-step active">
+            <div class="step-number">02</div>
+
+            <span> Departments </span>
+          </div>
+
+          <!-- STEP 3 -->
+
+          <div class="hospital-step">
+            <div class="step-number">03</div>
+
+            <span> Contact Details </span>
+          </div>
+
+          <!-- STEP 4 -->
+
+          <div class="hospital-step">
+            <div class="step-number">04</div>
+
+            <span> Facilities &amp; Images </span>
+          </div>
+        </div>
+
+        <!-- ================= DEPARTMENT CARD ================= -->
+
+        <div class="hospital-departments-card">
+          <span class="departments-label"> HOSPITAL REGISTRATION </span>
+
+          <h1>Hospital Departments</h1>
+
+          <p class="departments-description">
+            Select the departments and specialties currently available at your
+            hospital.
+          </p>
+
+          <!-- DEPARTMENTS -->
+
+          <div class="department-grid">
+            <label class="department-option">
+              <input type="checkbox" value="Cardiology" />
+              <span>Cardiology</span>
+            </label>
+
+            <label class="department-option">
+              <input type="checkbox" value="Orthopedics" />
+              <span>Orthopedics</span>
+            </label>
+
+            <label class="department-option">
+              <input type="checkbox" value="General Surgery" />
+              <span>General Surgery</span>
+            </label>
+
+            <label class="department-option">
+              <input type="checkbox" value="Oncology" />
+              <span>Oncology</span>
+            </label>
+
+            <label class="department-option">
+              <input type="checkbox" value="Gynecology" />
+              <span>Gynecology</span>
+            </label>
+
+            <label class="department-option">
+              <input type="checkbox" value="ENT" />
+              <span>ENT</span>
+            </label>
+          </div>
+
+          <!-- VIEW ALL -->
+
+          <button type="button" class="view-all-btn">
+            View All Departments
+          </button>
+
+          <!-- CONTINUE -->
+
+          <button
+            type="button"
+            class="continue-btn"
+            onclick="window.location.href = 'hospital-contact-details.html'"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

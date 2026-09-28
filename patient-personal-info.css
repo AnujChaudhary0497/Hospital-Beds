@@ -1,0 +1,609 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0b2e78;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.patient-header {
+  width: 100%;
+  height: 64px;
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-shadow: 0 1px 5px rgba(15, 23, 42, 0.08);
+}
+
+.patient-header-container {
+  width: 100%;
+  max-width: 1280px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patient-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.patient-logo img {
+  width: 145px;
+  height: auto;
+
+  display: block;
+}
+
+.patient-help {
+  font-size: 9px;
+
+  color: #f7255c;
+}
+
+.patient-help span {
+  margin-left: 8px;
+
+  color: #0b2e78;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.profile-section {
+  min-height: calc(100vh - 64px);
+
+  padding: 60px 25px 70px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 700px;
+
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 75px;
+}
+
+/* =========================================================
+   STEPS
+========================================================= */
+
+.profile-steps {
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-step {
+  position: relative;
+
+  height: 85px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  color: #8b94a3;
+
+  font-size: 13px;
+}
+
+.profile-step:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 15px;
+  top: 43px;
+
+  width: 2px;
+  height: 70px;
+
+  background-color: #dfe4eb;
+
+  z-index: 0;
+}
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.step-number {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  position: relative;
+
+  z-index: 1;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e2e6eb;
+
+  color: #8b94a3;
+
+  font-size: 10px;
+
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
+}
+
+/* ACTIVE STEP */
+
+.profile-step.active {
+  color: #0b2e78;
+
+  font-weight: 600;
+}
+
+.profile-step.active .step-number {
+  background-color: #f7255c;
+
+  border-color: #f7255c;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   PROFILE CARD
+========================================================= */
+
+.profile-card {
+  width: 330px;
+
+  background-color: #ffffff;
+
+  border-radius: 13px;
+
+  padding: 30px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.1);
+}
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.profile-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #f7255c;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+.profile-card h1 {
+  font-size: 21px;
+
+  line-height: 1.3;
+
+  color: #0b2e78;
+
+  margin-bottom: 9px;
+}
+
+.profile-description {
+  max-width: 280px;
+
+  color: #7b8495;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.form-group {
+  width: 100%;
+
+  margin-bottom: 13px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #26344d;
+
+  font-size: 7px;
+
+  font-weight: 600;
+}
+
+.form-group label span {
+  color: #f7255c;
+}
+
+/* INPUT + SELECT */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  height: 36px;
+
+  padding: 0 10px;
+
+  border: 1px solid #dfe4eb;
+
+  border-radius: 5px;
+
+  outline: none;
+
+  background-color: #ffffff;
+
+  color: #333333;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+}
+
+.form-group input::placeholder {
+  color: #a4abb5;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #f7255c;
+
+  box-shadow: 0 0 0 2px rgba(247, 37, 92, 0.06);
+}
+
+/* =========================================================
+   AGE + GENDER
+========================================================= */
+
+.form-row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+/* =========================================================
+   CONTINUE BUTTON
+========================================================= */
+
+.continue-btn {
+  width: 100%;
+
+  height: 36px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background-color: #f7255c;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.continue-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(247, 37, 92, 0.22);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .patient-header-container {
+    padding: 0 25px;
+  }
+
+  .profile-section {
+    padding: 50px 20px;
+  }
+
+  .profile-container {
+    max-width: 650px;
+
+    gap: 55px;
+  }
+
+  .profile-steps {
+    width: 220px;
+  }
+
+  .profile-step {
+    font-size: 12px;
+  }
+
+  .profile-card {
+    width: 310px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  /* HEADER */
+
+  .patient-header {
+    height: 60px;
+  }
+
+  .patient-header-container {
+    padding: 0 15px;
+  }
+
+  .patient-logo img {
+    width: 120px;
+  }
+
+  .patient-help {
+    font-size: 7px;
+  }
+
+  .patient-help span {
+    display: block;
+
+    margin-left: 0;
+
+    margin-top: 2px;
+  }
+
+  /* MAIN */
+
+  .profile-section {
+    min-height: calc(100vh - 60px);
+
+    padding: 35px 15px 45px;
+  }
+
+  .profile-container {
+    width: 100%;
+
+    max-width: 450px;
+
+    margin-top: 0;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 30px;
+  }
+
+  /* =====================================================
+       MOBILE STEPS
+    ===================================================== */
+
+  .profile-steps {
+    width: 100%;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .profile-step {
+    width: 33.333%;
+
+    height: auto;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    gap: 7px;
+
+    text-align: center;
+
+    font-size: 8px;
+  }
+
+  .profile-step:not(:last-child)::after {
+    left: calc(50% + 12px);
+
+    top: 12px;
+
+    width: calc(100% - 24px);
+
+    height: 1px;
+  }
+
+  .step-number {
+    width: 27px;
+    height: 27px;
+
+    font-size: 8px;
+  }
+
+  .profile-step span {
+    line-height: 1.3;
+  }
+
+  /* =====================================================
+       MOBILE CARD
+    ===================================================== */
+
+  .profile-card {
+    width: 100%;
+
+    padding: 28px 22px 24px;
+
+    border-radius: 10px;
+  }
+
+  .profile-label {
+    font-size: 7px;
+
+    margin-bottom: 8px;
+  }
+
+  .profile-card h1 {
+    font-size: 22px;
+
+    margin-bottom: 9px;
+  }
+
+  .profile-description {
+    max-width: 100%;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    margin-bottom: 19px;
+  }
+
+  /* FORM */
+
+  .form-group {
+    margin-bottom: 13px;
+  }
+
+  .form-group label {
+    font-size: 8px;
+
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 42px;
+
+    font-size: 9px;
+
+    padding: 0 10px;
+  }
+
+  /* BUTTON */
+
+  .continue-btn {
+    height: 42px;
+
+    font-size: 10px;
+
+    margin-top: 4px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .profile-section {
+    padding: 28px 12px 35px;
+  }
+
+  .profile-container {
+    gap: 25px;
+  }
+
+  .profile-step {
+    font-size: 7px;
+  }
+
+  .step-number {
+    width: 25px;
+    height: 25px;
+
+    font-size: 7px;
+  }
+
+  .profile-card {
+    padding: 25px 18px 21px;
+  }
+
+  .profile-card h1 {
+    font-size: 20px;
+  }
+
+  .profile-description {
+    font-size: 8px;
+  }
+
+  .form-row {
+    gap: 8px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 40px;
+
+    font-size: 8px;
+  }
+
+  .continue-btn {
+    height: 40px;
+
+    font-size: 9px;
+  }
+}

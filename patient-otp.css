@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #0b2e78;
+}
+
+/* ================= HEADER ================= */
+
+.patient-header {
+  width: 100%;
+  height: 56px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-shadow: 0 1px 5px rgba(15, 23, 42, 0.08);
+}
+
+.patient-header-container {
+  width: 100%;
+  max-width: 850px;
+
+  height: 100%;
+
+  margin: auto;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patient-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.patient-logo img {
+  width: 110px;
+  height: auto;
+
+  display: block;
+}
+
+.patient-help {
+  font-size: 7px;
+  color: #f7255c;
+}
+
+.patient-help span {
+  margin-left: 7px;
+
+  color: #0b2e78;
+  font-weight: 600;
+}
+
+/* ================= MAIN ================= */
+
+.patient-login-section {
+  min-height: calc(100vh - 56px);
+
+  padding: 22px 15px 40px;
+}
+
+.patient-page-container {
+  width: 100%;
+  max-width: 805px;
+
+  margin: auto;
+}
+
+/* ================= BACK LINK ================= */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-bottom: 8px;
+
+  color: #0b2e78;
+
+  font-size: 7px;
+
+  text-decoration: none;
+}
+
+.back-link i {
+  font-size: 6px;
+}
+
+/* ================= MAIN WRAPPER ================= */
+
+.patient-login-wrapper {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 285px 1fr;
+
+  gap: 10px;
+
+  align-items: stretch;
+}
+
+/* ================= OTP CARD ================= */
+
+.patient-login-card {
+  min-height: 348px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 7px 20px rgba(15, 23, 42, 0.1);
+
+  display: flex;
+  align-items: center;
+}
+
+.patient-form-content {
+  width: 100%;
+
+  padding: 25px 27px;
+}
+
+/* ================= TITLE ================= */
+
+.welcome-text {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #f7255c;
+
+  font-size: 6px;
+
+  font-weight: 700;
+}
+
+.patient-form-content h1 {
+  font-size: 21px;
+
+  line-height: 1.35;
+
+  color: #0b2e78;
+
+  margin-bottom: 12px;
+}
+
+.patient-description {
+  max-width: 240px;
+
+  margin-bottom: 18px;
+
+  color: #7b8495;
+
+  font-size: 7px;
+
+  line-height: 1.5;
+}
+
+/* ================= LABEL ================= */
+
+.patient-form-content label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #0b2e78;
+
+  font-size: 7px;
+
+  font-weight: 600;
+}
+
+/* ================= OTP INPUTS ================= */
+
+.otp-inputs {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 14px;
+}
+
+.otp-inputs input {
+  width: 28px;
+  height: 31px;
+
+  padding: 0;
+
+  border: 1px solid #dfe4eb;
+
+  border-radius: 5px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  color: #0b2e78;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.otp-inputs input:focus {
+  border-color: #f7255c;
+
+  box-shadow: 0 0 0 2px rgba(247, 37, 92, 0.08);
+}
+
+/* ================= VERIFY BUTTON ================= */
+
+.continue-btn {
+  width: 100%;
+  height: 31px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #f7255c;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.continue-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(247, 37, 92, 0.25);
+}
+
+/* ================= RESEND ================= */
+
+.resend-text {
+  margin-top: 9px;
+
+  color: #7b8495;
+
+  font-size: 5.5px;
+
+  line-height: 1.5;
+}
+
+.resend-text a {
+  color: #f7255c;
+
+  text-decoration: none;
+}
+
+/* ================= CHANGE NUMBER ================= */
+
+.change-number {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  color: #f7255c;
+
+  font-size: 5.5px;
+
+  text-decoration: none;
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.patient-image {
+  min-height: 348px;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 7px 20px rgba(15, 23, 42, 0.1);
+}
+
+.patient-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  /* Header */
+
+  .patient-header {
+    height: 60px;
+  }
+
+  .patient-header-container {
+    padding: 0 15px;
+  }
+
+  .patient-logo img {
+    width: 120px;
+  }
+
+  .patient-help {
+    font-size: 7px;
+  }
+
+  .patient-help span {
+    display: block;
+
+    margin-left: 0;
+
+    margin-top: 2px;
+  }
+
+  /* Main */
+
+  .patient-login-section {
+    padding: 20px 15px 35px;
+  }
+
+  .patient-page-container {
+    max-width: 450px;
+  }
+
+  /* Back */
+
+  .back-link {
+    font-size: 8px;
+
+    margin-bottom: 12px;
+  }
+
+  /* Layout */
+
+  .patient-login-wrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  /* OTP Card */
+
+  .patient-login-card {
+    min-height: auto;
+
+    order: 1;
+  }
+
+  .patient-form-content {
+    padding: 30px 22px;
+  }
+
+  /* Image */
+
+  .patient-image {
+    order: 2;
+
+    width: 100%;
+
+    height: 260px;
+
+    min-height: 0;
+
+    border-radius: 10px;
+  }
+
+  /* Text */
+
+  .welcome-text {
+    font-size: 7px;
+  }
+
+  .patient-form-content h1 {
+    font-size: 23px;
+  }
+
+  .patient-description {
+    max-width: 100%;
+
+    font-size: 9px;
+  }
+
+  .patient-form-content label {
+    font-size: 9px;
+  }
+
+  /* OTP */
+
+  .otp-inputs {
+    gap: 8px;
+
+    margin-bottom: 16px;
+  }
+
+  .otp-inputs input {
+    width: 42px;
+    height: 42px;
+
+    font-size: 14px;
+  }
+
+  /* Button */
+
+  .continue-btn {
+    height: 42px;
+
+    font-size: 10px;
+  }
+
+  /* Links */
+
+  .resend-text {
+    font-size: 7px;
+  }
+
+  .change-number {
+    font-size: 7px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .patient-login-section {
+    padding: 18px 12px 30px;
+  }
+
+  .patient-form-content {
+    padding: 25px 18px;
+  }
+
+  .patient-form-content h1 {
+    font-size: 21px;
+  }
+
+  .patient-description {
+    font-size: 8px;
+  }
+
+  .otp-inputs {
+    gap: 6px;
+  }
+
+  .otp-inputs input {
+    width: 39px;
+    height: 40px;
+
+    font-size: 13px;
+  }
+
+  .patient-image {
+    height: 220px;
+  }
+}

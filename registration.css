@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0b2e78;
+}
+
+/* HEADER */
+
+.register-header {
+  width: 100%;
+  height: 60px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-shadow: 0 1px 5px rgba(15, 23, 42, 0.08);
+}
+
+.register-header-container {
+  width: 100%;
+  max-width: 1120px;
+
+  height: 100%;
+
+  margin: auto;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.register-logo img {
+  width: 125px;
+  height: auto;
+
+  display: block;
+}
+
+.help-text {
+  font-size: 8px;
+  color: #7b8495;
+}
+
+.help-text span {
+  margin-left: 8px;
+  color: #0b2e78;
+  font-weight: 600;
+}
+
+/* MAIN */
+
+.register-choice-section {
+  min-height: calc(100vh - 60px);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 88px 20px 60px;
+}
+
+.register-choice-container {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* HEADING */
+
+.register-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.register-heading h1 {
+  font-size: 20px;
+  line-height: 1.3;
+
+  color: #0b2e78;
+
+  margin-bottom: 12px;
+}
+
+.register-heading p {
+  font-size: 8px;
+  color: #7b8495;
+}
+
+/* CARDS */
+
+.register-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.register-choice-card {
+  position: relative;
+
+  min-height: 136px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  padding: 35px 25px 13px;
+
+  text-align: center;
+
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.register-choice-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+}
+
+/* ICON */
+
+.choice-icon {
+  position: absolute;
+
+  top: -26px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+.patient-icon {
+  background: #ffe0e8;
+  color: #f7255c;
+}
+
+.hospital-icon {
+  background: #e5efff;
+  color: #0b2e78;
+}
+
+/* CARD CONTENT */
+
+.register-choice-card h2 {
+  font-size: 16px;
+
+  color: #0b2e78;
+
+  margin-bottom: 8px;
+}
+
+.register-choice-card p {
+  max-width: 270px;
+
+  margin: 0 auto 14px;
+
+  font-size: 7px;
+
+  line-height: 1.5;
+
+  color: #7b8495;
+}
+
+/* BUTTON */
+
+.choice-btn {
+  width: 100%;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  padding: 0 10px;
+  margin: 0;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  line-height: normal;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.choice-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(15, 23, 42, 0.15);
+}
+
+.patient-btn {
+  background: #f7255c;
+  color: #ffffff;
+}
+
+.hospital-btn {
+  background: #0b2e78;
+  color: #ffffff;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .register-header {
+    height: 60px;
+  }
+
+  .register-header-container {
+    padding: 0 16px;
+  }
+
+  .register-logo img {
+    width: 120px;
+  }
+
+  .help-text {
+    font-size: 7px;
+  }
+
+  .help-text span {
+    display: block;
+
+    margin-left: 0;
+    margin-top: 2px;
+  }
+
+  .register-choice-section {
+    min-height: calc(100vh - 60px);
+
+    padding: 70px 18px 40px;
+  }
+
+  .register-choice-container {
+    max-width: 400px;
+  }
+
+  .register-heading {
+    margin-bottom: 45px;
+  }
+
+  .register-heading h1 {
+    font-size: 21px;
+  }
+
+  .register-heading p {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .register-cards {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .register-choice-card {
+    min-height: 190px;
+
+    padding: 40px 20px 15px;
+  }
+
+  .choice-icon {
+    width: 55px;
+    height: 55px;
+
+    top: -28px;
+  }
+
+  .register-choice-card h2 {
+    font-size: 18px;
+  }
+
+  .register-choice-card p {
+    font-size: 9px;
+
+    max-width: 300px;
+
+    margin-bottom: 18px;
+  }
+
+  .choice-btn {
+    height: 38px;
+    font-size: 11px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .register-choice-section {
+    padding: 60px 15px 35px;
+  }
+
+  .register-heading h1 {
+    font-size: 19px;
+  }
+
+  .register-heading p {
+    font-size: 8px;
+  }
+
+  .register-choice-card {
+    min-height: 180px;
+  }
+
+  .register-choice-card h2 {
+    font-size: 17px;
+  }
+}

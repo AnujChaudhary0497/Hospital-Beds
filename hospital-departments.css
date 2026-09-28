@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #0b2e78;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.hospital-header {
+  width: 100%;
+  height: 64px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-shadow: 0 1px 5px rgba(15, 23, 42, 0.08);
+}
+
+.hospital-header-container {
+  width: 100%;
+  max-width: 1280px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hospital-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.hospital-logo img {
+  width: 145px;
+  height: auto;
+
+  display: block;
+}
+
+.hospital-help {
+  font-size: 9px;
+
+  color: #f7255c;
+}
+
+.hospital-help span {
+  margin-left: 8px;
+
+  color: #0b2e78;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.hospital-departments-section {
+  min-height: calc(100vh - 64px);
+
+  padding: 55px 20px 70px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hospital-departments-container {
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 75px;
+}
+
+/* =========================================================
+   STEPS
+========================================================= */
+
+.hospital-steps {
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hospital-step {
+  position: relative;
+
+  height: 61px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  color: #8b94a3;
+
+  font-size: 12px;
+}
+
+.hospital-step:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 14px;
+  top: 36px;
+
+  width: 1px;
+  height: 60px;
+
+  background: #dfe4eb;
+
+  z-index: 0;
+}
+
+/* STEP NUMBER */
+
+.step-number {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  position: relative;
+
+  z-index: 1;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e6eb;
+
+  color: #8b94a3;
+
+  font-size: 9px;
+
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+}
+
+/* COMPLETED */
+
+.hospital-step.completed {
+  color: #0b2e78;
+
+  font-weight: 600;
+}
+
+.hospital-step.completed .step-number {
+  background: #f7255c;
+
+  border-color: #f7255c;
+
+  color: #ffffff;
+}
+
+.hospital-step.completed::after {
+  background: #f7255c;
+}
+
+/* ACTIVE */
+
+.hospital-step.active {
+  color: #0b2e78;
+
+  font-weight: 600;
+}
+
+.hospital-step.active .step-number {
+  background: #f7255c;
+
+  border-color: #f7255c;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.hospital-departments-card {
+  width: 300px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 25px 24px 21px;
+
+  box-shadow: 0 7px 20px rgba(15, 23, 42, 0.1);
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.departments-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #f7255c;
+
+  font-size: 6px;
+
+  font-weight: 700;
+}
+
+.hospital-departments-card h1 {
+  color: #0b2e78;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+
+  margin-bottom: 7px;
+}
+
+.departments-description {
+  color: #7b8495;
+
+  font-size: 7px;
+
+  line-height: 1.45;
+
+  margin-bottom: 17px;
+}
+
+/* =========================================================
+   DEPARTMENT GRID
+========================================================= */
+
+.department-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 7px 9px;
+
+  margin-bottom: 12px;
+}
+
+.department-option {
+  height: 28px;
+
+  padding: 0 8px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #dfe4eb;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.department-option input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.department-option span {
+  width: 100%;
+
+  color: #0b2e78;
+
+  font-size: 7px;
+}
+
+.department-option:hover {
+  border-color: #f7255c;
+}
+
+.department-option:has(input:checked) {
+  border-color: #f7255c;
+
+  background: #fff7f9;
+}
+
+.department-option:has(input:checked) span {
+  color: #f7255c;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   VIEW ALL
+========================================================= */
+
+.view-all-btn {
+  display: block;
+
+  margin: 0 auto 12px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #f7255c;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 6px;
+
+  cursor: pointer;
+}
+
+.view-all-btn:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   CONTINUE
+========================================================= */
+
+.continue-btn {
+  width: 100%;
+
+  height: 32px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #f7255c;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.continue-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(247, 37, 92, 0.22);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .hospital-header-container {
+    padding: 0 25px;
+  }
+
+  .hospital-departments-container {
+    max-width: 650px;
+
+    gap: 55px;
+  }
+
+  .hospital-steps {
+    width: 205px;
+  }
+
+  .hospital-step {
+    font-size: 11px;
+  }
+
+  .hospital-departments-card {
+    width: 300px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .hospital-header {
+    height: 60px;
+  }
+
+  .hospital-header-container {
+    padding: 0 15px;
+  }
+
+  .hospital-logo img {
+    width: 120px;
+  }
+
+  .hospital-help {
+    font-size: 7px;
+  }
+
+  .hospital-help span {
+    display: block;
+
+    margin-left: 0;
+
+    margin-top: 2px;
+  }
+
+  /* MAIN */
+
+  .hospital-departments-section {
+    min-height: calc(100vh - 60px);
+
+    padding: 30px 15px 40px;
+  }
+
+  .hospital-departments-container {
+    width: 100%;
+
+    max-width: 450px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 25px;
+  }
+
+  /* =====================================================
+       MOBILE STEPS
+    ===================================================== */
+
+  .hospital-steps {
+    width: 100%;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .hospital-step {
+    width: 25%;
+
+    height: auto;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    gap: 7px;
+
+    text-align: center;
+
+    font-size: 7px;
+  }
+
+  .hospital-step:not(:last-child)::after {
+    left: calc(50% + 12px);
+
+    top: 12px;
+
+    width: calc(100% - 24px);
+
+    height: 1px;
+  }
+
+  .step-number {
+    width: 27px;
+    height: 27px;
+
+    font-size: 8px;
+  }
+
+  /* =====================================================
+       MOBILE CARD
+    ===================================================== */
+
+  .hospital-departments-card {
+    width: 100%;
+
+    padding: 28px 22px 23px;
+
+    border-radius: 10px;
+  }
+
+  .departments-label {
+    font-size: 7px;
+  }
+
+  .hospital-departments-card h1 {
+    font-size: 21px;
+  }
+
+  .departments-description {
+    font-size: 8px;
+
+    line-height: 1.5;
+  }
+
+  /* DEPARTMENTS */
+
+  .department-grid {
+    gap: 8px;
+  }
+
+  .department-option {
+    height: 42px;
+
+    padding: 0 10px;
+  }
+
+  .department-option span {
+    font-size: 9px;
+  }
+
+  /* VIEW ALL */
+
+  .view-all-btn {
+    font-size: 8px;
+
+    margin-bottom: 14px;
+  }
+
+  /* BUTTON */
+
+  .continue-btn {
+    height: 42px;
+
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .hospital-departments-section {
+    padding: 25px 12px 35px;
+  }
+
+  .hospital-departments-container {
+    gap: 22px;
+  }
+
+  .hospital-step {
+    font-size: 6.5px;
+  }
+
+  .step-number {
+    width: 25px;
+    height: 25px;
+
+    font-size: 7px;
+  }
+
+  .hospital-departments-card {
+    padding: 25px 18px 20px;
+  }
+
+  .hospital-departments-card h1 {
+    font-size: 19px;
+  }
+
+  .departments-description {
+    font-size: 8px;
+  }
+
+  .department-option {
+    height: 40px;
+  }
+
+  .department-option span {
+    font-size: 8px;
+  }
+
+  .continue-btn {
+    height: 40px;
+
+    font-size: 9px;
+  }
+}
